@@ -511,7 +511,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1144010659623556}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.348896, y: 0.25, z: 39.10597}
+  m_LocalPosition: {x: 33.348896, y: 0.25, z: 35.51}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4377675955591754}
@@ -872,7 +872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4de3cabe1bf3f64188fdbc9f0a32110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 100
+  movementSpeed: 200
   rotationSpeed: 50
 --- !u!136 &136710465336655696
 CapsuleCollider:
