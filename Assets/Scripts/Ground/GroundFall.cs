@@ -2,60 +2,83 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GroundFall : MonoBehaviour
+namespace Ground
 {
-    public Transform groundParent;
-    public float fallWaitTime;
-
-    [Header("Debug")]
-    public bool fallOnStart;
-
-    private List<GameObject> grounds;
-    private Coroutine coroutine;
-
-    private int currentGroundChild;
-
-    /// <summary>
-    /// Start is called on the frame when a script is enabled just before
-    /// any of the Update methods is called the first time.
-    /// </summary>
-    private void Start()
+    public class GroundFall : MonoBehaviour
     {
-        grounds = new List<GameObject>();
+        public Transform groundParent;
+        public float fallWaitTime = 14;
+        public int totalGroundsToFall = 7;
 
-        currentGroundChild = 0;
-        grounds.Add(groundParent.GetChild(currentGroundChild).gameObject);
-        currentGroundChild += 1;
+        [Header("Debug")]
+        public bool fallOnStart;
 
-        if (fallOnStart)
-            StartGroundFall();
-    }
+        private List<GameObject> grounds;
+        private List<Rigidbody> groundsToFall;
+        private Coroutine coroutine;
 
-    /// <summary>
-    /// Update is called every frame, if the MonoBehaviour is enabled.
-    /// </summary>
-    private void Update()
-    {
-        if (groundParent.childCount > currentGroundChild)
+        private int currentGroundChild;
+        private float waitBetweenEachEnumRate;
+
+        /// <summary>
+        /// Start is called on the frame when a script is enabled just before
+        /// any of the Update methods is called the first time.
+        /// </summary>
+        private void Start()
         {
+            grounds = new List<GameObject>();
+            groundsToFall = new List<Rigidbody>();
+
+            currentGroundChild = 0;
             grounds.Add(groundParent.GetChild(currentGroundChild).gameObject);
             currentGroundChild += 1;
+
+            if (fallOnStart)
+                StartGroundFall();
         }
-    }
 
-    public void StartGroundFall() => coroutine = StartCoroutine(MakeGroundsFall());
-
-    public void StopGroundFall() => StopCoroutine(coroutine);
-
-    private IEnumerator MakeGroundsFall()
-    {
-        while (true)
+        /// <summary>
+        /// Update is called every frame, if the MonoBehaviour is enabled.
+        /// </summary>
+        private void Update()
         {
-            int randomValue = Random.Range(0, 1000);
-            int randomIndex = randomValue % grounds.Count;
+            if (groundParent.childCount > currentGroundChild)
+            {
+                grounds.Add(groundParent.GetChild(currentGroundChild).gameObject);
+                currentGroundChild += 1;
+            }
+        }
 
-            grounds[randomIndex].GetComponent<Rigidbody>().isKinematic = false;
-            yield return new WaitForSeconds(fallWaitTime);
+        public void StartGroundFall()
+        {
+            groundsToFall.Clear();
+            waitBetweenEachEnumRate = fallWaitTime / totalGroundsToFall;
+
+            coroutine = StartCoroutine(MakeGroundsFall());
+        }
+
+        public void StopGroundFall() => StopCoroutine(coroutine);
+
+        private IEnumerator MakeGroundsFall()
+        {
+            while (true)
+            {
+                int randomValue = Random.Range(0, 1000);
+                int randomIndex = randomValue % grounds.Count;
+
+                groundsToFall.Add(grounds[randomIndex].GetComponent<Rigidbody>());
+                grounds[randomIndex].GetComponent<Renderer>().material.color = Color.black;
+
+                if (groundsToFall.Count >= totalGroundsToFall)
+                {
+                    foreach (Rigidbody rb in groundsToFall)
+                        rb.isKinematic = false;
+
+                    groundsToFall.Clear();
+                }
+
+                yield return new WaitForSeconds(waitBetweenEachEnumRate);
+            }
         }
     }
 }
