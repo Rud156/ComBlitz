@@ -9,6 +9,7 @@ namespace Player
     public class PlayerController : MonoBehaviour
     {
         public float movementSpeed = 100f;
+        public float rotationSpeed = 50f;
 
         private Animator playerAnimator;
         private Rigidbody playerRB;
@@ -56,12 +57,19 @@ namespace Player
 
         private void PointPlayerTowardsMouse()
         {
-            Vector3 mousePosition = Input.mousePosition;
-            
-			mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-			mousePosition.z = transform.position.z;
-            
-			transform.LookAt(mousePosition);
+            Plane playerPlane = new Plane(Vector3.up, transform.position);
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            float hitdist = 0.0f;
+
+            if (playerPlane.Raycast(ray, out hitdist))
+            {
+                Vector3 targetPoint = ray.GetPoint(hitdist);
+                Quaternion targetRotation = Quaternion.LookRotation(targetPoint - transform.position);
+
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation,
+                    rotationSpeed * Time.deltaTime);
+            }
         }
 
         private void PlayerShoot()
