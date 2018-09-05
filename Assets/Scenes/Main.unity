@@ -8212,7 +8212,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4257445671776290, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.004363274
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4257445671776290, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
       propertyPath: m_LocalRotation.z
@@ -8220,16 +8220,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4257445671776290, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.9999905
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4257445671776290, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
       propertyPath: m_RootOrder
       value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114518507955243828, guid: bc903bb7f0b9219419b352aa6280db79,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}

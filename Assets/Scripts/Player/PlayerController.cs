@@ -9,6 +9,7 @@ namespace Player
     public class PlayerController : MonoBehaviour
     {
         public float movementSpeed = 100f;
+        public float velocityThreshold = 0.5f;
         public float rotationSpeed = 50f;
 
         private Animator playerAnimator;
@@ -32,27 +33,41 @@ namespace Player
         /// </summary>
         void Update()
         {
-            MovePlayer();
+            MovePlayerVerticalAndHorizontal();
+
+            SetAndLimitPlayerAnimation();
 
             PointPlayerTowardsMouse();
             PlayerShoot();
         }
 
-        private void MovePlayer()
+        private void MovePlayerVerticalAndHorizontal()
         {
             float moveZ = Input.GetAxis("Vertical");
-            if (moveZ > 0)
-            {
-                playerAnimator.SetBool(playerAnimatorMove, true);
+            float moveX = Input.GetAxis("Horizontal");
 
-                Vector3 velocity = transform.forward * moveZ * movementSpeed * Time.deltaTime;
-                playerRB.velocity = new Vector3(velocity.x, playerRB.velocity.y, velocity.z);
-            }
+            Vector3 zVelocity = Vector3.zero;
+            Vector3 xVelocity = Vector3.zero;
+
+            if (moveZ > 0)
+                zVelocity = transform.forward * moveZ;
+
+            if (moveX != 0)
+                xVelocity = transform.right * moveX;
+
+            Vector3 combinedVelocity = (zVelocity + xVelocity) * movementSpeed * Time.deltaTime;
+            playerRB.velocity = new Vector3(combinedVelocity.x, playerRB.velocity.y, combinedVelocity.z);
+        }
+
+        private void SetAndLimitPlayerAnimation()
+        {
+            float moveZ = Input.GetAxis("Vertical");
+            float moveX = Input.GetAxis("Horizontal");
+
+            if (moveZ > 0 || moveX != 0)
+                playerAnimator.SetBool(playerAnimatorMove, true);
             else
-            {
-                playerRB.velocity = Vector3.zero + Vector3.up * playerRB.velocity.y;
                 playerAnimator.SetBool(playerAnimatorMove, false);
-            }
         }
 
         private void PointPlayerTowardsMouse()
