@@ -842,7 +842,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!95 &95351639984652474
 Animator:
   serializedVersion: 3
@@ -873,8 +873,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 100
-  maxSpeed: 75
-  velocityThreshold: 0.5
   rotationSpeed: 50
 --- !u!136 &136710465336655696
 CapsuleCollider:

@@ -9,7 +9,6 @@ namespace Player
     public class PlayerController : MonoBehaviour
     {
         public float movementSpeed = 100f;
-        public float velocityThreshold = 0.5f;
         public float rotationSpeed = 50f;
 
         private Animator playerAnimator;
