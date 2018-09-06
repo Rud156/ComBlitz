@@ -7,22 +7,14 @@ namespace DeBomb.Player.Ground
     public class PlayerSpawnGroundController : MonoBehaviour
     {
         public Transform groundTracker;
-        public float overlapSphereRadius = 2f;
+        public float overlapSphereRadius = 1f;
 
-        [Header("Grounds")]
-        public GameObject grassGround;
+        private void Start() => GroundManager.instance.createGroundInstance += CreateGroundInWorld;
 
-        public GameObject lavaGround;
-        public GameObject dirtGround;
+        private void OnDestroy() => GroundManager.instance.createGroundInstance -= CreateGroundInWorld;
 
-        // Update is called once per frame
-        private void Update() => CheckGroundClearAndPlace();
-
-        private void CheckGroundClearAndPlace()
+        private void CreateGroundInWorld(GameObject ground, Transform groundParent)
         {
-            if (!Input.GetKeyDown(KeyCode.Z) && !Input.GetKeyDown(KeyCode.X) && !Input.GetKeyDown(KeyCode.C))
-                return;
-
             Collider[] colliders = Physics.OverlapSphere(groundTracker.position, overlapSphereRadius);
 
             bool clear = false;
@@ -38,22 +30,12 @@ namespace DeBomb.Player.Ground
             }
 
             if (clear)
-                PlaceGround(xPos, zPos);
-        }
-
-        private void PlaceGround(float xPos, float zPos)
-        {
-            GameObject instantiatedGround = null;
-
-            if (Input.GetKeyDown(KeyCode.Z))
-                instantiatedGround = Instantiate(grassGround, new Vector3(xPos, 0, zPos), Quaternion.identity);
-            else if (Input.GetKeyDown(KeyCode.X))
-                instantiatedGround = Instantiate(lavaGround, new Vector3(xPos, 0, zPos), Quaternion.identity);
-            else if (Input.GetKeyDown(KeyCode.C))
-                instantiatedGround = Instantiate(dirtGround, new Vector3(xPos, 0, zPos), Quaternion.identity);
-
-            if (instantiatedGround != null)
-                GroundFall.instance.AddGround(instantiatedGround);
+            {
+                GameObject groundInstance = Instantiate(ground, new Vector3(xPos, 0, zPos),
+                    Quaternion.identity);
+                groundInstance.transform.SetParent(groundParent);
+                GroundManager.instance.AddGround(groundInstance);
+            }
         }
     }
 }

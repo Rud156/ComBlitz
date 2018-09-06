@@ -1003,7 +1003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundTracker: {fileID: 4177375312867920}
-  overlapSphereRadius: 2
+  overlapSphereRadius: 1
   grassGround: {fileID: 1155546808048874, guid: f77f45aa2d6e4a0448ace47bac2a5a67,
     type: 2}
   lavaGround: {fileID: 1941519210562276, guid: a983e6102f2a83141870cdcfd817cd12, type: 2}

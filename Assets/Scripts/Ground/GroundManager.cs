@@ -4,19 +4,31 @@ using UnityEngine;
 
 namespace DeBomb.Ground
 {
-    public class GroundFall : MonoBehaviour
+    public class GroundManager : MonoBehaviour
     {
         #region Singleton
 
-        public static GroundFall instance;
+        public static GroundManager instance;
 
         private void Awake() => instance = this;
 
         #endregion Singleton
 
+        public delegate void CreateGroundInstance(GameObject groundObject, Transform groundParent);
+
+        public CreateGroundInstance createGroundInstance;
+
+        [Header("Ground Spawn Stats")]
         public Transform groundParent;
+
         public float fallWaitTime = 14;
         public int totalGroundsToFall = 7;
+
+        [Header("Grounds")]
+        public GameObject grassGround;
+
+        public GameObject lavaGround;
+        public GameObject dirtGround;
 
         [Header("Debug")]
         public bool fallOnStart;
@@ -27,6 +39,7 @@ namespace DeBomb.Ground
 
         private int currentGroundChild;
         private float waitBetweenEachEnumRate;
+        private bool listCompleted;
 
         /// <summary>
         /// Start is called on the frame when a script is enabled just before
@@ -38,6 +51,8 @@ namespace DeBomb.Ground
             groundsToFall = new List<Rigidbody>();
 
             currentGroundChild = 0;
+            listCompleted = false;
+
             grounds.Add(groundParent.GetChild(currentGroundChild).gameObject);
             currentGroundChild += 1;
 
@@ -50,11 +65,8 @@ namespace DeBomb.Ground
         /// </summary>
         private void Update()
         {
-            if (groundParent.childCount > currentGroundChild)
-            {
-                grounds.Add(groundParent.GetChild(currentGroundChild).gameObject);
-                currentGroundChild += 1;
-            }
+            AddGroundChildToList();
+            CreateGround();
         }
 
         public void StartGroundFall()
@@ -68,6 +80,35 @@ namespace DeBomb.Ground
         public void StopGroundFall() => StopCoroutine(coroutine);
 
         public void AddGround(GameObject ground) => grounds.Add(ground);
+
+        private void AddGroundChildToList()
+        {
+            if (listCompleted)
+                return;
+
+            if (groundParent.childCount > currentGroundChild)
+            {
+                grounds.Add(groundParent.GetChild(currentGroundChild).gameObject);
+                currentGroundChild += 1;
+            }
+            else
+                listCompleted = true;
+        }
+
+        private void CreateGround()
+        {
+            // Use Resource Manager to check for sufficient resources
+
+            if (createGroundInstance == null)
+                return;
+
+            if (Input.GetKeyDown(KeyCode.Z))
+                createGroundInstance(dirtGround, groundParent);
+            else if (Input.GetKeyDown(KeyCode.X))
+                createGroundInstance(grassGround, groundParent);
+            else if (Input.GetKeyDown(KeyCode.C))
+                createGroundInstance(lavaGround, groundParent);
+        }
 
         private IEnumerator MakeGroundsFall()
         {
