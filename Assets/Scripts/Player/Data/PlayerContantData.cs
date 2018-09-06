@@ -1,4 +1,4 @@
-namespace DeBomb.Player
+namespace DeBomb.Player.Data
 {
     public static class PlayerContantData
     {

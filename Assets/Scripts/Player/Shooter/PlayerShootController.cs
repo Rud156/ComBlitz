@@ -1,11 +1,16 @@
-﻿using UnityEngine;
+﻿using DeBomb.Player.Data;
+using UnityEngine;
 
-namespace DeBomb.Player
+namespace DeBomb.Player.Shooter
 {
     [RequireComponent(typeof(Rigidbody))]
     [RequireComponent(typeof(Animator))]
     public class PlayerShootController : MonoBehaviour
     {
+        public GameObject bullet;
+        public float bulletLaunchVelocity;
+        public Transform bulletLaunchPoint;
+
         private Rigidbody playerRB;
         private Animator playerAnimator;
 
@@ -28,6 +33,12 @@ namespace DeBomb.Player
             }
             else
                 playerAnimator.SetBool(PlayerContantData.PlayerShootAnimParam, false);
+        }
+
+        private void ShootBullet()
+        {
+            GameObject bulletInstance = Instantiate(bullet, bulletLaunchPoint.position, Quaternion.identity);
+            bulletInstance.GetComponent<Rigidbody>().velocity = bulletLaunchVelocity * transform.forward;
         }
     }
 }

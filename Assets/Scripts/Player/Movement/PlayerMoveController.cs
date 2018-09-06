@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using DeBomb.Player.Data;
+using UnityEngine;
 
-namespace DeBomb.Player
+namespace DeBomb.Player.Movement
 {
     [RequireComponent(typeof(Rigidbody))]
     [RequireComponent(typeof(Animator))]

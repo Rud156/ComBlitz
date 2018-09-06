@@ -1,7 +1,7 @@
 ﻿using DeBomb.Extensions;
 using UnityEngine;
 
-namespace DeBomb.Player
+namespace DeBomb.Player.Ground
 {
     public class PlayerSpawnGroundController : MonoBehaviour
     {

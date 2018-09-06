@@ -67,7 +67,9 @@ namespace DeBomb.Ground
                 int randomIndex = randomValue % grounds.Count;
 
                 groundsToFall.Add(grounds[randomIndex].GetComponent<Rigidbody>());
+
                 grounds[randomIndex].GetComponent<Renderer>().material.color = Color.black;
+                grounds.RemoveAt(randomIndex);
 
                 if (groundsToFall.Count >= totalGroundsToFall)
                 {
