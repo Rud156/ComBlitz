@@ -6,6 +6,14 @@ namespace DeBomb.Ground
 {
     public class GroundFall : MonoBehaviour
     {
+        #region Singleton
+
+        public static GroundFall instance;
+
+        private void Awake() => instance = this;
+
+        #endregion Singleton
+
         public Transform groundParent;
         public float fallWaitTime = 14;
         public int totalGroundsToFall = 7;
@@ -58,6 +66,8 @@ namespace DeBomb.Ground
         }
 
         public void StopGroundFall() => StopCoroutine(coroutine);
+
+        public void AddGround(GameObject ground) => grounds.Add(ground);
 
         private IEnumerator MakeGroundsFall()
         {

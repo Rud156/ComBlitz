@@ -1,4 +1,5 @@
 ﻿using DeBomb.Extensions;
+using DeBomb.Ground;
 using UnityEngine;
 
 namespace DeBomb.Player.Ground
@@ -19,6 +20,9 @@ namespace DeBomb.Player.Ground
 
         private void CheckGroundClearAndPlace()
         {
+            if (!Input.GetKeyDown(KeyCode.Z) && !Input.GetKeyDown(KeyCode.X) && !Input.GetKeyDown(KeyCode.C))
+                return;
+
             Collider[] colliders = Physics.OverlapSphere(groundTracker.position, overlapSphereRadius);
 
             bool clear = false;
@@ -39,12 +43,17 @@ namespace DeBomb.Player.Ground
 
         private void PlaceGround(float xPos, float zPos)
         {
+            GameObject instantiatedGround = null;
+
             if (Input.GetKeyDown(KeyCode.Z))
-                Instantiate(grassGround, new Vector3(xPos, 0, zPos), Quaternion.identity);
+                instantiatedGround = Instantiate(grassGround, new Vector3(xPos, 0, zPos), Quaternion.identity);
             else if (Input.GetKeyDown(KeyCode.X))
-                Instantiate(lavaGround, new Vector3(xPos, 0, zPos), Quaternion.identity);
+                instantiatedGround = Instantiate(lavaGround, new Vector3(xPos, 0, zPos), Quaternion.identity);
             else if (Input.GetKeyDown(KeyCode.C))
-                Instantiate(dirtGround, new Vector3(xPos, 0, zPos), Quaternion.identity);
+                instantiatedGround = Instantiate(dirtGround, new Vector3(xPos, 0, zPos), Quaternion.identity);
+
+            if (instantiatedGround != null)
+                GroundFall.instance.AddGround(instantiatedGround);
         }
     }
 }
