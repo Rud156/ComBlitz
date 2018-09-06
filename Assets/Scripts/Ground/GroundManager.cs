@@ -14,7 +14,7 @@ namespace DeBomb.Ground
 
         #endregion Singleton
 
-        public delegate void CreateGroundInstance(GameObject groundObject, Transform groundParent);
+        public delegate void CreateGroundInstance(GameObject groundObject);
 
         public CreateGroundInstance createGroundInstance;
 
@@ -86,7 +86,7 @@ namespace DeBomb.Ground
             if (listCompleted)
                 return;
 
-            if (groundParent.childCount > currentGroundChild)
+            if (currentGroundChild < groundParent.childCount)
             {
                 grounds.Add(groundParent.GetChild(currentGroundChild).gameObject);
                 currentGroundChild += 1;
@@ -102,12 +102,19 @@ namespace DeBomb.Ground
             if (createGroundInstance == null)
                 return;
 
+            GameObject ground;
+
             if (Input.GetKeyDown(KeyCode.Z))
-                createGroundInstance(dirtGround, groundParent);
+                ground = Instantiate(dirtGround, transform.position, Quaternion.identity);
             else if (Input.GetKeyDown(KeyCode.X))
-                createGroundInstance(grassGround, groundParent);
+                ground = Instantiate(grassGround, transform.position, Quaternion.identity);
             else if (Input.GetKeyDown(KeyCode.C))
-                createGroundInstance(lavaGround, groundParent);
+                ground = Instantiate(lavaGround, transform.position, Quaternion.identity);
+            else
+                return;
+
+            ground.transform.SetParent(groundParent);
+            createGroundInstance(ground);
         }
 
         private IEnumerator MakeGroundsFall()

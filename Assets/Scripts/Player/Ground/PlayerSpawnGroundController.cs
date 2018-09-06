@@ -13,7 +13,7 @@ namespace DeBomb.Player.Ground
 
         private void OnDestroy() => GroundManager.instance.createGroundInstance -= CreateGroundInWorld;
 
-        private void CreateGroundInWorld(GameObject ground, Transform groundParent)
+        private void CreateGroundInWorld(GameObject ground)
         {
             Collider[] colliders = Physics.OverlapSphere(groundTracker.position, overlapSphereRadius);
 
@@ -31,10 +31,7 @@ namespace DeBomb.Player.Ground
 
             if (clear)
             {
-                GameObject groundInstance = Instantiate(ground, new Vector3(xPos, 0, zPos),
-                    Quaternion.identity);
-                groundInstance.transform.SetParent(groundParent);
-                GroundManager.instance.AddGround(groundInstance);
+                ground.transform.position = new Vector3(xPos, 0, zPos);
             }
         }
     }
