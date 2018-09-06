@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f826bb9135bf27f419d6db0fc6632839
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - groundTracker: {instanceID: 0}
+  - grassGround: {fileID: 1155546808048874, guid: f77f45aa2d6e4a0448ace47bac2a5a67,
+      type: 2}
+  - lavaGround: {fileID: 1941519210562276, guid: a983e6102f2a83141870cdcfd817cd12,
+      type: 2}
+  - dirtGround: {fileID: 1212678294326434, guid: 80ad5de9db370484ca5985c9f5fe874a,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

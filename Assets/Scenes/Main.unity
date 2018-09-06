@@ -21361,7 +21361,7 @@ MonoBehaviour:
   groundParent: {fileID: 872618379}
   fallWaitTime: 14
   totalGroundsToFall: 7
-  fallOnStart: 0
+  fallOnStart: 1
 --- !u!4 &1141116097
 Transform:
   m_ObjectHideFlags: 0
@@ -38111,11 +38111,6 @@ Prefab:
     - target: {fileID: 4257445671776290, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
       propertyPath: m_RootOrder
       value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 23023008989236602, guid: bc903bb7f0b9219419b352aa6280db79,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
