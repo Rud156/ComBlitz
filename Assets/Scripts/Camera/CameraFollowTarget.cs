@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CustomCamera
+namespace DeBomb.CustomCamera
 {
     public class CameraFollowTarget : MonoBehaviour
     {
         [Header("Base Stats")]
         public float followSpeed = 10f;
         public float lookAtSpeed = 10f;
-        public bool useRotation = false;
         public Vector3 cameraOffset;
 
         [Header("Target")]
@@ -30,8 +29,7 @@ namespace CustomCamera
         {
             UpdateLastTargetPosition();
 
-            if (useRotation)
-                LootAtTarget();
+            LootAtTarget();
             MoveToTarget();
         }
 

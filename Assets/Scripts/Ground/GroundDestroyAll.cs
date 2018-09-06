@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Ground
+namespace DeBomb.Ground
 {
     public class GroundDestroyAll : MonoBehaviour
     {
