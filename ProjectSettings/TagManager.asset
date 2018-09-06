@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - MainGround
+  - Enemy
+  - Base
+  - ConstructionPlatforms
   layers:
   - Default
   - TransparentFX

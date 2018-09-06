@@ -636,9 +636,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4836068982886936}
   - component: {fileID: 95437176292072008}
+  - component: {fileID: 195589668992467454}
   m_Layer: 0
   m_Name: Orc Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1618,7 +1619,7 @@ Animator:
   m_GameObject: {fileID: 1805352117909408}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: d021512d6de402148a36d287d6cde611, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fc91356dd3bf15941af71804e77257d6, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1714,3 +1715,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.31015843, y: -0.061297655, z: -0.061658025}
     m_Extent: {x: 1.487706, y: 1.131535, z: 0.9401239}
   m_DirtyAABB: 0
+--- !u!195 &195589668992467454
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1805352117909408}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
