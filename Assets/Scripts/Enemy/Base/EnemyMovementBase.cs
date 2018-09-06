@@ -1,5 +1,5 @@
 ﻿using DeBomb.ConstantData;
-using System.Linq;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -12,40 +12,29 @@ namespace DeBomb.Enemy
         private NavMeshAgent enemyAgent;
 
         private Transform playerTransform;
-        private Transform baseTransform;
-        private Transform[] constructionPlatforms;
 
         private void Start()
         {
             enemyAgent = GetComponent<NavMeshAgent>();
-
             playerTransform = GameObject.FindGameObjectWithTag(TagManager.Player).transform;
-            baseTransform = GameObject.FindGameObjectWithTag(TagManager.Base).transform;
-            constructionPlatforms = GameObject.FindGameObjectsWithTag(TagManager.Platform)
-                .Select(_ => _.transform).ToArray();
         }
 
-        private void Update()
-        {
-            CheckPlayerDistance();
-        }
+        private void Update() => MoveTowardsPlayerAndAttack();
 
-        private void CheckPlayerDistance()
+        private void MoveTowardsPlayerAndAttack()
         {
-            if (Vector3.Distance(playerTransform.position, transform.position) < maxPLayerTargetDistance)
-                enemyAgent.SetDestination(playerTransform.position);
-            else
+            if (!enemyAgent.pathPending)
             {
-                if(constructionPlatforms.Length > 0)
+                if (enemyAgent.remainingDistance <= enemyAgent.stoppingDistance)
                 {
-
+                    if (!enemyAgent.hasPath || enemyAgent.velocity.sqrMagnitude == 0f)
+                        StartCoroutine(AttackPlayer());
                 }
             }
 
+            enemyAgent.SetDestination(playerTransform.position);
         }
 
-        public void AttackObject()
-        {
-        }
+        protected abstract IEnumerator AttackPlayer();
     }
 }

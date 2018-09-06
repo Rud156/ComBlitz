@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace DeBomb.Ground
 {
@@ -29,6 +30,9 @@ namespace DeBomb.Ground
 
         public GameObject lavaGround;
         public GameObject dirtGround;
+
+        [Header("NavMesh")]
+        public NavMeshSurface surface;
 
         [Header("Debug")]
         public bool fallOnStart;
@@ -79,7 +83,11 @@ namespace DeBomb.Ground
 
         public void StopGroundFall() => StopCoroutine(coroutine);
 
-        public void AddGround(GameObject ground) => grounds.Add(ground);
+        public void AddGround(GameObject ground)
+        {
+            grounds.Add(ground);
+            surface.BuildNavMesh();
+        }
 
         private void AddGroundChildToList()
         {
@@ -115,6 +123,7 @@ namespace DeBomb.Ground
 
             ground.transform.SetParent(groundParent);
             createGroundInstance(ground);
+            AddGround(ground);
         }
 
         private IEnumerator MakeGroundsFall()
