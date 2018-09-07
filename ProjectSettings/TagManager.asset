@@ -7,7 +7,7 @@ TagManager:
   - MainGround
   - Enemy
   - Base
-  - Shooters
+  - Shooter Holder
   layers:
   - Default
   - TransparentFX

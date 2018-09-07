@@ -11,24 +11,24 @@ namespace DeBomb.Enemy.Base
         public float maxTargetSwitchDistance = 10f;
 
         public float minPlayerTargetDistance = 10f;
-        public Transform shooterHolder;
 
         [Header("Enemy Control Stats")]
         public float enemyMovementThreshold = 1f;
 
         public float waitBetweenAttackTime = 2f;
 
-        protected NavMeshAgent enemyAgent;
-        protected Animator enemyAnimator;
+        private NavMeshAgent enemyAgent;
+        private Animator enemyAnimator;
 
-        protected Transform playerTransform;
-        protected Transform baseTransform;
-        protected bool enemyAttackPlaying;
+        private Transform playerTransform;
+        private Transform baseTransform;
+        private Transform shooterHolder;
 
+        private bool enemyAttackPlaying;
         protected string enemyMoveAnimParam;
         protected string enemyAttackAnimParam;
 
-        protected Transform currentTarget;
+        private Transform currentTarget;
 
         protected void Init()
         {
@@ -37,6 +37,7 @@ namespace DeBomb.Enemy.Base
 
             playerTransform = GameObject.FindGameObjectWithTag(TagManager.Player).transform;
             baseTransform = GameObject.FindGameObjectWithTag(TagManager.Base).transform;
+            shooterHolder = GameObject.FindGameObjectWithTag(TagManager.ShooterHolder).transform;
 
             currentTarget = baseTransform;
             enemyAttackPlaying = false;
