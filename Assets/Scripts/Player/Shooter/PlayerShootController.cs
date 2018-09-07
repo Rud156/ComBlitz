@@ -27,10 +27,7 @@ namespace DeBomb.Player.Shooter
         private void PlayerShoot()
         {
             if (Input.GetMouseButton(0))
-            {
                 playerAnimator.SetBool(PlayerContantData.PlayerShootAnimParam, true);
-                playerRB.velocity = Vector3.zero + Vector3.up * playerRB.velocity.y;
-            }
             else
                 playerAnimator.SetBool(PlayerContantData.PlayerShootAnimParam, false);
         }

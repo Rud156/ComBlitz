@@ -3,27 +3,47 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace DeBomb.Enemy
+namespace DeBomb.Enemy.Base
 {
     public abstract class EnemyMovementBase : MonoBehaviour
     {
-        public float maxPLayerTargetDistance;
+        [Header("Other Target Stats")]
+        public float maxTargetSwitchDistance = 10f;
 
-        private NavMeshAgent enemyAgent;
+        public Transform shooterHolder;
 
-        private Transform playerTransform;
+        [Header("Enemy Control Stats")]
+        public float enemyMovementThreshold = 1f;
 
-        private void Start()
+        public float waitBetweenAttackTime = 2f;
+
+        protected NavMeshAgent enemyAgent;
+        protected Animator enemyAnimator;
+
+        protected Transform playerTransform;
+        protected Transform baseTransform;
+        protected bool enemyAttackPlaying;
+
+        protected string enemyMoveAnimParam;
+        protected string enemyAttackAnimParam;
+
+        protected Transform currentTarget;
+        
+        protected void Init()
         {
+            enemyAnimator = GetComponent<Animator>();
             enemyAgent = GetComponent<NavMeshAgent>();
+
             playerTransform = GameObject.FindGameObjectWithTag(TagManager.Player).transform;
+            baseTransform = GameObject.FindGameObjectWithTag(TagManager.Base).transform;
+
+            currentTarget = baseTransform;
+            enemyAttackPlaying = false;
         }
 
-        private void Update() => MoveTowardsPlayerAndAttack();
-
-        private void MoveTowardsPlayerAndAttack()
+        protected void MoveTowardsTargetAndAttack()
         {
-            if (!enemyAgent.pathPending)
+            if (!enemyAgent.pathPending && !enemyAttackPlaying)
             {
                 if (enemyAgent.remainingDistance <= enemyAgent.stoppingDistance)
                 {
@@ -32,7 +52,43 @@ namespace DeBomb.Enemy
                 }
             }
 
-            enemyAgent.SetDestination(playerTransform.position);
+            if (enemyAttackPlaying)
+                enemyAgent.ResetPath();
+            else
+                enemyAgent.SetDestination(currentTarget.position);
+        }
+
+        protected void ChangeTargetIfInPath()
+        {
+            int shootersChildCount = shooterHolder.transform.childCount;
+
+            float shortestDistance = maxTargetSwitchDistance;
+            Transform potentialTarget = null;
+
+            float distanceToPlayer = Vector3.Distance(transform.position,
+                playerTransform.position);
+            if(distanceToPlayer <= shortestDistance)
+            {
+                shortestDistance = distanceToPlayer;
+                potentialTarget = playerTransform;
+            }
+
+            for(int i = 0; i < shootersChildCount; i++)
+            {
+                float distanceToShooter = Vector3.Distance(transform.position,
+                    shooterHolder.transform.GetChild(i).position);
+
+                if(distanceToShooter <= shortestDistance)
+                {
+                    shortestDistance = distanceToShooter;
+                    potentialTarget = shooterHolder.transform.GetChild(i);
+                }
+            }
+
+            if (potentialTarget == null)
+                potentialTarget = baseTransform;
+            
+
         }
 
         protected abstract IEnumerator AttackPlayer();

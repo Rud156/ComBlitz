@@ -7,7 +7,7 @@ TagManager:
   - MainGround
   - Enemy
   - Base
-  - ConstructionPlatforms
+  - Shooters
   layers:
   - Default
   - TransparentFX
