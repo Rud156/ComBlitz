@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 namespace DeBomb.Enemy.Base
 {
-    public abstract class EnemyMovementBase : MonoBehaviour
+    public abstract class EnemyControllerBase : MonoBehaviour
     {
         [Header("Other Target Stats")]
         public float maxTargetSwitchDistance = 10f;
@@ -42,7 +42,16 @@ namespace DeBomb.Enemy.Base
             enemyAttackPlaying = false;
         }
 
-        protected void MoveTowardsTargetAndAttack()
+        protected void UpdateEnemy()
+        {
+            ChangeTargetIfInPath();
+            ChangeTargetToPlayerIfNear();
+
+            MoveTowardsTargetAndAttack();
+            SetMovementAnimation();
+        }
+
+        private void MoveTowardsTargetAndAttack()
         {
             if (!enemyAgent.pathPending && !enemyAttackPlaying)
             {
@@ -59,7 +68,13 @@ namespace DeBomb.Enemy.Base
                 enemyAgent.SetDestination(currentTarget.position);
         }
 
-        protected void ChangeTargetIfInPath()
+        private void SetMovementAnimation()
+        {
+            if (enemyAgent.velocity.magnitude > enemyMovementThreshold)
+                enemyAnimator.SetBool(enemyMoveAnimParam, true);
+        }
+
+        private void ChangeTargetIfInPath()
         {
             int shootersChildCount = shooterHolder.transform.childCount;
             float shortestDistance = maxTargetSwitchDistance;
@@ -83,13 +98,20 @@ namespace DeBomb.Enemy.Base
             currentTarget = potentialTarget;
         }
 
-        protected void ChangeTargetToPlayerIfNear()
+        private void ChangeTargetToPlayerIfNear()
         {
             float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
             if (distanceToPlayer <= minPlayerTargetDistance)
                 currentTarget = playerTransform;
         }
 
-        protected abstract IEnumerator AttackPlayer();
+        private IEnumerator AttackPlayer()
+        {
+            enemyAnimator.SetBool(enemyAttackAnimParam, true);
+            enemyAttackPlaying = true;
+            yield return new WaitForSeconds(waitBetweenAttackTime);
+
+            enemyAttackPlaying = false;
+        }
     }
 }

@@ -1,10 +1,8 @@
 ﻿using DeBomb.Enemy.Base;
-using System.Collections;
-using UnityEngine;
 
 namespace DeBomb.Enemy.Knight
 {
-    public class KnightController : EnemyMovementBase
+    public class KnightController : EnemyControllerBase
     {
         private void Start()
         {
@@ -14,28 +12,6 @@ namespace DeBomb.Enemy.Knight
             base.Init();
         }
 
-        private void Update()
-        {
-            base.ChangeTargetIfInPath();
-            base.ChangeTargetToPlayerIfNear();
-            base.MoveTowardsTargetAndAttack();
-
-            SetMovementAnimation();
-        }
-
-        private void SetMovementAnimation()
-        {
-            if (base.enemyAgent.velocity.magnitude > base.enemyMovementThreshold)
-                base.enemyAnimator.SetBool(base.enemyMoveAnimParam, true);
-        }
-
-        protected override IEnumerator AttackPlayer()
-        {
-            base.enemyAnimator.SetBool(base.enemyAttackAnimParam, true);
-            base.enemyAttackPlaying = true;
-            yield return new WaitForSeconds(base.waitBetweenAttackTime);
-
-            base.enemyAttackPlaying = false;
-        }
+        private void Update() => base.UpdateEnemy();
     }
 }
