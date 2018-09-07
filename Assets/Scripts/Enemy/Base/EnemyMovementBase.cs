@@ -10,6 +10,7 @@ namespace DeBomb.Enemy.Base
         [Header("Other Target Stats")]
         public float maxTargetSwitchDistance = 10f;
 
+        public float minPlayerTargetDistance = 10f;
         public Transform shooterHolder;
 
         [Header("Enemy Control Stats")]
@@ -28,7 +29,7 @@ namespace DeBomb.Enemy.Base
         protected string enemyAttackAnimParam;
 
         protected Transform currentTarget;
-        
+
         protected void Init()
         {
             enemyAnimator = GetComponent<Animator>();
@@ -61,24 +62,15 @@ namespace DeBomb.Enemy.Base
         protected void ChangeTargetIfInPath()
         {
             int shootersChildCount = shooterHolder.transform.childCount;
-
             float shortestDistance = maxTargetSwitchDistance;
             Transform potentialTarget = null;
 
-            float distanceToPlayer = Vector3.Distance(transform.position,
-                playerTransform.position);
-            if(distanceToPlayer <= shortestDistance)
-            {
-                shortestDistance = distanceToPlayer;
-                potentialTarget = playerTransform;
-            }
-
-            for(int i = 0; i < shootersChildCount; i++)
+            for (int i = 0; i < shootersChildCount; i++)
             {
                 float distanceToShooter = Vector3.Distance(transform.position,
                     shooterHolder.transform.GetChild(i).position);
 
-                if(distanceToShooter <= shortestDistance)
+                if (distanceToShooter <= shortestDistance)
                 {
                     shortestDistance = distanceToShooter;
                     potentialTarget = shooterHolder.transform.GetChild(i);
@@ -87,8 +79,15 @@ namespace DeBomb.Enemy.Base
 
             if (potentialTarget == null)
                 potentialTarget = baseTransform;
-            
 
+            currentTarget = potentialTarget;
+        }
+
+        protected void ChangeTargetToPlayerIfNear()
+        {
+            float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
+            if (distanceToPlayer <= minPlayerTargetDistance)
+                currentTarget = playerTransform;
         }
 
         protected abstract IEnumerator AttackPlayer();

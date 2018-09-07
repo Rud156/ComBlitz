@@ -17,6 +17,7 @@ namespace DeBomb.Enemy.Knight
         private void Update()
         {
             base.ChangeTargetIfInPath();
+            base.ChangeTargetToPlayerIfNear();
             base.MoveTowardsTargetAndAttack();
 
             SetMovementAnimation();
@@ -24,17 +25,17 @@ namespace DeBomb.Enemy.Knight
 
         private void SetMovementAnimation()
         {
-            if (enemyAgent.velocity.magnitude > enemyMovementThreshold)
-                enemyAnimator.SetBool(enemyMoveAnimParam, true);
+            if (base.enemyAgent.velocity.magnitude > base.enemyMovementThreshold)
+                base.enemyAnimator.SetBool(base.enemyMoveAnimParam, true);
         }
 
         protected override IEnumerator AttackPlayer()
         {
-            enemyAnimator.SetBool(enemyAttackAnimParam, true);
-            enemyAttackPlaying = true;
-            yield return new WaitForSeconds(waitBetweenAttackTime);
+            base.enemyAnimator.SetBool(base.enemyAttackAnimParam, true);
+            base.enemyAttackPlaying = true;
+            yield return new WaitForSeconds(base.waitBetweenAttackTime);
 
-            enemyAttackPlaying = false;
+            base.enemyAttackPlaying = false;
         }
     }
 }
