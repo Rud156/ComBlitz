@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace DeBomb.Player.Shooter
 {
-    [RequireComponent(typeof(Rigidbody))]
     [RequireComponent(typeof(Animator))]
     public class PlayerShootController : MonoBehaviour
     {
@@ -11,15 +10,10 @@ namespace DeBomb.Player.Shooter
         public float bulletLaunchVelocity;
         public Transform bulletLaunchPoint;
 
-        private Rigidbody playerRB;
         private Animator playerAnimator;
 
         // Use this for initialization
-        private void Start()
-        {
-            playerAnimator = GetComponent<Animator>();
-            playerRB = GetComponent<Rigidbody>();
-        }
+        private void Start() => playerAnimator = GetComponent<Animator>();
 
         // Update is called once per frame
         private void Update() => PlayerShoot();
