@@ -15,6 +15,7 @@ TagManager:
   - Enemy Orc
   - Shooter Bomb
   - Shooter Laser
+  - Enemy Holder
   layers:
   - Default
   - TransparentFX
