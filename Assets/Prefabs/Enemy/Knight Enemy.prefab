@@ -912,7 +912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f461db942262d14b8d64efeb5051cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTargetSwitchDistance: 10
+  maxTargetSwitchDistance: 5
   minPlayerTargetDistance: 10
   enemyMovementThreshold: 1
   waitBetweenAttackTime: 2

@@ -1759,7 +1759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxTargetSwitchDistance: 10
-  minPlayerTargetDistance: 10
+  minPlayerTargetDistance: 15
   enemyMovementThreshold: 1
   waitBetweenAttackTime: 2
 --- !u!114 &114395177963295994
