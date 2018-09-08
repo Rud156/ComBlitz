@@ -11,7 +11,13 @@ namespace DeBomb.Ground
 
         public static GroundManager instance;
 
-        private void Awake() => instance = this;
+        private void Awake()
+        {
+            instance = this;
+
+            if (instance != this)
+                Destroy(gameObject);
+        }
 
         #endregion Singleton
 
