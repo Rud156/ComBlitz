@@ -1,2 +1,2 @@
-# DeBomb
-A game where removing bombs is the main goal
+# ComBlitz
+A game where surviving your own onslaught is the goal
