@@ -13,7 +13,8 @@ namespace DeBomb.Ground
 
         private void Awake()
         {
-            instance = this;
+            if (instance == null)
+                instance = this;
 
             if (instance != this)
                 Destroy(gameObject);
@@ -52,8 +53,8 @@ namespace DeBomb.Ground
         private bool listCompleted;
 
         /// <summary>
-        /// Start is called on the frame when a script is enabled just before
-        /// any of the Update methods is called the first time.
+        /// Start is called on the frame when a script is enabled just before any of the Update
+        /// methods is called the first time.
         /// </summary>
         private void Start()
         {
