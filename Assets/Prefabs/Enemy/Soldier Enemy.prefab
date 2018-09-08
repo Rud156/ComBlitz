@@ -927,7 +927,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c99966fe66a981c48b3587004a8e599d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyDeathEffect: {fileID: 0}
+  enemyDeathEffect: {fileID: 1674681003994678, guid: 50f42120f414fcf47b75303ef3ce5967,
+    type: 2}
   maxEnemyHealth: 40
   minHealthColor: {r: 1, g: 0, b: 0, a: 1}
   halfHealthColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
