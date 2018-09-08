@@ -31,6 +31,7 @@ namespace DeBomb.Ground
 
         public float fallWaitTime = 14;
         public int totalGroundsToFall = 7;
+        public Material brokenGroundMaterial;
 
         [Header("Grounds")]
         public GameObject grassGround;
@@ -142,7 +143,7 @@ namespace DeBomb.Ground
 
                 groundsToFall.Add(grounds[randomIndex].GetComponent<Rigidbody>());
 
-                grounds[randomIndex].GetComponent<Renderer>().material.color = Color.black;
+                grounds[randomIndex].GetComponent<Renderer>().material = brokenGroundMaterial;
                 grounds.RemoveAt(randomIndex);
 
                 if (groundsToFall.Count >= totalGroundsToFall)
