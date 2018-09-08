@@ -17,8 +17,8 @@ namespace DeBomb.Enemy.Base
 
         public float waitBetweenAttackTime = 2f;
 
-        private NavMeshAgent enemyAgent;
-        private Animator enemyAnimator;
+        protected NavMeshAgent enemyAgent;
+        protected Animator enemyAnimator;
 
         private Transform playerTransform;
         private Transform baseTransform;
@@ -28,7 +28,7 @@ namespace DeBomb.Enemy.Base
         protected string enemyMoveAnimParam;
         protected string enemyAttackAnimParam;
 
-        private Transform currentTarget;
+        protected Transform currentTarget;
 
         protected void Init()
         {
@@ -52,7 +52,7 @@ namespace DeBomb.Enemy.Base
             SetMovementAnimation();
         }
 
-        private void MoveTowardsTargetAndAttack()
+        protected virtual void MoveTowardsTargetAndAttack()
         {
             if (!enemyAgent.pathPending && !enemyAttackPlaying)
             {

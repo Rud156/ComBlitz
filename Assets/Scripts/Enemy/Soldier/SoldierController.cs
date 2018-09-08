@@ -15,5 +15,19 @@ namespace DeBomb.Enemy.Soldier
 
         // Update is called once per frame
         private void Update() => base.UpdateEnemy();
+
+        protected override void MoveTowardsTargetAndAttack()
+        {
+            if (base.currentTarget != null)
+            {
+                base.enemyAgent.SetDestination(currentTarget.position);
+                base.enemyAnimator.SetBool(base.enemyAttackAnimParam, true);
+            }
+            else
+            {
+                base.enemyAnimator.SetBool(base.enemyAttackAnimParam, false);
+                base.enemyAgent.ResetPath();
+            }
+        }
     }
 }
