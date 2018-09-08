@@ -8,6 +8,13 @@ TagManager:
   - Enemy
   - Base
   - Shooter Holder
+  - Player Bullet
+  - Shooter Bullet
+  - Enemy Bullet
+  - Enemy Sword
+  - Enemy Orc
+  - Shooter Bomb
+  - Shooter Laser
   layers:
   - Default
   - TransparentFX
