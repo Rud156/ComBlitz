@@ -54,6 +54,11 @@ namespace DeBomb.Enemy.Base
 
         protected virtual void MoveTowardsTargetAndAttack()
         {
+            if (enemyAttackPlaying)
+                enemyAgent.ResetPath();
+            else
+                enemyAgent.SetDestination(currentTarget.position);
+
             if (!enemyAgent.pathPending && !enemyAttackPlaying)
             {
                 if (enemyAgent.remainingDistance <= enemyAgent.stoppingDistance)
@@ -62,11 +67,6 @@ namespace DeBomb.Enemy.Base
                         StartCoroutine(AttackPlayer());
                 }
             }
-
-            if (enemyAttackPlaying)
-                enemyAgent.ResetPath();
-            else
-                enemyAgent.SetDestination(currentTarget.position);
         }
 
         private void SetMovementAnimation()
@@ -110,8 +110,10 @@ namespace DeBomb.Enemy.Base
         {
             enemyAnimator.SetBool(enemyAttackAnimParam, true);
             enemyAttackPlaying = true;
+
             yield return new WaitForSeconds(waitBetweenAttackTime);
 
+            enemyAnimator.SetBool(enemyAttackAnimParam, false);
             enemyAttackPlaying = false;
         }
     }

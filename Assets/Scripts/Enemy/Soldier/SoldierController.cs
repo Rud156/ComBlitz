@@ -10,11 +10,12 @@ namespace DeBomb.Enemy.Soldier
 
         public float bulletLaunchVelocity;
         public Transform bulletLaunchPoint;
+        public float minAttackDistance;
 
         // Use this for initialization
         private void Start()
         {
-            base.enemyAttackAnimParam = "SoldierAttacking";
+            base.enemyAttackAnimParam = "SoldierShooting";
             base.enemyMoveAnimParam = "SoldierMoving";
 
             base.Init();
@@ -28,7 +29,11 @@ namespace DeBomb.Enemy.Soldier
             if (base.currentTarget != null)
             {
                 base.enemyAgent.SetDestination(currentTarget.position);
-                base.enemyAnimator.SetBool(base.enemyAttackAnimParam, true);
+
+                if (Vector3.Distance(transform.position, currentTarget.position) <= minAttackDistance)
+                    base.enemyAnimator.SetBool(base.enemyAttackAnimParam, true);
+                else
+                    base.enemyAnimator.SetBool(base.enemyAttackAnimParam, false);
             }
             else
             {

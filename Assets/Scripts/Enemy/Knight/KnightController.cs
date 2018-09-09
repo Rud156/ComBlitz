@@ -11,7 +11,7 @@ namespace DeBomb.Enemy.Knight
         private void Start()
         {
             base.enemyAttackAnimParam = "KnightAttacking";
-            base.enemyMoveAnimParam = "KinghtMoving";
+            base.enemyMoveAnimParam = "KnightMoving";
 
             base.Init();
         }

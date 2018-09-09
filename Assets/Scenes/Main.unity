@@ -13743,7 +13743,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4257445671776290, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1144010659623556, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
       propertyPath: m_TagString
@@ -14587,7 +14587,7 @@ Transform:
   m_Children:
   - {fileID: 534669905}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &743872816
 GameObject:
@@ -17089,7 +17089,7 @@ Transform:
   - {fileID: 171089646}
   - {fileID: 1477581823}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &874145474
 GameObject:
@@ -20114,7 +20114,7 @@ RectTransform:
   - {fileID: 703530935}
   - {fileID: 1606194170}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -21848,7 +21848,7 @@ GameObject:
   - component: {fileID: 1141116097}
   - component: {fileID: 1141116096}
   m_Layer: 0
-  m_Name: GroundManager
+  m_Name: Ground Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21875,7 +21875,7 @@ MonoBehaviour:
   lavaGround: {fileID: 1941519210562276, guid: a983e6102f2a83141870cdcfd817cd12, type: 2}
   dirtGround: {fileID: 1212678294326434, guid: 80ad5de9db370484ca5985c9f5fe874a, type: 2}
   surface: {fileID: 113653229}
-  fallOnStart: 1
+  fallOnStart: 0
 --- !u!4 &1141116097
 Transform:
   m_ObjectHideFlags: 0
@@ -29970,7 +29970,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 431734, guid: 3b5b1a234fb1d3d43b223c202452bfe5, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 147488, guid: 3b5b1a234fb1d3d43b223c202452bfe5, type: 2}
       propertyPath: m_Name
@@ -33378,7 +33378,7 @@ Transform:
   m_LocalScale: {x: 5, y: 0.5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1731384158
 BoxCollider:
@@ -37953,6 +37953,115 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1950825842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1950825845}
+  - component: {fileID: 1950825844}
+  - component: {fileID: 1950825843}
+  m_Layer: 0
+  m_Name: Object Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1950825843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1950825842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0adb976c2e684045b8386be0d2da9d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grassGround:
+    greenOrbsCount: 0
+    orangeOrbsCount: 0
+    redOrbsCount: 0
+    prefab: {fileID: 0}
+    button: {fileID: 0}
+  dirtGround:
+    greenOrbsCount: 0
+    orangeOrbsCount: 0
+    redOrbsCount: 0
+    prefab: {fileID: 0}
+    button: {fileID: 0}
+  lavaGround:
+    greenOrbsCount: 0
+    orangeOrbsCount: 0
+    redOrbsCount: 0
+    prefab: {fileID: 0}
+    button: {fileID: 0}
+  knightFactory:
+    greenOrbsCount: 0
+    orangeOrbsCount: 0
+    redOrbsCount: 0
+    prefab: {fileID: 0}
+    button: {fileID: 0}
+  orcFactory:
+    greenOrbsCount: 0
+    orangeOrbsCount: 0
+    redOrbsCount: 0
+    prefab: {fileID: 0}
+    button: {fileID: 0}
+  soldierFactory:
+    greenOrbsCount: 0
+    orangeOrbsCount: 0
+    redOrbsCount: 0
+    prefab: {fileID: 0}
+    button: {fileID: 0}
+  bulletShooter:
+    greenOrbsCount: 0
+    orangeOrbsCount: 0
+    redOrbsCount: 0
+    prefab: {fileID: 0}
+    button: {fileID: 0}
+  laserShooter:
+    greenOrbsCount: 0
+    orangeOrbsCount: 0
+    redOrbsCount: 0
+    prefab: {fileID: 0}
+    button: {fileID: 0}
+  bombShooter:
+    greenOrbsCount: 0
+    orangeOrbsCount: 0
+    redOrbsCount: 0
+    prefab: {fileID: 0}
+    button: {fileID: 0}
+--- !u!114 &1950825844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1950825842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1a300615281c4a4dbd06499dd74f35a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  greenOrbText: {fileID: 0}
+  orangeOrbText: {fileID: 0}
+  redOrbText: {fileID: 0}
+--- !u!4 &1950825845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1950825842}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1955350853
 GameObject:
   m_ObjectHideFlags: 0
@@ -42179,7 +42288,7 @@ Transform:
   - {fileID: 706988498}
   - {fileID: 1321908700}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2120677130
 GameObject:
