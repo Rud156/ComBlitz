@@ -1,9 +1,16 @@
 ﻿using DeBomb.Enemy.Base;
+using UnityEngine;
 
 namespace DeBomb.Enemy.Soldier
 {
     public class SoldierController : EnemyControllerBase
     {
+        [Header("Soldier BUllet")]
+        public GameObject bullet;
+
+        public float bulletLaunchVelocity;
+        public Transform bulletLaunchPoint;
+
         // Use this for initialization
         private void Start()
         {
@@ -28,6 +35,12 @@ namespace DeBomb.Enemy.Soldier
                 base.enemyAnimator.SetBool(base.enemyAttackAnimParam, false);
                 base.enemyAgent.ResetPath();
             }
+        }
+
+        public void ShootBullet()
+        {
+            GameObject bulletInstance = Instantiate(bullet, bulletLaunchPoint.position, Quaternion.identity);
+            bulletInstance.GetComponent<Rigidbody>().velocity = bulletLaunchVelocity * transform.forward;
         }
     }
 }

@@ -443,6 +443,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1816147331422940
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4217718887098452}
+  m_Layer: 0
+  m_Name: Bullet Launch Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1864142535212100
 GameObject:
   m_ObjectHideFlags: 1
@@ -605,6 +620,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4217718887098452
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1816147331422940}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.9306, y: -0.1685, z: -0.2024}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 4471791113083310}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4231736396006856
 Transform:
   m_ObjectHideFlags: 1
@@ -685,6 +713,7 @@ Transform:
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
   m_Children:
   - {fileID: 4419182584741152}
+  - {fileID: 4217718887098452}
   m_Father: {fileID: 4016176774162138}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -916,6 +945,9 @@ MonoBehaviour:
   minPlayerTargetDistance: 20
   enemyMovementThreshold: 1
   waitBetweenAttackTime: 1
+  bullet: {fileID: 1801117671892260, guid: 3feb5ea7737a50848b3436d148691dc3, type: 2}
+  bulletLaunchVelocity: 70
+  bulletLaunchPoint: {fileID: 4217718887098452}
 --- !u!114 &114683921078814150
 MonoBehaviour:
   m_ObjectHideFlags: 1
