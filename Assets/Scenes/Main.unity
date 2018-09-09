@@ -3125,6 +3125,31 @@ Prefab:
       propertyPath: m_Name
       value: Knight Factory
       objectReference: {fileID: 0}
+    - target: {fileID: 114059166062715064, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 54794d251fdb5fd4cbecf374170615d4, type: 3}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0000038147
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.000002861
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 88.972
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 73.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 707037982179cc544aa7f5fd3b8e8052, type: 2}
   m_IsPrefabAsset: 0
@@ -7841,6 +7866,31 @@ Prefab:
       propertyPath: m_Name
       value: Dirt Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 114059166062715064, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 6d4eaf6dea9ae4943bedd73b28a2d035, type: 3}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 92.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 50.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -3.735
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000011444
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 707037982179cc544aa7f5fd3b8e8052, type: 2}
   m_IsPrefabAsset: 0
@@ -8969,6 +9019,31 @@ Prefab:
     - target: {fileID: 1313552159983004, guid: 707037982179cc544aa7f5fd3b8e8052, type: 2}
       propertyPath: m_Name
       value: Soldier Factory
+      objectReference: {fileID: 0}
+    - target: {fileID: 114059166062715064, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 9957aadc948318b42883617eb42456c0, type: 3}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 63.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 83.106
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0000038146973
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 707037982179cc544aa7f5fd3b8e8052, type: 2}
@@ -23232,7 +23307,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -205.29712, y: 30.262085}
+  m_SizeDelta: {x: -206.49237, y: 30.9906}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1205649606
 MonoBehaviour:
@@ -31579,6 +31654,31 @@ Prefab:
       propertyPath: m_Name
       value: Orc Factory
       objectReference: {fileID: 0}
+    - target: {fileID: 114059166062715064, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: ff1ba34613c32474bb77a86fef1be7e5, type: 3}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 88.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 81.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0000038147
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0000019073
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 707037982179cc544aa7f5fd3b8e8052, type: 2}
   m_IsPrefabAsset: 0
@@ -33112,6 +33212,31 @@ Prefab:
     - target: {fileID: 1313552159983004, guid: 707037982179cc544aa7f5fd3b8e8052, type: 2}
       propertyPath: m_Name
       value: Lava Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 114059166062715064, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: d413b9a89524bd24ca98ac1001f21ef0, type: 3}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 92.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 71
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00001049
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0000095367
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 707037982179cc544aa7f5fd3b8e8052, type: 2}
@@ -36735,7 +36860,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1841799081
 RectTransform:
   m_ObjectHideFlags: 0
@@ -38497,6 +38622,31 @@ Prefab:
     - target: {fileID: 1313552159983004, guid: 707037982179cc544aa7f5fd3b8e8052, type: 2}
       propertyPath: m_Name
       value: Grass Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 114059166062715064, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 3838a0d3e0161494b8de91bed2a0bc6a, type: 3}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 91.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 47.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0000064373
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000303989314520, guid: 707037982179cc544aa7f5fd3b8e8052,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0000059605
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 707037982179cc544aa7f5fd3b8e8052, type: 2}

@@ -50,6 +50,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4043166537357116}
   - component: {fileID: 65345272811358420}
+  - component: {fileID: 114110753136784856}
   m_Layer: 0
   m_Name: Axe Head
   m_TagString: Untagged
@@ -141,6 +142,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4042462695497558}
   - component: {fileID: 65811706714270256}
+  - component: {fileID: 114077009171138774}
   m_Layer: 0
   m_Name: Orc Wolf Mouth
   m_TagString: Enemy Orc
@@ -1810,6 +1812,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114077009171138774
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1151629095124592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f732445814d3c041920c06bb5517181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
+--- !u!114 &114110753136784856
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1057194881611698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f732445814d3c041920c06bb5517181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 30
 --- !u!114 &114223642920763566
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1903,17 +1929,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1805352117909408}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 670de7dddf2558449b6175d4046318ad, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a617646bb76c90419b82923dfb610b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyDeathEffect: {fileID: 1674681003994678, guid: 50f42120f414fcf47b75303ef3ce5967,
+  deathEffect: {fileID: 1674681003994678, guid: 50f42120f414fcf47b75303ef3ce5967,
     type: 2}
-  maxEnemyHealth: 60
+  maxHealth: 60
   minHealthColor: {r: 1, g: 0, b: 0, a: 1}
   halfHealthColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   maxHealthColor: {r: 0, g: 1, b: 0, a: 1}
-  enemyHealthSlider: {fileID: 114395177963295994}
-  enemyHealthFiller: {fileID: 114685411636031118}
+  healthSlider: {fileID: 0}
+  healthFiller: {fileID: 0}
 --- !u!114 &114685411636031118
 MonoBehaviour:
   m_ObjectHideFlags: 1
