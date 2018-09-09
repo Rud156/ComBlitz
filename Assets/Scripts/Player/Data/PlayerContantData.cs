@@ -1,4 +1,4 @@
-namespace DeBomb.Player.Data
+namespace ComBlitz.Player.Data
 {
     public static class PlayerContantData
     {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace DeBomb.Extensions
+namespace ComBlitz.Extensions
 {
     public static class ExtensionFunctions
     {

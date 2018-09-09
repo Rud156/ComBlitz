@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DeBomb.CustomCamera
+namespace ComBlitz.CustomCamera
 {
     public class CameraFollowTarget : MonoBehaviour
     {

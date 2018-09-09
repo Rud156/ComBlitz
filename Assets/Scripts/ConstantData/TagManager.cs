@@ -1,4 +1,4 @@
-﻿namespace DeBomb.ConstantData
+﻿namespace ComBlitz.ConstantData
 {
     public static class TagManager
     {

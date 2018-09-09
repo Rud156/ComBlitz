@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace DeBomb.Player.Shooter
+namespace ComBlitz.Player.Shooter
 {
     class BulletDamageManager : MonoBehaviour
     {

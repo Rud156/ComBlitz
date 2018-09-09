@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace DeBomb.Resources
+namespace ComBlitz.Resources
 {
     public class ShopManager : MonoBehaviour
     {

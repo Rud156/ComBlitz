@@ -1,9 +1,9 @@
-﻿using DeBomb.ConstantData;
+﻿using ComBlitz.ConstantData;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace DeBomb.Enemy.Base
+namespace ComBlitz.Enemy.Base
 {
     public abstract class EnemyControllerBase : MonoBehaviour
     {

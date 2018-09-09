@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace DeBomb.Factories
+namespace ComBlitz.Factories
 {
     public abstract class FactoriesBaseCreator : MonoBehaviour
     {

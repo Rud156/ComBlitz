@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace DeBomb.Enemy.Base
+namespace ComBlitz.Enemy.Base
 {
     public abstract class EnemyBaseHealthAndDamage : MonoBehaviour
     {

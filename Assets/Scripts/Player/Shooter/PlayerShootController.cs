@@ -1,7 +1,7 @@
-﻿using DeBomb.Player.Data;
+﻿using ComBlitz.Player.Data;
 using UnityEngine;
 
-namespace DeBomb.Player.Shooter
+namespace ComBlitz.Player.Shooter
 {
     [RequireComponent(typeof(Animator))]
     public class PlayerShootController : MonoBehaviour

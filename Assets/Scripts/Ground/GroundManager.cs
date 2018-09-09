@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace DeBomb.Ground
+namespace ComBlitz.Ground
 {
     public class GroundManager : MonoBehaviour
     {

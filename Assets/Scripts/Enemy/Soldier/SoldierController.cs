@@ -1,7 +1,7 @@
-﻿using DeBomb.Enemy.Base;
+﻿using ComBlitz.Enemy.Base;
 using UnityEngine;
 
-namespace DeBomb.Enemy.Soldier
+namespace ComBlitz.Enemy.Soldier
 {
     public class SoldierController : EnemyControllerBase
     {

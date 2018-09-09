@@ -1,6 +1,6 @@
-﻿using DeBomb.Enemy.Base;
+﻿using ComBlitz.Enemy.Base;
 
-namespace DeBomb.Enemy.Knight
+namespace ComBlitz.Enemy.Knight
 {
     internal class KnightHealthAndDamage : EnemyBaseHealthAndDamage
     {

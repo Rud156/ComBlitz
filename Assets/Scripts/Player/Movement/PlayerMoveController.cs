@@ -1,7 +1,7 @@
-﻿using DeBomb.Player.Data;
+﻿using ComBlitz.Player.Data;
 using UnityEngine;
 
-namespace DeBomb.Player.Movement
+namespace ComBlitz.Player.Movement
 {
     [RequireComponent(typeof(Rigidbody))]
     [RequireComponent(typeof(Animator))]

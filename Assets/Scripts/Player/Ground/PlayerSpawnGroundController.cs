@@ -1,8 +1,8 @@
-﻿using DeBomb.Extensions;
-using DeBomb.Ground;
+﻿using ComBlitz.Extensions;
+using ComBlitz.Ground;
 using UnityEngine;
 
-namespace DeBomb.Player.Ground
+namespace ComBlitz.Player.Ground
 {
     public class PlayerSpawnGroundController : MonoBehaviour
     {

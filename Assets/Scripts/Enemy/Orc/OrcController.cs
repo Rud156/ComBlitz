@@ -1,7 +1,7 @@
-﻿using DeBomb.Enemy.Base;
+﻿using ComBlitz.Enemy.Base;
 using UnityEngine;
 
-namespace DeBomb.Enemy.Orc
+namespace ComBlitz.Enemy.Orc
 {
     public class OrcController : EnemyControllerBase
     {
