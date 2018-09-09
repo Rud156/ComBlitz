@@ -24,7 +24,7 @@ namespace DeBomb.Enemy.Base
         private Transform baseTransform;
         private Transform shooterHolder;
 
-        private bool enemyAttackPlaying;
+        protected bool enemyAttackPlaying;
         protected string enemyMoveAnimParam;
         protected string enemyAttackAnimParam;
 

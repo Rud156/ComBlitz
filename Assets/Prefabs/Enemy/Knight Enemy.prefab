@@ -320,6 +320,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1653902061808838
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4654464083292304}
+  - component: {fileID: 65913911780710342}
+  m_Layer: 0
+  m_Name: Sword Hit Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1670576370976468
 GameObject:
   m_ObjectHideFlags: 1
@@ -640,7 +656,8 @@ Transform:
   m_LocalRotation: {x: 0.70640385, y: -0.02440202, z: -0.024421396, w: 0.7069666}
   m_LocalPosition: {x: -0.22806452, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
-  m_Children: []
+  m_Children:
+  - {fileID: 4654464083292304}
   m_Father: {fileID: 4213136760105752}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -698,6 +715,19 @@ Transform:
   - {fileID: 4921267260878078}
   m_Father: {fileID: 4772091816037886}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4654464083292304
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1653902061808838}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.082, y: 0.032, z: 0.511}
+  m_LocalScale: {x: 0.17, y: 0.1, z: 0.7}
+  m_Children: []
+  m_Father: {fileID: 4420337175509670}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4696383151590816
 Transform:
@@ -883,6 +913,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 1
+--- !u!65 &65913911780710342
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1653902061808838}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &95394878210617816
 Animator:
   serializedVersion: 3
@@ -916,6 +958,7 @@ MonoBehaviour:
   minPlayerTargetDistance: 10
   enemyMovementThreshold: 1
   waitBetweenAttackTime: 2
+  swordContactPoint: {fileID: 65913911780710342}
 --- !u!114 &114349039704644016
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -1,9 +1,13 @@
 ﻿using DeBomb.Enemy.Base;
+using UnityEngine;
 
 namespace DeBomb.Enemy.Knight
 {
     public class KnightController : EnemyControllerBase
     {
+        [Header("Sword")]
+        public BoxCollider swordContactPoint;
+
         private void Start()
         {
             base.enemyAttackAnimParam = "KnightAttacking";
@@ -12,6 +16,14 @@ namespace DeBomb.Enemy.Knight
             base.Init();
         }
 
-        private void Update() => base.UpdateEnemy();
+        private void Update()
+        {
+            if (base.enemyAttackPlaying)
+                swordContactPoint.enabled = true;
+            else
+                swordContactPoint.enabled = false;
+
+            base.UpdateEnemy();
+        }
     }
 }
