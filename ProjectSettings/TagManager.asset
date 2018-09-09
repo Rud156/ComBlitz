@@ -16,6 +16,9 @@ TagManager:
   - Shooter Bomb
   - Shooter Laser
   - Enemy Holder
+  - Red Orb
+  - Green Orb
+  - Yellow Orb
   layers:
   - Default
   - TransparentFX
