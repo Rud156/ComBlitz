@@ -41,6 +41,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1057194881611698
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4043166537357116}
+  - component: {fileID: 65345272811358420}
+  m_Layer: 0
+  m_Name: Axe Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1066526603817656
 GameObject:
   m_ObjectHideFlags: 1
@@ -983,6 +999,19 @@ Transform:
   m_Father: {fileID: 4197217630932368}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4043166537357116
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1057194881611698}
+  m_LocalRotation: {x: 0.00000014901154, y: 0.00000017881385, z: -0.06475375, w: 0.99790126}
+  m_LocalPosition: {x: -0.132, y: -0.007, z: 0.535}
+  m_LocalScale: {x: 0.7, y: 0.1, z: 0.7}
+  m_Children: []
+  m_Father: {fileID: 4987078407630988}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -7.425}
 --- !u!4 &4047800314937140
 Transform:
   m_ObjectHideFlags: 1
@@ -1620,7 +1649,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1805352117909408}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30, y: 0.25, z: 41.94}
+  m_LocalPosition: {x: 30, y: 0.25, z: 36.78}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 4412878643877256}
@@ -1707,7 +1736,8 @@ Transform:
   m_LocalRotation: {x: 0.6904622, y: -0.21185221, z: -0.34452546, w: 0.5997357}
   m_LocalPosition: {x: -0.23434645, y: -0.00000009689331, z: 0}
   m_LocalScale: {x: 1.0000001, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4043166537357116}
   m_Father: {fileID: 4803084803617504}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1726,6 +1756,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 1
+--- !u!65 &65345272811358420
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1057194881611698}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65414238717162400
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1804,6 +1846,7 @@ MonoBehaviour:
   minPlayerTargetDistance: 15
   enemyMovementThreshold: 1
   waitBetweenAttackTime: 2
+  orcAxeContactPoint: {fileID: 65345272811358420}
 --- !u!114 &114395177963295994
 MonoBehaviour:
   m_ObjectHideFlags: 1
