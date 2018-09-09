@@ -14,8 +14,8 @@ namespace DeBomb.Player.Movement
         private Rigidbody playerRB;
 
         /// <summary>
-        /// Start is called on the frame when a script is enabled just before
-        /// any of the Update methods is called the first time.
+        /// Start is called on the frame when a script is enabled just before any of the Update
+        /// methods is called the first time.
         /// </summary>
         private void Start()
         {
@@ -43,7 +43,7 @@ namespace DeBomb.Player.Movement
             Vector3 zVelocity = Vector3.zero;
             Vector3 xVelocity = Vector3.zero;
 
-            if (moveZ > 0)
+            if (moveZ != 0)
                 zVelocity = transform.forward * moveZ;
 
             if (moveX != 0)
@@ -58,10 +58,8 @@ namespace DeBomb.Player.Movement
             float moveZ = Input.GetAxis(PlayerContantData.VerticalAxis);
             float moveX = Input.GetAxis(PlayerContantData.HorizontalAxis);
 
-            if (moveZ > 0 || moveX != 0)
-                playerAnimator.SetBool(PlayerContantData.PlayerMoveAnimParam, true);
-            else
-                playerAnimator.SetBool(PlayerContantData.PlayerMoveAnimParam, false);
+            playerAnimator.SetFloat(PlayerContantData.PlayerVerticalMovement, moveZ);
+            playerAnimator.SetFloat(PlayerContantData.PlayerHorizontalMovement, moveX);
         }
 
         private void PointPlayerTowardsMouse()

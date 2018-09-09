@@ -5,7 +5,8 @@ namespace DeBomb.Player.Data
         public const string HorizontalAxis = "Horizontal";
         public const string VerticalAxis = "Vertical";
 
-        public const string PlayerMoveAnimParam = "PlayerMoving";
+        public const string PlayerHorizontalMovement = "PlayerHorizontalMovement";
+        public const string PlayerVerticalMovement = "PlayerVerticalMovement";
         public const string PlayerShootAnimParam = "PlayerShooting";
     }
 }
