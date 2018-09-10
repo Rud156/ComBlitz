@@ -13,7 +13,7 @@ namespace ComBlitz.Player.Ground
 
         private void OnDestroy() => GroundManager.instance.createGroundInstance -= CreateGroundInWorld;
 
-        private void CreateGroundInWorld(GameObject ground)
+        private bool CreateGroundInWorld(GameObject ground)
         {
             Collider[] colliders = Physics.OverlapSphere(groundTracker.position, overlapSphereRadius);
 
@@ -33,6 +33,8 @@ namespace ComBlitz.Player.Ground
             {
                 ground.transform.position = new Vector3(xPos, 0, zPos);
             }
+
+            return clear;
         }
     }
 }

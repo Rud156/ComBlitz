@@ -58,15 +58,15 @@ namespace ComBlitz.Resources
             switch (orbType)
             {
                 case OrbType.Green:
-                    greenOrbsCount += 1;
+                    greenOrbsCount += totalCount;
                     break;
 
                 case OrbType.Orange:
-                    orangeOrbsCount += 1;
+                    orangeOrbsCount += totalCount;
                     break;
 
                 case OrbType.Red:
-                    redOrbsCount += 1;
+                    redOrbsCount += totalCount;
                     break;
             }
         }

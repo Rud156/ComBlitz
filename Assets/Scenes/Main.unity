@@ -10051,12 +10051,12 @@ Prefab:
     - target: {fileID: 224688890798969394, guid: 7a126ddcc3dc01f49be35018e6e139b3,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 71
+      value: 471
       objectReference: {fileID: 0}
     - target: {fileID: 224688890798969394, guid: 7a126ddcc3dc01f49be35018e6e139b3,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -271
+      value: -71
       objectReference: {fileID: 0}
     - target: {fileID: 224688890798969394, guid: 7a126ddcc3dc01f49be35018e6e139b3,
         type: 2}
@@ -13528,8 +13528,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -21.800095}
-  m_SizeDelta: {x: -244.19232, y: 193.4953}
+  m_AnchoredPosition: {x: -0.000059457623, y: -0.000015258789}
+  m_SizeDelta: {x: -44.19232, y: -6.5046997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &649963116
 MonoBehaviour:
@@ -13565,8 +13565,8 @@ MonoBehaviour:
   m_StartAxis: 0
   m_CellSize: {x: 100, y: 100}
   m_Spacing: {x: 100, y: 100}
-  m_Constraint: 0
-  m_ConstraintCount: 2
+  m_Constraint: 1
+  m_ConstraintCount: 3
 --- !u!1 &650926306
 GameObject:
   m_ObjectHideFlags: 0
@@ -35386,8 +35386,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 649963115}
-  m_Horizontal: 0
-  m_Vertical: 1
+  m_Horizontal: 1
+  m_Vertical: 0
   m_MovementType: 1
   m_Elasticity: 0.1
   m_Inertia: 1
@@ -35439,7 +35439,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: -0.0000076293945}
+  m_AnchoredPosition: {x: 0.000030517578, y: -0.000015258789}
   m_SizeDelta: {x: -42, y: -40.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1717970124

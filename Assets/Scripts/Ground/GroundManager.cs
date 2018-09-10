@@ -22,7 +22,7 @@ namespace ComBlitz.Ground
 
         #endregion Singleton
 
-        public delegate void CreateGroundInstance(GameObject groundObject);
+        public delegate bool CreateGroundInstance(GameObject groundObject);
 
         public CreateGroundInstance createGroundInstance;
 
@@ -32,12 +32,6 @@ namespace ComBlitz.Ground
         public float fallWaitTime = 14;
         public int totalGroundsToFall = 7;
         public Material brokenGroundMaterial;
-
-        [Header("Grounds")]
-        public GameObject grassGround;
-
-        public GameObject lavaGround;
-        public GameObject dirtGround;
 
         [Header("NavMesh")]
         public NavMeshSurface surface;
@@ -75,11 +69,7 @@ namespace ComBlitz.Ground
         /// <summary>
         /// Update is called every frame, if the MonoBehaviour is enabled.
         /// </summary>
-        private void Update()
-        {
-            AddGroundChildToList();
-            CreateGround();
-        }
+        private void Update() => AddGroundChildToList();
 
         public void StartGroundFall()
         {
@@ -97,6 +87,22 @@ namespace ComBlitz.Ground
             surface.BuildNavMesh();
         }
 
+        public bool CreateGround(GameObject ground)
+        {
+            if (createGroundInstance == null)
+                return false;
+
+            GameObject groundInstance = Instantiate(ground, transform.position, Quaternion.identity);
+
+            groundInstance.transform.SetParent(groundParent);
+            bool groundPlaced = createGroundInstance(groundInstance);
+
+            if (groundPlaced)
+                AddGround(groundInstance);
+
+            return groundPlaced;
+        }
+
         private void AddGroundChildToList()
         {
             if (listCompleted)
@@ -109,29 +115,6 @@ namespace ComBlitz.Ground
             }
             else
                 listCompleted = true;
-        }
-
-        private void CreateGround()
-        {
-            // Use Resource Manager to check for sufficient resources
-
-            if (createGroundInstance == null)
-                return;
-
-            GameObject ground;
-
-            if (Input.GetKeyDown(KeyCode.Z))
-                ground = Instantiate(dirtGround, transform.position, Quaternion.identity);
-            else if (Input.GetKeyDown(KeyCode.X))
-                ground = Instantiate(grassGround, transform.position, Quaternion.identity);
-            else if (Input.GetKeyDown(KeyCode.C))
-                ground = Instantiate(lavaGround, transform.position, Quaternion.identity);
-            else
-                return;
-
-            ground.transform.SetParent(groundParent);
-            createGroundInstance(ground);
-            AddGround(ground);
         }
 
         private IEnumerator MakeGroundsFall()
