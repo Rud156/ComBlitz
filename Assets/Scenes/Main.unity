@@ -1942,6 +1942,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &88680311 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114041369827792090, guid: 7a126ddcc3dc01f49be35018e6e139b3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1336724596}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &102552462
 Prefab:
   m_ObjectHideFlags: 0
@@ -5807,6 +5813,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &252195863 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114167730781696750, guid: 707037982179cc544aa7f5fd3b8e8052,
+    type: 2}
+  m_PrefabInternal: {fileID: 387239067}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &252195864 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114846128889968302, guid: 707037982179cc544aa7f5fd3b8e8052,
+    type: 2}
+  m_PrefabInternal: {fileID: 387239067}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &253845931
 GameObject:
   m_ObjectHideFlags: 0
@@ -13528,7 +13546,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000059457623, y: -0.000015258789}
+  m_AnchoredPosition: {x: -0.000014136492, y: -0.000030517578}
   m_SizeDelta: {x: -44.19232, y: -6.5046997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &649963116
@@ -14990,7 +15008,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1144010659623556, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
@@ -16796,6 +16814,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &801757528 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114167730781696750, guid: 707037982179cc544aa7f5fd3b8e8052,
+    type: 2}
+  m_PrefabInternal: {fileID: 1671946558}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &801757529 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114846128889968302, guid: 707037982179cc544aa7f5fd3b8e8052,
+    type: 2}
+  m_PrefabInternal: {fileID: 1671946558}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &812509247
 GameObject:
   m_ObjectHideFlags: 0
@@ -22085,6 +22115,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1071595748 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114041369827792090, guid: 7a126ddcc3dc01f49be35018e6e139b3,
+    type: 2}
+  m_PrefabInternal: {fileID: 505012906}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1071905382
 GameObject:
   m_ObjectHideFlags: 0
@@ -22792,6 +22828,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1123576349 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114167730781696750, guid: 707037982179cc544aa7f5fd3b8e8052,
+    type: 2}
+  m_PrefabInternal: {fileID: 158174183}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1123576350 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114846128889968302, guid: 707037982179cc544aa7f5fd3b8e8052,
+    type: 2}
+  m_PrefabInternal: {fileID: 158174183}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1129050471
 GameObject:
   m_ObjectHideFlags: 0
@@ -23228,10 +23276,6 @@ MonoBehaviour:
   totalGroundsToFall: 7
   brokenGroundMaterial: {fileID: 2100000, guid: 97aaa211d0a36c349920ca64c377c72c,
     type: 2}
-  grassGround: {fileID: 1155546808048874, guid: f77f45aa2d6e4a0448ace47bac2a5a67,
-    type: 2}
-  lavaGround: {fileID: 1941519210562276, guid: a983e6102f2a83141870cdcfd817cd12, type: 2}
-  dirtGround: {fileID: 1212678294326434, guid: 80ad5de9db370484ca5985c9f5fe874a, type: 2}
   surface: {fileID: 113653229}
   fallOnStart: 0
 --- !u!4 &1141116097
@@ -23959,6 +24003,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1196676381 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114167730781696750, guid: 707037982179cc544aa7f5fd3b8e8052,
+    type: 2}
+  m_PrefabInternal: {fileID: 1917014919}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1196676382 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114846128889968302, guid: 707037982179cc544aa7f5fd3b8e8052,
+    type: 2}
+  m_PrefabInternal: {fileID: 1917014919}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1204064654
 GameObject:
   m_ObjectHideFlags: 0
@@ -26816,6 +26872,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1319795505 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114041369827792090, guid: 7a126ddcc3dc01f49be35018e6e139b3,
+    type: 2}
+  m_PrefabInternal: {fileID: 102552462}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1321908699
 GameObject:
   m_ObjectHideFlags: 0
@@ -34649,6 +34711,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1681369242 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114041369827792090, guid: 7a126ddcc3dc01f49be35018e6e139b3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1240757662}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1682365336
 GameObject:
   m_ObjectHideFlags: 0
@@ -35439,7 +35507,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0.000030517578, y: 0}
   m_SizeDelta: {x: -42, y: -40.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1717970124
@@ -36078,6 +36146,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1743482562 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114041369827792090, guid: 7a126ddcc3dc01f49be35018e6e139b3,
+    type: 2}
+  m_PrefabInternal: {fileID: 618739968}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1745814842
 GameObject:
   m_ObjectHideFlags: 0
@@ -40737,7 +40811,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1950825843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40750,59 +40824,103 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grassGround:
-    greenOrbsCount: 0
-    orangeOrbsCount: 0
-    redOrbsCount: 0
-    prefab: {fileID: 0}
-    button: {fileID: 0}
+    greenOrbsCount: 5
+    orangeOrbsCount: 1
+    redOrbsCount: 1
+    description: Grass. Hm.. Useful for creating Knights?
+    groundToBePlacedOn: 3
+    itemType: 0
+    prefab: {fileID: 1155546808048874, guid: f77f45aa2d6e4a0448ace47bac2a5a67, type: 2}
+    button: {fileID: 1196676381}
+    itemBorderImage: {fileID: 1196676382}
   dirtGround:
-    greenOrbsCount: 0
-    orangeOrbsCount: 0
-    redOrbsCount: 0
-    prefab: {fileID: 0}
-    button: {fileID: 0}
+    greenOrbsCount: 1
+    orangeOrbsCount: 5
+    redOrbsCount: 1
+    description: Dirt? Sand? Soldiers travel the world...
+    groundToBePlacedOn: 3
+    itemType: 0
+    prefab: {fileID: 1212678294326434, guid: 80ad5de9db370484ca5985c9f5fe874a, type: 2}
+    button: {fileID: 252195863}
+    itemBorderImage: {fileID: 252195864}
   lavaGround:
-    greenOrbsCount: 0
-    orangeOrbsCount: 0
-    redOrbsCount: 0
-    prefab: {fileID: 0}
-    button: {fileID: 0}
+    greenOrbsCount: 1
+    orangeOrbsCount: 1
+    redOrbsCount: 5
+    description: Lava? Burning Death... Mordor
+    groundToBePlacedOn: 3
+    itemType: 0
+    prefab: {fileID: 1941519210562276, guid: a983e6102f2a83141870cdcfd817cd12, type: 2}
+    button: {fileID: 801757528}
+    itemBorderImage: {fileID: 801757529}
   knightFactory:
-    greenOrbsCount: 0
-    orangeOrbsCount: 0
-    redOrbsCount: 0
+    greenOrbsCount: 5
+    orangeOrbsCount: 3
+    redOrbsCount: 1
+    description: Bold and Strong Knight emerge...
+    groundToBePlacedOn: 1
+    itemType: 2
     prefab: {fileID: 0}
-    button: {fileID: 0}
+    button: {fileID: 1123576349}
+    itemBorderImage: {fileID: 1123576350}
   orcFactory:
     greenOrbsCount: 0
     orangeOrbsCount: 0
     redOrbsCount: 0
+    description: 
+    groundToBePlacedOn: 0
+    itemType: 0
     prefab: {fileID: 0}
     button: {fileID: 0}
+    itemBorderImage: {fileID: 0}
   soldierFactory:
     greenOrbsCount: 0
     orangeOrbsCount: 0
     redOrbsCount: 0
+    description: 
+    groundToBePlacedOn: 0
+    itemType: 0
     prefab: {fileID: 0}
     button: {fileID: 0}
+    itemBorderImage: {fileID: 0}
   bulletShooter:
     greenOrbsCount: 0
     orangeOrbsCount: 0
     redOrbsCount: 0
+    description: 
+    groundToBePlacedOn: 0
+    itemType: 0
     prefab: {fileID: 0}
     button: {fileID: 0}
+    itemBorderImage: {fileID: 0}
   laserShooter:
     greenOrbsCount: 0
     orangeOrbsCount: 0
     redOrbsCount: 0
+    description: 
+    groundToBePlacedOn: 0
+    itemType: 0
     prefab: {fileID: 0}
     button: {fileID: 0}
+    itemBorderImage: {fileID: 0}
   bombShooter:
     greenOrbsCount: 0
     orangeOrbsCount: 0
     redOrbsCount: 0
+    description: 
+    groundToBePlacedOn: 0
+    itemType: 0
     prefab: {fileID: 0}
     button: {fileID: 0}
+    itemBorderImage: {fileID: 0}
+  defaultBorder: {fileID: 21300000, guid: 82655cc7ceb674744b18e6d7ba007c40, type: 3}
+  notAvailableBorder: {fileID: 21300000, guid: c87c3a2c8d42efa49821eb1fad71942e, type: 3}
+  selectedBorder: {fileID: 21300000, guid: 18f1d13b39d78274e8f45d4afcac5bc1, type: 3}
+  itemDetailsParent: {fileID: 872820091}
+  itemDescription: {fileID: 1501950643}
+  itemOrangeOrbCount: {fileID: 1681369242}
+  itemRedOrbCount: {fileID: 88680311}
+  itemGreenOrbCount: {fileID: 1071595748}
 --- !u!114 &1950825844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40814,9 +40932,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1a300615281c4a4dbd06499dd74f35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  greenOrbText: {fileID: 0}
-  orangeOrbText: {fileID: 0}
-  redOrbText: {fileID: 0}
+  greenOrbText: {fileID: 1319795505}
+  orangeOrbText: {fileID: 1743482562}
+  redOrbText: {fileID: 1969761979}
 --- !u!4 &1950825845
 Transform:
   m_ObjectHideFlags: 0
@@ -41335,6 +41453,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1969761979 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114041369827792090, guid: 7a126ddcc3dc01f49be35018e6e139b3,
+    type: 2}
+  m_PrefabInternal: {fileID: 498304753}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1973061572
 GameObject:
   m_ObjectHideFlags: 0
