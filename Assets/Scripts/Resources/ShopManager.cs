@@ -1,5 +1,4 @@
 ﻿using ComBlitz.ConstantData;
-using ComBlitz.Ground;
 using ComBlitz.Player.Spawner;
 using UnityEngine;
 using UnityEngine.UI;
@@ -154,12 +153,11 @@ namespace ComBlitz.Resources
             }
         }
 
+        // This method is called from the Select Item Button
         public void UseItem()
         {
-            bool itemPlacedInWorld = false;
-
             if (SelectedItem.itemType == ItemType.Ground)
-                itemPlacedInWorld = GroundManager.instance.CreateGround(SelectedItem.prefab);
+                PlayerSpawnGroundController.instance.CreateGroundInWorld(SelectedItem.prefab);
             else
             {
                 string tagName = "";
@@ -174,9 +172,6 @@ namespace ComBlitz.Resources
 
                 PlayerSpawner.instance.CreateFactoryOrShooter(tagName, SelectedItem.prefab);
             }
-
-            if (itemPlacedInWorld)
-                UseOrbToPlaceSelectedObject();
         }
 
         public void UseOrbToPlaceSelectedObject()
@@ -187,6 +182,8 @@ namespace ComBlitz.Resources
 
             SelectedItem = null;
         }
+
+        public void ClearItemSelection() => SelectedItem = null;
 
         private void SetActiveItemToUI()
         {

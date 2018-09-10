@@ -22,10 +22,6 @@ namespace ComBlitz.Ground
 
         #endregion Singleton
 
-        public delegate bool CreateGroundInstance(GameObject groundObject);
-
-        public CreateGroundInstance createGroundInstance;
-
         [Header("Ground Spawn Stats")]
         public Transform groundParent;
 
@@ -85,22 +81,6 @@ namespace ComBlitz.Ground
         {
             grounds.Add(ground);
             surface.BuildNavMesh();
-        }
-
-        public bool CreateGround(GameObject ground)
-        {
-            if (createGroundInstance == null)
-                return false;
-
-            GameObject groundInstance = Instantiate(ground, transform.position, Quaternion.identity);
-
-            groundInstance.transform.SetParent(groundParent);
-            bool groundPlaced = createGroundInstance(groundInstance);
-
-            if (groundPlaced)
-                AddGround(groundInstance);
-
-            return groundPlaced;
         }
 
         private void AddGroundChildToList()

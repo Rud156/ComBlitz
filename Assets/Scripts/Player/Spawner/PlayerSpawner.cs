@@ -30,6 +30,7 @@ namespace ComBlitz.Player.Spawner
         private Material actualObjectMaterial;
         private string allowedTagName;
         private GameObject objectToBePlaced;
+        private Renderer objectRenderer;
 
         private void Start() => objectIsBeingPlaced = false;
 
@@ -40,7 +41,10 @@ namespace ComBlitz.Player.Spawner
 
             CheckAndPlaceObjectInWorld();
             if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                ShopManager.instance.ClearItemSelection();
                 objectIsBeingPlaced = false;
+            }
         }
 
         public void CreateFactoryOrShooter(string collisionTagName, GameObject objectPrefab)
@@ -51,9 +55,10 @@ namespace ComBlitz.Player.Spawner
             objectInstance.transform.localPosition = Vector3.zero;
 
             objectIsBeingPlaced = true;
-            actualObjectMaterial = objectInstance.GetComponent<Renderer>().material;
             allowedTagName = collisionTagName;
             objectToBePlaced = objectInstance;
+            objectRenderer = objectToBePlaced.GetComponent<Renderer>();
+            actualObjectMaterial = objectRenderer.material;
         }
 
         private void CheckAndPlaceObjectInWorld()
@@ -62,14 +67,14 @@ namespace ComBlitz.Player.Spawner
             bool objectCanBePlaced = false;
 
             if (colliders.Length > 1 || colliders.Length == 0)
-                objectToBePlaced.GetComponent<Renderer>().material = incorrectPositionMaterial;
+                objectRenderer.material = incorrectPositionMaterial;
             else if (colliders[0].CompareTag(allowedTagName))
             {
-                objectToBePlaced.GetComponent<Renderer>().material = actualObjectMaterial;
+                objectRenderer.material = actualObjectMaterial;
                 objectCanBePlaced = true;
             }
             else
-                objectToBePlaced.GetComponent<Renderer>().material = incorrectPositionMaterial;
+                objectRenderer.material = incorrectPositionMaterial;
 
             if (objectCanBePlaced && Input.GetMouseButton(0))
             {
@@ -80,7 +85,6 @@ namespace ComBlitz.Player.Spawner
                 objectToBePlaced.transform.position = new Vector3(xPos, 0, zPos);
 
                 ShopManager.instance.UseOrbToPlaceSelectedObject();
-
                 objectIsBeingPlaced = false;
             }
         }
