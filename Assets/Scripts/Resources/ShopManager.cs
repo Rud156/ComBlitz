@@ -80,6 +80,7 @@ namespace ComBlitz.Resources
 
         [Header("Item Details")]
         public GameObject itemDetailsParent;
+
         public Text itemDescription;
 
         public Text itemOrangeOrbCount;
@@ -100,7 +101,12 @@ namespace ComBlitz.Resources
 
         private void Start() => SelectedItem = null;
 
-        private void Update() => CheckAndRenderAllShopItems();
+        private void Update()
+        {
+            CheckAndRenderAllShopItems();
+            RenderSelecteditem();
+            SetActiveItemToUI();
+        }
 
         #region Ground
 
@@ -167,6 +173,24 @@ namespace ComBlitz.Resources
 
                 SelectedItem = null;
             }
+        }
+
+        private void SetActiveItemToUI()
+        {
+            // Grounds
+            SetItemActiveBasedOnSelection(grassGround);
+            SetItemActiveBasedOnSelection(dirtGround);
+            SetItemActiveBasedOnSelection(lavaGround);
+
+            // Factories
+            SetItemActiveBasedOnSelection(knightFactory);
+            SetItemActiveBasedOnSelection(soldierFactory);
+            SetItemActiveBasedOnSelection(orcFactory);
+
+            // Shooters
+            SetItemActiveBasedOnSelection(bulletShooter);
+            SetItemActiveBasedOnSelection(laserShooter);
+            SetItemActiveBasedOnSelection(bombShooter);
         }
 
         private void SetItemActiveBasedOnSelection(ShopItem item)

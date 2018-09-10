@@ -20,6 +20,12 @@ namespace ComBlitz.Resources
 
         #endregion Singleton
 
+        [Header("Starting Resources")]
+        public int initialGreenOrbCount;
+
+        public int initialOrangeOrbCount;
+        public int initialRedOrbCount;
+
         [Header("UI Display")]
         public Text greenOrbText;
 
@@ -39,18 +45,18 @@ namespace ComBlitz.Resources
 
         private void Start()
         {
-            greenOrbsCount = 0;
-            redOrbsCount = 0;
-            orangeOrbsCount = 0;
+            greenOrbsCount = initialGreenOrbCount;
+            redOrbsCount = initialRedOrbCount;
+            orangeOrbsCount = initialOrangeOrbCount;
         }
 
         private void Update() => DisplayResourcesOnUI();
 
         private void DisplayResourcesOnUI()
         {
-            greenOrbText.text = $"Green Orbs: {greenOrbsCount}";
-            orangeOrbText.text = $"Orange Orbs: {orangeOrbsCount}";
-            redOrbText.text = $"Red Orbs: {redOrbsCount}";
+            greenOrbText.text = $"X {greenOrbsCount}";
+            orangeOrbText.text = $"X {orangeOrbsCount}";
+            redOrbText.text = $"X {redOrbsCount}";
         }
 
         public void AddOrb(OrbType orbType, int totalCount)
