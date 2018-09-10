@@ -40,9 +40,11 @@ GameObject:
   - component: {fileID: 114004649402772108}
   - component: {fileID: 114497783707461740}
   - component: {fileID: 114334770965504516}
+  - component: {fileID: 114588864517642900}
+  - component: {fileID: 114565329916497480}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1002,12 +1004,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f826bb9135bf27f419d6db0fc6632839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundHolder: {fileID: 0}
   groundTracker: {fileID: 4177375312867920}
+  initalSpawnHeightAbove: 1
+  incorrectGroundMaterial: {fileID: 0}
   overlapSphereRadius: 1
-  grassGround: {fileID: 1155546808048874, guid: f77f45aa2d6e4a0448ace47bac2a5a67,
-    type: 2}
-  lavaGround: {fileID: 1941519210562276, guid: a983e6102f2a83141870cdcfd817cd12, type: 2}
-  dirtGround: {fileID: 1212678294326434, guid: 80ad5de9db370484ca5985c9f5fe874a, type: 2}
 --- !u!114 &114497783707461740
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1022,6 +1023,37 @@ MonoBehaviour:
   bullet: {fileID: 1801117671892260, guid: eae7a4a0cec31d347a804e599959218f, type: 2}
   bulletLaunchVelocity: 50
   bulletLaunchPoint: {fileID: 4276217187417220}
+--- !u!114 &114565329916497480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1144010659623556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33aec2e73f80ec48b0c8c0db0e29a7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnerHolder: {fileID: 0}
+  spawnPoint: {fileID: 4177375312867920}
+  incorrectPositionMaterial: {fileID: 0}
+  overlapSphereRadius: 2
+--- !u!114 &114588864517642900
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1144010659623556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f826bb9135bf27f419d6db0fc6632839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundHolder: {fileID: 0}
+  groundTracker: {fileID: 4177375312867920}
+  initalSpawnHeightAbove: 1
+  incorrectGroundMaterial: {fileID: 0}
+  overlapSphereRadius: 2
 --- !u!136 &136710465336655696
 CapsuleCollider:
   m_ObjectHideFlags: 1
