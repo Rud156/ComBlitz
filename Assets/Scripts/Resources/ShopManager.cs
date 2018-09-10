@@ -1,4 +1,6 @@
-﻿using ComBlitz.Ground;
+﻿using ComBlitz.ConstantData;
+using ComBlitz.Ground;
+using ComBlitz.Player.Spawner;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -158,21 +160,32 @@ namespace ComBlitz.Resources
 
             if (SelectedItem.itemType == ItemType.Ground)
                 itemPlacedInWorld = GroundManager.instance.CreateGround(SelectedItem.prefab);
-            else if (SelectedItem.itemType == ItemType.Factory)
-            {
-            }
             else
             {
+                string tagName = "";
+                if (SelectedItem.groundToBePlacedOn == GroundTypes.DirtGround)
+                    tagName = TagManager.DirtGround;
+                else if (SelectedItem.groundToBePlacedOn == GroundTypes.GrassGround)
+                    tagName = TagManager.GrassGround;
+                else if (SelectedItem.groundToBePlacedOn == GroundTypes.LavaGround)
+                    tagName = TagManager.LavaGround;
+                else
+                    return;
+
+                PlayerSpawner.instance.CreateFactoryOrShooter(tagName, SelectedItem.prefab);
             }
 
             if (itemPlacedInWorld)
-            {
-                ResourceManager.instance.UseOrbs(ResourceManager.OrbType.Orange, SelectedItem.orangeOrbsCount);
-                ResourceManager.instance.UseOrbs(ResourceManager.OrbType.Red, SelectedItem.redOrbsCount);
-                ResourceManager.instance.UseOrbs(ResourceManager.OrbType.Green, SelectedItem.greenOrbsCount);
+                UseOrbToPlaceSelectedObject();
+        }
 
-                SelectedItem = null;
-            }
+        public void UseOrbToPlaceSelectedObject()
+        {
+            ResourceManager.instance.UseOrbs(ResourceManager.OrbType.Orange, SelectedItem.orangeOrbsCount);
+            ResourceManager.instance.UseOrbs(ResourceManager.OrbType.Red, SelectedItem.redOrbsCount);
+            ResourceManager.instance.UseOrbs(ResourceManager.OrbType.Green, SelectedItem.greenOrbsCount);
+
+            SelectedItem = null;
         }
 
         private void SetActiveItemToUI()

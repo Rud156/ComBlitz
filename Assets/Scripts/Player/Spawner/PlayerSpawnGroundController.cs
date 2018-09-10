@@ -2,7 +2,7 @@
 using ComBlitz.Ground;
 using UnityEngine;
 
-namespace ComBlitz.Player.Ground
+namespace ComBlitz.Player.Spawner
 {
     public class PlayerSpawnGroundController : MonoBehaviour
     {
