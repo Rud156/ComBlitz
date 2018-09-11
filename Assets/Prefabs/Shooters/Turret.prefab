@@ -185,7 +185,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1628262246522202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 41.459908, y: 1.1299864, z: 43.749023}
+  m_LocalPosition: {x: 36.880726, y: 0.25, z: 39.3792}
   m_LocalScale: {x: 0.5, y: 0.5000007, z: 0.5000007}
   m_Children:
   - {fileID: 4605038527255772}
@@ -361,7 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 283b5f4228fd67d44bedff3901df0d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistanceToTarget: 20
+  maxDistanceToTarget: 10
   fireRate: 2
   projectileShooter: {fileID: 4275904973336024}
   projectileShotEffect: {fileID: 0}
