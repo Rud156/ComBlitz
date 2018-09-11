@@ -24241,7 +24241,7 @@ MonoBehaviour:
     type: 2}
   navMeshSurface: {fileID: 200713494}
   waitTimeAfterFalling: 1
-  fallOnStart: 1
+  fallOnStart: 0
 --- !u!4 &1141116097
 Transform:
   m_ObjectHideFlags: 0
@@ -46809,7 +46809,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2120299617
 Transform:
   m_ObjectHideFlags: 0

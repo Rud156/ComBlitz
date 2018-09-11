@@ -6,19 +6,15 @@ namespace ComBlitz.Factories
 {
     public class FactoriesCreator : MonoBehaviour
     {
-        [Header("Spawn Objects")]
-        public Transform spawnTransform;
+        [Header("Spawn Objects")] public Transform spawnTransform;
         public GameObject unit;
         public GameObject spawnEffect;
 
-        [Header("Spawn Stats")]
-        public float waitBetweenSpawn = 5f;
+        [Header("Spawn Stats")] public float waitBetweenSpawn = 5f;
         public float waitBeteweenEffectAndSpawn = 0.1f;
 
-        [Header("Debug")]
-        public bool spawnOnStart;
+        [Header("Debug")] public bool spawnOnStart;
 
-        private Coroutine coroutine;
         private Transform spawnerHolder;
 
         private void Start()
@@ -26,12 +22,10 @@ namespace ComBlitz.Factories
             if (spawnOnStart)
                 StartSpawn();
 
-            spawnerHolder = GameObject.FindGameObjectWithTag(TagManager.FactoryHolder).transform;
+            spawnerHolder = GameObject.FindGameObjectWithTag(TagManager.EnemyHolder).transform;
         }
 
-        public void StartSpawn() => coroutine = StartCoroutine(SpawnUnits());
-
-        public void StopSpawn() => StopCoroutine(coroutine);
+        public void StartSpawn() => StartCoroutine(SpawnUnits());
 
         private IEnumerator SpawnUnits()
         {

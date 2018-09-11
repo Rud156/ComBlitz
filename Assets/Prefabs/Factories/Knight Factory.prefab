@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23422516166419110}
   - component: {fileID: 65249733378964966}
   - component: {fileID: 54117279703650620}
+  - component: {fileID: 208867307116547160}
   - component: {fileID: 114697932752376970}
   m_Layer: 0
   m_Name: Knight Factory
@@ -162,4 +163,19 @@ MonoBehaviour:
     type: 2}
   waitBetweenSpawn: 10
   waitBeteweenEffectAndSpawn: 0.1
-  spawnOnStart: 1
+  spawnOnStart: 0
+--- !u!208 &208867307116547160
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1646653038921522}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.9120002, y: 3.3240001, z: 2.6810002}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 0, z: 2.6810002}
+  m_TimeToStationary: 0.5

@@ -1,5 +1,8 @@
-﻿using ComBlitz.Extensions;
+﻿using ComBlitz.ConstantData;
+using ComBlitz.Extensions;
+using ComBlitz.Factories;
 using ComBlitz.Resources;
+using ComBlitz.Shooters;
 using UnityEngine;
 
 namespace ComBlitz.Player.Spawner
@@ -56,11 +59,12 @@ namespace ComBlitz.Player.Spawner
         {
             GameObject objectInstance = Instantiate(objectPrefab, transform.position,
                 objectPrefab.transform.rotation);
+            rotation = objectPrefab.transform.rotation;
+
             objectInstance.transform.SetParent(spawnPoint);
             objectInstance.transform.localPosition = Vector3.zero;
             objectInstance.GetComponent<BoxCollider>().enabled = false;
             objectInstance.GetComponent<Rigidbody>().isKinematic = true;
-            rotation = objectPrefab.transform.rotation;
 
             objectIsBeingPlaced = true;
             spawnIndicator.gameObject.SetActive(true);
@@ -97,6 +101,11 @@ namespace ComBlitz.Player.Spawner
                 objectToBePlaced.transform.rotation = rotation;
                 objectToBePlaced.GetComponent<BoxCollider>().enabled = true;
                 objectToBePlaced.GetComponent<Rigidbody>().isKinematic = false;
+                
+                if(parentTagName == TagManager.FactoryHolder)
+                    objectToBePlaced.GetComponent<FactoriesCreator>().StartSpawn();
+                else
+                    objectToBePlaced.GetComponent<ShooterTargetEnemy>().StartShooting();
 
                 ShopManager.instance.UseOrbToPlaceSelectedObject();
                 objectIsBeingPlaced = false;

@@ -957,17 +957,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1216225746254208}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99966fe66a981c48b3587004a8e599d, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a617646bb76c90419b82923dfb610b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyDeathEffect: {fileID: 1674681003994678, guid: 50f42120f414fcf47b75303ef3ce5967,
+  deathEffect: {fileID: 1674681003994678, guid: 50f42120f414fcf47b75303ef3ce5967,
     type: 2}
-  maxEnemyHealth: 40
+  maxHealth: 40
   minHealthColor: {r: 1, g: 0, b: 0, a: 1}
   halfHealthColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   maxHealthColor: {r: 0, g: 1, b: 0, a: 1}
-  enemyHealthSlider: {fileID: 114709937366913312}
-  enemyHealthFiller: {fileID: 114837232701572910}
+  healthSlider: {fileID: 114709937366913312}
+  healthFiller: {fileID: 114837232701572910}
 --- !u!114 &114709937366913312
 MonoBehaviour:
   m_ObjectHideFlags: 1

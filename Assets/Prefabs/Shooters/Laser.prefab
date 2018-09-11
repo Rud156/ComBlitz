@@ -70,6 +70,7 @@ GameObject:
   - component: {fileID: 4498773684692778}
   - component: {fileID: 65879497578468458}
   - component: {fileID: 54542568948603176}
+  - component: {fileID: 208937314682743024}
   - component: {fileID: 114507090305460150}
   m_Layer: 0
   m_Name: Laser
@@ -295,3 +296,18 @@ MonoBehaviour:
   projectile: {fileID: 1334638396897952, guid: 7370ee96fb2fff842a67923b33d04a44, type: 2}
   projectileLaunchPoint: {fileID: 4939837093435628}
   launchSpeed: 50
+--- !u!208 &208937314682743024
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1476899010229264}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

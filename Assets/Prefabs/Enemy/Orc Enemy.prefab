@@ -1938,8 +1938,8 @@ MonoBehaviour:
   minHealthColor: {r: 1, g: 0, b: 0, a: 1}
   halfHealthColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   maxHealthColor: {r: 0, g: 1, b: 0, a: 1}
-  healthSlider: {fileID: 0}
-  healthFiller: {fileID: 0}
+  healthSlider: {fileID: 114395177963295994}
+  healthFiller: {fileID: 114685411636031118}
 --- !u!114 &114685411636031118
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2083,7 +2083,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 1.5
+  m_StoppingDistance: 1.2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1

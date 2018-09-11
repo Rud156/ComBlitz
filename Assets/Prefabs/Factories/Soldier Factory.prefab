@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23524713440778176}
   - component: {fileID: 65173873433421122}
   - component: {fileID: 54708033251693618}
+  - component: {fileID: 208295691667234706}
   - component: {fileID: 114756430560958126}
   m_Layer: 0
   m_Name: Soldier Factory
@@ -163,4 +164,19 @@ MonoBehaviour:
     type: 2}
   waitBetweenSpawn: 5
   waitBeteweenEffectAndSpawn: 0.1
-  spawnOnStart: 1
+  spawnOnStart: 0
+--- !u!208 &208295691667234706
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1676815709059950}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 11.162001, y: 11.442, z: 8.42}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 0, z: 8.102}
+  m_TimeToStationary: 0.5

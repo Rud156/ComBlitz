@@ -19,11 +19,9 @@ namespace ComBlitz.Shooters
 
         private Transform enemyHolder;
 
-        private void Start()
-        {
-            enemyHolder = GameObject.FindGameObjectWithTag(TagManager.EnemyHolder).transform;
-            StartCoroutine(FindAndShootEnemy());
-        }
+        private void Start() => enemyHolder = GameObject.FindGameObjectWithTag(TagManager.EnemyHolder).transform;
+
+        public void StartShooting() => StartCoroutine(FindAndShootEnemy());
 
         private GameObject GetNearestEnemy()
         {
