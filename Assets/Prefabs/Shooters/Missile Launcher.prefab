@@ -314,11 +314,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 283b5f4228fd67d44bedff3901df0d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHolder: {fileID: 0}
-  maxDistanceToTarget: 0
-  fireRate: 0
-  projectileShooter: {fileID: 0}
+  maxDistanceToTarget: 100
+  fireRate: 7
+  projectileShooter: {fileID: 4604615802473004}
   projectileShotEffect: {fileID: 0}
   projectile: {fileID: 0}
-  projectileLaunchPoint: {fileID: 0}
-  launchSpeed: 0
+  projectileLaunchPoint: {fileID: 4303242522970014}
+  launchSpeed: 20
