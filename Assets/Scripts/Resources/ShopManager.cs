@@ -99,12 +99,13 @@ namespace ComBlitz.Resources
 
         private void Update()
         {
-            CheckAndRenderAllShopItems();
             RenderSelectedItem();
             SetActiveItemToUi();
 
             if (Input.GetKeyDown(KeyCode.Q))
                 OpenInventory();
+            
+            CheckAndRenderAllShopItems();
         }
 
         #region Ground
@@ -160,7 +161,12 @@ namespace ComBlitz.Resources
             inventory.SetActive(true);
         }
 
-        public void CloseInventory() => inventory.SetActive(false);
+        public void CloseInventory(bool clearSelection = false)
+        {
+            if (clearSelection)
+                SelectedItem = null;
+            inventory.SetActive(false);
+        }
 
         // This method is called from the Select Item Button
         public void UseItem()

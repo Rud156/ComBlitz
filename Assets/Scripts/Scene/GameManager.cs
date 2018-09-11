@@ -62,7 +62,7 @@ namespace ComBlitz.Scene
 
         private void CloseInventory()
         {
-            ShopManager.instance.CloseInventory();
+            ShopManager.instance.CloseInventory(true);
             InventoryClosed();
         }
 
