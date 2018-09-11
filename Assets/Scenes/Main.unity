@@ -15735,16 +15735,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 114588864517642900, guid: bc903bb7f0b9219419b352aa6280db79,
-        type: 2}
-      propertyPath: groundHolder
-      value: 
-      objectReference: {fileID: 872618379}
     - target: {fileID: 114565329916497480, guid: bc903bb7f0b9219419b352aa6280db79,
         type: 2}
       propertyPath: spawnerHolder
       value: 
       objectReference: {fileID: 1388060395}
+    - target: {fileID: 114588864517642900, guid: bc903bb7f0b9219419b352aa6280db79,
+        type: 2}
+      propertyPath: groundHolder
+      value: 
+      objectReference: {fileID: 872618379}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
   m_IsPrefabAsset: 0
@@ -46753,7 +46753,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2120299617
 Transform:
   m_ObjectHideFlags: 0

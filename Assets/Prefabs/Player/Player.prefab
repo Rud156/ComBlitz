@@ -1035,12 +1035,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnerHolder: {fileID: 0}
   spawnPoint: {fileID: 4177375312867920}
+  overlapSphereRadius: 1
   spawnIndicator: {fileID: 23866075322457058}
   incorrectPositionMaterial: {fileID: 2100000, guid: 00a17f3880f1656408339767faf97733,
     type: 2}
   correctPositionMaterial: {fileID: 2100000, guid: d4e22a2f5116f044ab4ee1e1b92d18cd,
     type: 2}
-  overlapSphereRadius: 1
 --- !u!114 &114588864517642900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1054,13 +1054,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groundHolder: {fileID: 0}
   groundTracker: {fileID: 4177375312867920}
-  groundIndicator: {fileID: 23866075322457058}
   initalSpawnHeightAbove: 1
+  overlapSphereRadius: 1
+  groundIndicator: {fileID: 23866075322457058}
   incorrectGroundMaterial: {fileID: 2100000, guid: 00a17f3880f1656408339767faf97733,
     type: 2}
   correctGroundMaterial: {fileID: 2100000, guid: d4e22a2f5116f044ab4ee1e1b92d18cd,
     type: 2}
-  overlapSphereRadius: 1
 --- !u!136 &136710465336655696
 CapsuleCollider:
   m_ObjectHideFlags: 1

@@ -58,6 +58,7 @@ namespace ComBlitz.Player.Spawner
             objectInstance.transform.SetParent(spawnPoint);
             objectInstance.transform.localPosition = Vector3.zero;
             objectInstance.GetComponent<BoxCollider>().enabled = false;
+            objectInstance.GetComponent<Rigidbody>().isKinematic = true;
             rotation = objectPrefab.transform.rotation;
 
             objectIsBeingPlaced = true;
@@ -90,6 +91,7 @@ namespace ComBlitz.Player.Spawner
                 objectToBePlaced.transform.position = new Vector3(xPos, 0.25f, zPos);
                 objectToBePlaced.transform.rotation = rotation;
                 objectToBePlaced.GetComponent<BoxCollider>().enabled = true;
+                objectToBePlaced.GetComponent<Rigidbody>().isKinematic = false;
 
                 ShopManager.instance.UseOrbToPlaceSelectedObject();
                 objectIsBeingPlaced = false;
