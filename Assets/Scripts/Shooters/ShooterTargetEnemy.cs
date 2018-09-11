@@ -2,15 +2,67 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShooterTargetEnemy : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+namespace ComBlitz.Shooters
+{
+    public class ShooterTargetEnemy : MonoBehaviour
+    {
+        [Header(("Shooter Stats"))] public Transform enemyHolder;
+        public float maxDistanceToTarget;
+        public float fireRate;
+        public Transform projectileShooter;
+        public GameObject projectileShotEffect;
+
+        [Header(("Bullet Stats"))] public GameObject projectile;
+        public Transform projectileLaunchPoint;
+        public float launchSpeed;
+
+        private void Start() => StartCoroutine(FindAndShootEnemy());
+
+        private GameObject GetNearestEnemy()
+        {
+            GameObject nearestEnemy = null;
+            int childCount = enemyHolder.childCount;
+            float minDistance = maxDistanceToTarget;
+
+            for (int i = 0; i < childCount; i++)
+            {
+                GameObject enemy = enemyHolder.GetChild(i).gameObject;
+                float enemyDistance = Vector3.Distance(enemy.transform.position, transform.position);
+
+                if (enemyDistance <= minDistance)
+                {
+                    minDistance = enemyDistance;
+                    nearestEnemy = enemy;
+                }
+            }
+
+            return nearestEnemy;
+        }
+
+        private IEnumerator FindAndShootEnemy()
+        {
+            GameObject nearestEnemy = GetNearestEnemy();
+
+            if (nearestEnemy != null)
+            {
+                Vector3 direction = nearestEnemy.transform.position -
+                                    projectileLaunchPoint.transform.position;
+                Quaternion lookRotation = Quaternion.LookRotation(direction);
+
+                projectileShooter.transform.rotation = lookRotation;
+
+                GameObject shotEffectInstance = Instantiate(projectileShotEffect,
+                    projectileLaunchPoint.transform.position, Quaternion.identity);
+                shotEffectInstance.transform.rotation = lookRotation;
+
+                GameObject projectileInstance = Instantiate(projectile,
+                    projectileLaunchPoint.transform.position, Quaternion.identity);
+                projectileInstance.GetComponent<Rigidbody>().velocity =
+                    projectileLaunchPoint.transform.forward * launchSpeed;
+            }
+            
+            yield return new WaitForSeconds(fireRate);
+        }
+    }
 }

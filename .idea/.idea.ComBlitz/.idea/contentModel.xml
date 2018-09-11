@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Documents\UnityProjects\ComBlitz" t="IncludeRecursive">
+    <e p="C:\Users\Rockin'So\.Rider2018.2\config\Extensions" t="IncludeRecursive" />
+    <e p="C:\Users\Rockin'So\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Rockin'So\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_ComBlitz.-475303735.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Rockin'So\Documents\UnityProjects\ComBlitz" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -222,6 +225,7 @@
             <e p="FactoriesCreator.cs" t="Include" />
           </e>
           <e p="Ground" t="Include">
+            <e p="BuildNavMeshAtRuntime.cs" t="Include" />
             <e p="GroundDestroyAll.cs" t="Include" />
             <e p="GroundManager.cs" t="Include" />
           </e>
@@ -268,13 +272,12 @@
         </e>
       </e>
       <e p="ComBlitz.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
-      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
     </e>
-    <e p="C:\Users\Rockin'So\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Rockin'So\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_ComBlitz.1121232896.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Rockin'So\Documents\UnityProjects\ComBlitz\Library" t="ExcludeRecursive" />
-    <e p="C:\Users\Rockin'So\Documents\UnityProjects\ComBlitz\Temp" t="ExcludeRecursive" />
   </component>
 </project>

@@ -22,9 +22,6 @@ namespace ComBlitz.CustomCamera
         /// </summary>
         void Start() => lastTargetPosition = target.position;
 
-        /// <summary>
-        /// This function is called every fixed framerate frame, if the MonoBehaviour is enabled.
-        /// </summary>
         void FixedUpdate()
         {
             UpdateLastTargetPosition();

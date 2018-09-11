@@ -10,13 +10,13 @@ GameObject:
   - component: {fileID: 431734}
   - component: {fileID: 3317254}
   - component: {fileID: 2349850}
-  - component: {fileID: 208378515887711860}
+  - component: {fileID: 208563566888113926}
   m_Layer: 0
   m_Name: Fortress
   m_TagString: Base
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &431734
 Transform:
@@ -85,7 +85,7 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 147488}
   m_IsPrefabAsset: 1
---- !u!208 &208378515887711860
+--- !u!208 &208563566888113926
 NavMeshObstacle:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,6 +97,6 @@ NavMeshObstacle:
   m_Extents: {x: 0.73300004, y: 0.91200006, z: 0.73300004}
   m_MoveThreshold: 0.1
   m_Carve: 1
-  m_CarveOnlyStationary: 0
+  m_CarveOnlyStationary: 1
   m_Center: {x: 0.001, y: 0.91300005, z: 0.0050000004}
   m_TimeToStationary: 0.5

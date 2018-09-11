@@ -2127,6 +2127,7 @@ GameObject:
   m_Component:
   - component: {fileID: 113653228}
   - component: {fileID: 113653229}
+  - component: {fileID: 113653230}
   m_Layer: 0
   m_Name: NavMesh
   m_TagString: Untagged
@@ -2165,7 +2166,7 @@ MonoBehaviour:
   m_LayerMask:
     serializedVersion: 2
     m_Bits: 512
-  m_UseGeometry: 0
+  m_UseGeometry: 1
   m_DefaultArea: 0
   m_IgnoreNavMeshAgent: 1
   m_IgnoreNavMeshObstacle: 1
@@ -2174,7 +2175,19 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 7ca24893a3a4e9a42a953bcd6c62b049, type: 2}
+  m_NavMeshData: {fileID: 0}
+--- !u!114 &113653230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 113653227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c61cf10d796a4756a2e442801e0863b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  navMeshRebuildRate: 0.5
 --- !u!1 &119387017
 GameObject:
   m_ObjectHideFlags: 0
@@ -15733,7 +15746,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4257445671776290, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 114565329916497480, guid: bc903bb7f0b9219419b352aa6280db79,
         type: 2}
@@ -24234,7 +24247,6 @@ MonoBehaviour:
   totalGroundsToFall: 7
   brokenGroundMaterial: {fileID: 2100000, guid: 97aaa211d0a36c349920ca64c377c72c,
     type: 2}
-  surface: {fileID: 113653229}
   fallOnStart: 1
 --- !u!4 &1141116097
 Transform:
@@ -29440,7 +29452,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1393191517
 GameObject:
@@ -32957,7 +32969,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 431734, guid: 3b5b1a234fb1d3d43b223c202452bfe5, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 147488, guid: 3b5b1a234fb1d3d43b223c202452bfe5, type: 2}
       propertyPath: m_Name
@@ -37219,7 +37231,7 @@ GameObject:
   - component: {fileID: 1731384160}
   - component: {fileID: 1731384159}
   - component: {fileID: 1731384158}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MainGround
   m_TagString: MainGround
   m_Icon: {fileID: 0}
@@ -39004,7 +39016,7 @@ Transform:
   m_LocalScale: {x: 200, y: 1, z: 200}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1813795041
 MonoBehaviour:
@@ -46753,7 +46765,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2120299617
 Transform:
   m_ObjectHideFlags: 0

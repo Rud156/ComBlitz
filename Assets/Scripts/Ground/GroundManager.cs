@@ -29,9 +29,6 @@ namespace ComBlitz.Ground
         public int totalGroundsToFall = 7;
         public Material brokenGroundMaterial;
 
-        [Header("NavMesh")]
-        public NavMeshSurface surface;
-
         [Header("Debug")]
         public bool fallOnStart;
 
@@ -77,11 +74,7 @@ namespace ComBlitz.Ground
 
         public void StopGroundFall() => StopCoroutine(coroutine);
 
-        public void AddGround(GameObject ground)
-        {
-            grounds.Add(ground);
-            // surface.BuildNavMesh();
-        }
+        public void AddGround(GameObject ground) => grounds.Add(ground);
 
         private void AddGroundChildToList()
         {

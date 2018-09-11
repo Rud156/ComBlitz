@@ -43,7 +43,7 @@ namespace ComBlitz.Scene
 
             else if (inventoryOpen)
                 CloseInventory();
-            
+
             else if (pauseMenuOpen)
                 ClosePauseMenu();
             else if (!pauseMenuOpen)
@@ -60,11 +60,7 @@ namespace ComBlitz.Scene
             OpenPauseMenu();
         }
 
-        private void CloseInventory()
-        {
-            ShopManager.instance.CloseInventory(true);
-            InventoryClosed();
-        }
+        #region Inventory
 
         public void InventoryOpened()
         {
@@ -78,15 +74,42 @@ namespace ComBlitz.Scene
             inventoryOpen = false;
         }
 
+        private void CloseInventory()
+        {
+            ShopManager.instance.CloseInventory(true);
+            InventoryClosed();
+        }
+
+        #endregion Inventory
+
+        #region PauseMenu
+
         public void PauseMenuOpened() => pauseMenuOpen = true;
 
         public void PauseMenuClose() => pauseMenuOpen = true;
+
+        public void ClosePauseMenu()
+        {
+            PauseAndResume.instance.ResumeGame();
+            pauseMenuOpen = false;
+        }
+
+        private void OpenPauseMenu()
+        {
+            PauseAndResume.instance.PauseGame();
+            pauseMenuOpen = true;
+        }
+
+        #endregion PauseMenu
+
+
+        #region InventoryItem
 
         public void InventoryItemSelected()
         {
             playerShooter.DeActivateShooting();
             inventoryItemSelected = true;
-            
+
             inventoryOpen = false;
             ShopManager.instance.CloseInventory();
         }
@@ -96,12 +119,7 @@ namespace ComBlitz.Scene
             playerShooter.ActivateShooting();
             inventoryItemSelected = false;
         }
-        
-        public void ClosePauseMenu()
-        {
-            PauseAndResume.instance.ResumeGame();
-            pauseMenuOpen = false;
-        }
+
 
         private void DiscardSelectedInventoryItem()
         {
@@ -109,10 +127,6 @@ namespace ComBlitz.Scene
             ShopManager.instance.ClearItemSelectionAndDestroyObject();
         }
 
-        private void OpenPauseMenu()
-        {
-            PauseAndResume.instance.PauseGame();
-            pauseMenuOpen = true;
-        }
+        #endregion InventoryItem
     }
 }
