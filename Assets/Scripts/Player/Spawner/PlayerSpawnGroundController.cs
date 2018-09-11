@@ -83,11 +83,12 @@ namespace ComBlitz.Player.Spawner
 
                 groundToBePlaced.transform.SetParent(groundHolder);
                 groundToBePlaced.transform.position = new Vector3(xPos, 0, zPos);
+                groundToBePlaced.transform.rotation = Quaternion.identity;
                 groundToBePlaced.GetComponent<BoxCollider>().enabled = true;
 
                 ShopManager.instance.UseOrbToPlaceSelectedObject();
                 groundIsBeingPlaced = false;
-                groundIndicator.gameObject.SetActive(true);
+                groundIndicator.gameObject.SetActive(false);
 
                 GroundManager.instance.AddGround(groundToBePlaced);
             }

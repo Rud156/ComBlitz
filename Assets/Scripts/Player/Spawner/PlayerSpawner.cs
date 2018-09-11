@@ -32,6 +32,7 @@ namespace ComBlitz.Player.Spawner
         private bool objectIsBeingPlaced;
         private string allowedTagName;
         private GameObject objectToBePlaced;
+        private Quaternion rotation;
 
         private void Start() => objectIsBeingPlaced = false;
 
@@ -57,6 +58,7 @@ namespace ComBlitz.Player.Spawner
             objectInstance.transform.SetParent(spawnPoint);
             objectInstance.transform.localPosition = Vector3.zero;
             objectInstance.GetComponent<BoxCollider>().enabled = false;
+            rotation = objectPrefab.transform.rotation;
 
             objectIsBeingPlaced = true;
             spawnIndicator.gameObject.SetActive(true);
@@ -86,6 +88,7 @@ namespace ComBlitz.Player.Spawner
 
                 objectToBePlaced.transform.SetParent(spawnerHolder);
                 objectToBePlaced.transform.position = new Vector3(xPos, 0.25f, zPos);
+                objectToBePlaced.transform.rotation = rotation;
                 objectToBePlaced.GetComponent<BoxCollider>().enabled = true;
 
                 ShopManager.instance.UseOrbToPlaceSelectedObject();

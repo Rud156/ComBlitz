@@ -80,7 +80,7 @@ namespace ComBlitz.Ground
         public void AddGround(GameObject ground)
         {
             grounds.Add(ground);
-            surface.BuildNavMesh();
+            // surface.BuildNavMesh();
         }
 
         private void AddGroundChildToList()
