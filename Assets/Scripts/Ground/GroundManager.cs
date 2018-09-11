@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using EZCameraShake;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -28,6 +29,7 @@ namespace ComBlitz.Ground
         public Material brokenGroundMaterial;
 
         [Header(("NavMesh"))] public NavMeshSurface navMeshSurface;
+        public float waitTimeAfterFalling = 0.3f;
 
         [Header("Debug")] public bool fallOnStart;
 
@@ -111,11 +113,18 @@ namespace ComBlitz.Ground
                         rb.isKinematic = false;
 
                     groundsToFall.Clear();
-                    navMeshSurface.BuildNavMesh();
+                    CameraShaker.Instance.ShakeOnce(5, 5, 2, 0.3f);
+                    StartCoroutine(BuildNavMesh());
                 }
 
                 yield return new WaitForSeconds(waitBetweenEachEnumRate);
             }
+        }
+
+        private IEnumerator BuildNavMesh()
+        {
+            yield return new WaitForSeconds(waitTimeAfterFalling);
+            navMeshSurface.BuildNavMesh();
         }
     }
 }
