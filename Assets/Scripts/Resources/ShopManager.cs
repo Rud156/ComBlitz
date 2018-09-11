@@ -1,5 +1,6 @@
 ﻿using ComBlitz.ConstantData;
 using ComBlitz.Player.Spawner;
+using ComBlitz.Scene;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -29,8 +30,7 @@ namespace ComBlitz.Resources
             public int orangeOrbsCount;
             public int redOrbsCount;
 
-            [TextArea]
-            public string description;
+            [TextArea] public string description;
 
             public GroundTypes groundToBePlacedOn;
             public ItemType itemType;
@@ -55,38 +55,29 @@ namespace ComBlitz.Resources
 
         #endregion Singleton
 
-        [Header("Grounds")]
-        public ShopItem grassGround;
-
+        [Header("Grounds")] public ShopItem grassGround;
         public ShopItem dirtGround;
         public ShopItem lavaGround;
 
-        [Header("Enemy Factories")]
-        public ShopItem knightFactory;
-
+        [Header("Enemy Factories")] public ShopItem knightFactory;
         public ShopItem orcFactory;
         public ShopItem soldierFactory;
 
-        [Header("Shooters")]
-        public ShopItem bulletShooter;
-
+        [Header("Shooters")] public ShopItem bulletShooter;
         public ShopItem laserShooter;
         public ShopItem bombShooter;
 
-        [Header("Image States")]
-        public Sprite defaultBorder;
-
+        [Header("Image States")] public Sprite defaultBorder;
         public Sprite notAvailableBorder;
         public Sprite selectedBorder;
 
-        [Header("Item Details")]
-        public GameObject itemDetailsParent;
-
+        [Header("Item Details")] public GameObject itemDetailsParent;
         public Text itemDescription;
-
         public Text itemOrangeOrbCount;
         public Text itemRedOrbCount;
         public Text itemGreenOrbCount;
+
+        [Header("Inventory")] public GameObject inventory;
 
         private ShopItem _selectedItem;
 
@@ -100,13 +91,20 @@ namespace ComBlitz.Resources
             }
         }
 
-        private void Start() => SelectedItem = null;
+        private void Start()
+        {
+            SelectedItem = null;
+            inventory.SetActive(false);
+        }
 
         private void Update()
         {
             CheckAndRenderAllShopItems();
-            RenderSelecteditem();
-            SetActiveItemToUI();
+            RenderSelectedItem();
+            SetActiveItemToUi();
+
+            if (Input.GetKeyDown(KeyCode.Q))
+                OpenInventory();
         }
 
         #region Ground
@@ -139,7 +137,7 @@ namespace ComBlitz.Resources
 
         #endregion Shooter
 
-        private void RenderSelecteditem()
+        private void RenderSelectedItem()
         {
             if (SelectedItem == null)
                 itemDetailsParent.SetActive(false);
@@ -153,6 +151,17 @@ namespace ComBlitz.Resources
             }
         }
 
+        public void OpenInventory()
+        {
+            if (SelectedItem != null)
+                return;
+
+            GameManager.instance.InventoryOpened();
+            inventory.SetActive(true);
+        }
+
+        public void CloseInventory() => inventory.SetActive(false);
+
         // This method is called from the Select Item Button
         public void UseItem()
         {
@@ -161,17 +170,27 @@ namespace ComBlitz.Resources
             else
             {
                 string tagName = "";
-                if (SelectedItem.groundToBePlacedOn == GroundTypes.DirtGround)
-                    tagName = TagManager.DirtGround;
-                else if (SelectedItem.groundToBePlacedOn == GroundTypes.GrassGround)
-                    tagName = TagManager.GrassGround;
-                else if (SelectedItem.groundToBePlacedOn == GroundTypes.LavaGround)
-                    tagName = TagManager.LavaGround;
-                else
-                    return;
+                switch (SelectedItem.groundToBePlacedOn)
+                {
+                    case GroundTypes.DirtGround:
+                        tagName = TagManager.DirtGround;
+                        break;
+                    case GroundTypes.GrassGround:
+                        tagName = TagManager.GrassGround;
+                        break;
+                    case GroundTypes.LavaGround:
+                        tagName = TagManager.LavaGround;
+                        break;
+                    case GroundTypes.None:
+                        return;
+                    default:
+                        return;
+                }
 
                 PlayerSpawner.instance.CreateFactoryOrShooter(tagName, SelectedItem.prefab);
             }
+
+            GameManager.instance.InventoryItemSelected();
         }
 
         public void UseOrbToPlaceSelectedObject()
@@ -180,12 +199,18 @@ namespace ComBlitz.Resources
             ResourceManager.instance.UseOrbs(ResourceManager.OrbType.Red, SelectedItem.redOrbsCount);
             ResourceManager.instance.UseOrbs(ResourceManager.OrbType.Green, SelectedItem.greenOrbsCount);
 
+            GameManager.instance.InventoryItemWorkComplete();
             SelectedItem = null;
         }
 
-        public void ClearItemSelection() => SelectedItem = null;
+        public void ClearItemSelectionAndDestroyObject()
+        {
+            SelectedItem = null;
+            PlayerSpawner.instance.DestroyNotPlacedItem();
+            PlayerSpawnGroundController.instance.DestroyNotPlacedGround();
+        }
 
-        private void SetActiveItemToUI()
+        private void SetActiveItemToUi()
         {
             // Grounds
             SetItemActiveBasedOnSelection(grassGround);

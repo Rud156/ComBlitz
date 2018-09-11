@@ -24,14 +24,14 @@ namespace ComBlitz.Player.Spawner
 
         public Transform groundHolder;
         public Transform groundTracker;
+        public Renderer groundIndicator;
         public float initalSpawnHeightAbove = 1f;
         public Material incorrectGroundMaterial;
+        public Material correctGroundMaterial;
         public float overlapSphereRadius = 2f;
 
         private bool groundIsBeingPlaced;
-        private Material actualGroundMaterial;
         private GameObject groundToBePlaced;
-        private Renderer groundRenderer;
 
         private void Start() => groundIsBeingPlaced = false;
 
@@ -41,11 +41,13 @@ namespace ComBlitz.Player.Spawner
                 return;
 
             CheckAndCreateGroundInWorld();
-            if (Input.GetMouseButtonDown(0))
-            {
-                ShopManager.instance.ClearItemSelection();
-                groundIsBeingPlaced = false;
-            }
+        }
+
+        public void DestroyNotPlacedGround()
+        {
+            Destroy(groundToBePlaced);
+            groundIsBeingPlaced = false;
+            groundIndicator.gameObject.SetActive(false);
         }
 
         public void CreateGroundInWorld(GameObject groundPrefab)
@@ -55,9 +57,8 @@ namespace ComBlitz.Player.Spawner
             groundInstance.transform.localPosition = Vector3.zero + Vector3.up * initalSpawnHeightAbove;
 
             groundIsBeingPlaced = true;
+            groundIndicator.gameObject.SetActive(true);
             groundToBePlaced = groundInstance;
-            groundRenderer = groundToBePlaced.GetComponent<Renderer>();
-            actualGroundMaterial = groundRenderer.material;
         }
 
         private void CheckAndCreateGroundInWorld()
@@ -69,10 +70,10 @@ namespace ComBlitz.Player.Spawner
             if (colliders.Length == 0)
             {
                 clear = true;
-                groundRenderer.material = incorrectGroundMaterial;
+                groundIndicator.material = incorrectGroundMaterial;
             }
             else
-                groundRenderer.material = actualGroundMaterial;
+                groundIndicator.material = correctGroundMaterial;
 
             if (clear && Input.GetMouseButtonDown(0))
             {

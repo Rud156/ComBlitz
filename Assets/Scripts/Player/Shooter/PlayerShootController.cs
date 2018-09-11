@@ -11,15 +11,28 @@ namespace ComBlitz.Player.Shooter
         public Transform bulletLaunchPoint;
 
         private Animator playerAnimator;
+        private bool stopShooting;
 
         // Use this for initialization
-        private void Start() => playerAnimator = GetComponent<Animator>();
+        private void Start()
+        {
+            playerAnimator = GetComponent<Animator>();
+            stopShooting = false;
+        }
 
         // Update is called once per frame
         private void Update() => PlayerShoot();
 
+        public void ActivateShooting() => stopShooting = false;
+
+        public void DeActivateShooting() => stopShooting = true;
+
         private void PlayerShoot()
         {
+            if (stopShooting)
+                return;
+
+
             if (Input.GetMouseButton(0))
                 playerAnimator.SetBool(PlayerContantData.PlayerShootAnimParam, true);
             else

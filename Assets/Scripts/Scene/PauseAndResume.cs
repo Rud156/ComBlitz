@@ -27,30 +27,11 @@ namespace ComBlitz.Scene
         /// Start is called on the frame when a script is enabled just before any of the Update
         /// methods is called the first time.
         /// </summary>
-        private void Start()
-        {
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
-
-            pauseMenu.SetActive(false);
-        }
-
-        /// <summary>
-        /// Callback sent to all game objects when the player pauses.
-        /// </summary>
-        /// <param name="pauseStatus">The pause state of the application.</param>
-        private void OnApplicationPause(bool pauseStatus)
-        {
-            if (pauseStatus)
-                PauseGame();
-        }
+        private void Start() => pauseMenu.SetActive(false);
 
         public void PauseGame()
         {
             pauseMenu.SetActive(true);
-
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
 
             Time.timeScale = 0;
         }
@@ -59,14 +40,12 @@ namespace ComBlitz.Scene
         {
             pauseMenu.SetActive(false);
 
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
-
             Time.timeScale = 1;
         }
 
         public void GoToMainMenu()
         {
+            Time.timeScale = 1;
             NextSceneData.sceneToLoad = 0;
             SceneManager.LoadScene(1);
         }

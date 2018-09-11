@@ -19,6 +19,9 @@ TagManager:
   - Red Orb
   - Green Orb
   - Yellow Orb
+  - GrassGround
+  - LavaGround
+  - DirtGround
   layers:
   - Default
   - TransparentFX
