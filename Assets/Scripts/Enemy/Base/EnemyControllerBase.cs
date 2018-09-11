@@ -73,6 +73,8 @@ namespace ComBlitz.Enemy.Base
         {
             if (enemyAgent.velocity.magnitude > enemyMovementThreshold)
                 enemyAnimator.SetBool(enemyMoveAnimParam, true);
+            else
+                enemyAnimator.SetBool(enemyMoveAnimParam, false);
         }
 
         private void ChangeTargetIfInPath()

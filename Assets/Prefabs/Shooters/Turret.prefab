@@ -362,8 +362,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 283b5f4228fd67d44bedff3901df0d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistanceToTarget: 10
-  fireRate: 2
+  maxDistanceToTarget: 1000
+  fireRate: 0.1
   projectileShooter: {fileID: 4275904973336024}
   projectileShotEffect: {fileID: 1506582911323858, guid: 16fbe165f8e3e074ab823398963a9773,
     type: 2}

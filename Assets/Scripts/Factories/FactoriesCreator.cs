@@ -29,14 +29,17 @@ namespace ComBlitz.Factories
 
         private IEnumerator SpawnUnits()
         {
-            Instantiate(spawnEffect, spawnTransform.position, spawnEffect.transform.rotation);
+            while (true)
+            {
+                yield return new WaitForSeconds(waitBetweenSpawn);
 
-            yield return new WaitForSeconds(waitBeteweenEffectAndSpawn);
+                Instantiate(spawnEffect, spawnTransform.position, spawnEffect.transform.rotation);
 
-            GameObject unitInstance = Instantiate(unit, spawnTransform.position, unit.transform.rotation);
-            unitInstance.transform.SetParent(spawnerHolder.transform);
+                yield return new WaitForSeconds(waitBeteweenEffectAndSpawn);
 
-            yield return new WaitForSeconds(waitBetweenSpawn);
+                GameObject unitInstance = Instantiate(unit, spawnTransform.position, unit.transform.rotation);
+                unitInstance.transform.SetParent(spawnerHolder.transform);
+            }
         }
     }
 }

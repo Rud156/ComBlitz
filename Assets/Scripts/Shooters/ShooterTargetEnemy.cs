@@ -46,27 +46,30 @@ namespace ComBlitz.Shooters
 
         private IEnumerator FindAndShootEnemy()
         {
-            GameObject nearestEnemy = GetNearestEnemy();
-
-            if (nearestEnemy != null)
+            while (true)
             {
-                Vector3 direction = nearestEnemy.transform.position -
-                                    projectileLaunchPoint.transform.position;
-                Quaternion lookRotation = Quaternion.LookRotation(direction);
+                GameObject nearestEnemy = GetNearestEnemy();
 
-                projectileShooter.transform.rotation = lookRotation;
+                if (nearestEnemy != null)
+                {
+                    Vector3 direction = nearestEnemy.transform.position -
+                                        projectileLaunchPoint.transform.position;
+                    Quaternion lookRotation = Quaternion.LookRotation(direction);
 
-                GameObject shotEffectInstance = Instantiate(projectileShotEffect,
-                    projectileLaunchPoint.transform.position, Quaternion.identity);
-                shotEffectInstance.transform.rotation = lookRotation;
+                    projectileShooter.transform.rotation = lookRotation;
 
-                GameObject projectileInstance = Instantiate(projectile,
-                    projectileLaunchPoint.transform.position, Quaternion.identity);
-                projectileInstance.GetComponent<Rigidbody>().velocity =
-                    projectileLaunchPoint.transform.forward * launchSpeed;
+                    GameObject shotEffectInstance = Instantiate(projectileShotEffect,
+                        projectileLaunchPoint.transform.position, Quaternion.identity);
+                    shotEffectInstance.transform.rotation = lookRotation;
+
+                    GameObject projectileInstance = Instantiate(projectile,
+                        projectileLaunchPoint.transform.position, Quaternion.identity);
+                    projectileInstance.GetComponent<Rigidbody>().velocity =
+                        projectileLaunchPoint.transform.forward * launchSpeed;
+                }
+
+                yield return new WaitForSeconds(fireRate);
             }
-
-            yield return new WaitForSeconds(fireRate);
         }
     }
 }
