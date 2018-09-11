@@ -193,7 +193,10 @@ namespace ComBlitz.Resources
                         return;
                 }
 
-                PlayerSpawner.instance.CreateFactoryOrShooter(tagName, SelectedItem.prefab);
+                string parentTagName = SelectedItem.itemType == ItemType.Factory
+                    ? TagManager.FactoryHolder
+                    : TagManager.ShooterHolder;
+                PlayerSpawner.instance.CreateFactoryOrShooter(tagName, SelectedItem.prefab, parentTagName);
             }
 
             GameManager.instance.InventoryItemSelected();

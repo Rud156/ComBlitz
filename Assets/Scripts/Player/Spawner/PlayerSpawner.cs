@@ -21,7 +21,6 @@ namespace ComBlitz.Player.Spawner
 
         #endregion Singleton
 
-        public Transform spawnerHolder;
         public Transform spawnPoint;
         public float overlapSphereRadius = 2f;
 
@@ -33,6 +32,8 @@ namespace ComBlitz.Player.Spawner
         private string allowedTagName;
         private GameObject objectToBePlaced;
         private Quaternion rotation;
+
+        private string parentTagName;
 
         private void Start() => objectIsBeingPlaced = false;
 
@@ -51,7 +52,7 @@ namespace ComBlitz.Player.Spawner
             spawnIndicator.gameObject.SetActive(false);
         }
 
-        public void CreateFactoryOrShooter(string collisionTagName, GameObject objectPrefab)
+        public void CreateFactoryOrShooter(string collisionTagName, GameObject objectPrefab, string parentTag)
         {
             GameObject objectInstance = Instantiate(objectPrefab, transform.position,
                 objectPrefab.transform.rotation);
@@ -65,6 +66,8 @@ namespace ComBlitz.Player.Spawner
             spawnIndicator.gameObject.SetActive(true);
             allowedTagName = collisionTagName;
             objectToBePlaced = objectInstance;
+
+            parentTagName = parentTag;
         }
 
         private void CheckAndPlaceObjectInWorld()
@@ -86,6 +89,8 @@ namespace ComBlitz.Player.Spawner
             {
                 float xPos = ExtensionFunctions.GetClosestMultiple(spawnPoint.position.x);
                 float zPos = ExtensionFunctions.GetClosestMultiple(spawnPoint.position.z);
+
+                Transform spawnerHolder = GameObject.FindGameObjectWithTag(parentTagName).transform;
 
                 objectToBePlaced.transform.SetParent(spawnerHolder);
                 objectToBePlaced.transform.position = new Vector3(xPos, 0.25f, zPos);

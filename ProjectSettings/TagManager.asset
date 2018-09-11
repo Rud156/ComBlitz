@@ -4,16 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - MainGround
-  - Enemy
   - Base
   - Shooter Holder
-  - Player Bullet
-  - Shooter Bullet
-  - Enemy Bullet
-  - Enemy Sword
-  - Enemy Orc
-  - Shooter Bomb
   - Shooter Laser
   - Enemy Holder
   - Red Orb
@@ -22,6 +14,7 @@ TagManager:
   - GrassGround
   - LavaGround
   - DirtGround
+  - Factory Holder
   layers:
   - Default
   - TransparentFX
