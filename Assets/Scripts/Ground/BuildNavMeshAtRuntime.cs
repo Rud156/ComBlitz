@@ -20,6 +20,7 @@ namespace ComBlitz.Ground
         {
             while (true)
             {
+                Debug.Log("Building the NavMesh");
                 navSurface.BuildNavMesh();
                 yield return new WaitForSeconds(navMeshRebuildRate);
             }
