@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 65829090777761180}
   - component: {fileID: 54469725637846700}
   - component: {fileID: 114481718511558728}
+  - component: {fileID: 114500989662561452}
   m_Layer: 0
   m_Name: Missile
   m_TagString: Untagged
@@ -187,6 +188,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 20
+--- !u!114 &114500989662561452
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1237630641643976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c310c106608b9f4196e988afa1140e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &198347093101490360
 ParticleSystem:
   m_ObjectHideFlags: 1

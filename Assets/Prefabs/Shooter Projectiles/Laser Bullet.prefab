@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 65014113549903094}
   - component: {fileID: 96438211245907204}
   - component: {fileID: 114641151492017854}
+  - component: {fileID: 114391761493706288}
   m_Layer: 0
   m_Name: Laser Bullet
   m_TagString: Untagged
@@ -109,7 +110,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1334638396897952}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -215,6 +216,17 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 1
   m_Emitting: 1
+--- !u!114 &114391761493706288
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1334638396897952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c310c106608b9f4196e988afa1140e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114641151492017854
 MonoBehaviour:
   m_ObjectHideFlags: 1
