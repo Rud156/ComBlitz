@@ -364,7 +364,8 @@ MonoBehaviour:
   maxDistanceToTarget: 10
   fireRate: 2
   projectileShooter: {fileID: 4275904973336024}
-  projectileShotEffect: {fileID: 0}
+  projectileShotEffect: {fileID: 1506582911323858, guid: 16fbe165f8e3e074ab823398963a9773,
+    type: 2}
   projectile: {fileID: 1010910495934554, guid: 637b1f350f4e61042a98c00538ff7ceb, type: 2}
   projectileLaunchPoint: {fileID: 4331280460561218}
   launchSpeed: 50

@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23524713440778176}
   - component: {fileID: 65173873433421122}
   - component: {fileID: 54708033251693618}
+  - component: {fileID: 114756430560958126}
   m_Layer: 0
   m_Name: Soldier Factory
   m_TagString: Untagged
@@ -145,3 +146,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 22.323584, y: 22.884253, z: 16.840519}
   m_Center: {x: -0.000004768371, y: -0.000003814698, z: 8.101719}
+--- !u!114 &114756430560958126
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1676815709059950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8403630afd765d4b8c5a57ed69b57de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTransform: {fileID: 4034170753093200}
+  unit: {fileID: 1216225746254208, guid: 714c9b9f364d05c4b87558b3f9d5d444, type: 2}
+  spawnEffect: {fileID: 0}
+  waitBetweenSpawn: 5
+  waitBeteweenEffectAndSpawn: 0.1
+  spawnOnStart: 1

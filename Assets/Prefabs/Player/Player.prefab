@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 114497783707461740}
   - component: {fileID: 114588864517642900}
   - component: {fileID: 114565329916497480}
+  - component: {fileID: 114571146085103434}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1033,7 +1034,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a33aec2e73f80ec48b0c8c0db0e29a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnerHolder: {fileID: 0}
   spawnPoint: {fileID: 4177375312867920}
   overlapSphereRadius: 1
   spawnIndicator: {fileID: 23866075322457058}
@@ -1041,6 +1041,25 @@ MonoBehaviour:
     type: 2}
   correctPositionMaterial: {fileID: 2100000, guid: d4e22a2f5116f044ab4ee1e1b92d18cd,
     type: 2}
+--- !u!114 &114571146085103434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1144010659623556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a617646bb76c90419b82923dfb610b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathEffect: {fileID: 1217732180633582, guid: 0148b436f36992949b7a69de181c1756,
+    type: 2}
+  maxHealth: 250
+  minHealthColor: {r: 1, g: 0, b: 0, a: 1}
+  halfHealthColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  maxHealthColor: {r: 0, g: 1, b: 0, a: 1}
+  healthSlider: {fileID: 0}
+  healthFiller: {fileID: 0}
 --- !u!114 &114588864517642900
 MonoBehaviour:
   m_ObjectHideFlags: 1

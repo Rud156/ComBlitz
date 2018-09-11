@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using ComBlitz.ConstantData;
 using UnityEngine;
 
 namespace ComBlitz.Factories
@@ -7,7 +8,6 @@ namespace ComBlitz.Factories
     {
         [Header("Spawn Objects")]
         public Transform spawnTransform;
-        public Transform spawnerHolder;
         public GameObject unit;
         public GameObject spawnEffect;
 
@@ -18,12 +18,15 @@ namespace ComBlitz.Factories
         [Header("Debug")]
         public bool spawnOnStart;
 
-        protected Coroutine coroutine;
+        private Coroutine coroutine;
+        private Transform spawnerHolder;
 
         private void Start()
         {
             if (spawnOnStart)
                 StartSpawn();
+
+            spawnerHolder = GameObject.FindGameObjectWithTag(TagManager.FactoryHolder).transform;
         }
 
         public void StartSpawn() => coroutine = StartCoroutine(SpawnUnits());

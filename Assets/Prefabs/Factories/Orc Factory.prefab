@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23138609531594474}
   - component: {fileID: 65401710522123414}
   - component: {fileID: 54261315518663468}
+  - component: {fileID: 114706206895816814}
   m_Layer: 0
   m_Name: Orc Factory
   m_TagString: Untagged
@@ -65,7 +66,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1530795250213420}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 38.297474, y: 0.25, z: 41.475067}
+  m_LocalPosition: {x: 32.206814, y: 0.25, z: 34.85426}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children:
   - {fileID: 4367339815163648}
@@ -142,3 +143,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 17.38159, y: 16.945805, z: 25.381804}
   m_Center: {x: 0, y: 1.8034852e-13, z: 12.690902}
+--- !u!114 &114706206895816814
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1530795250213420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8403630afd765d4b8c5a57ed69b57de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTransform: {fileID: 4367339815163648}
+  unit: {fileID: 1805352117909408, guid: 62994deab6964f0469ad1acaf4c85b7c, type: 2}
+  spawnEffect: {fileID: 0}
+  waitBetweenSpawn: 7
+  waitBeteweenEffectAndSpawn: 0.1
+  spawnOnStart: 1
