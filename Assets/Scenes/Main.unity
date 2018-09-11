@@ -130,7 +130,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4877211
 Transform:
@@ -231,7 +231,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7907887
 Transform:
@@ -332,7 +332,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &8282102
 Transform:
@@ -433,7 +433,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &16781978
 Transform:
@@ -596,7 +596,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &21605825
 Transform:
@@ -697,7 +697,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &30271047
 Transform:
@@ -798,7 +798,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &30656266
 Transform:
@@ -899,7 +899,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &37470149
 Transform:
@@ -1034,7 +1034,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &47647955
 Transform:
@@ -1135,7 +1135,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &56331820
 Transform:
@@ -1236,7 +1236,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &56385211
 Transform:
@@ -1337,7 +1337,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &60761639
 Transform:
@@ -1462,7 +1462,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1941519210562276, guid: a983e6102f2a83141870cdcfd817cd12, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1941519210562276, guid: a983e6102f2a83141870cdcfd817cd12, type: 2}
       propertyPath: m_Layer
@@ -1488,7 +1488,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &62921534
 Transform:
@@ -1589,7 +1589,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &71190546
 Transform:
@@ -1690,7 +1690,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &77039777
 Transform:
@@ -1791,7 +1791,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &81634732
 Transform:
@@ -1892,7 +1892,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &84212225
 Transform:
@@ -2135,7 +2135,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &119387018
 Transform:
@@ -2236,7 +2236,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &119495964
 Transform:
@@ -2460,7 +2460,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &121463732
 Transform:
@@ -2561,7 +2561,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &122863620
 Transform:
@@ -2662,7 +2662,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &125173310
 Transform:
@@ -2763,7 +2763,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &128791576
 Transform:
@@ -2864,7 +2864,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &133506805
 Transform:
@@ -2965,7 +2965,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &148151641
 Transform:
@@ -3066,7 +3066,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &153591910
 Transform:
@@ -3167,7 +3167,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &154996122
 Transform:
@@ -3447,7 +3447,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &162492584
 Transform:
@@ -3548,7 +3548,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &168452411
 Transform:
@@ -3649,7 +3649,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &171089646
 Transform:
@@ -3750,7 +3750,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &172409728
 Transform:
@@ -3851,7 +3851,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &173683087
 Transform:
@@ -3952,7 +3952,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &173840770
 Transform:
@@ -4053,7 +4053,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &182122136
 Transform:
@@ -4154,7 +4154,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &184598383
 Transform:
@@ -4255,7 +4255,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &186344064
 Transform:
@@ -4356,7 +4356,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &191640005
 Transform:
@@ -4462,7 +4462,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &199324736
 Transform:
@@ -4586,10 +4586,10 @@ MonoBehaviour:
   m_IgnoreNavMeshObstacle: 1
   m_OverrideTileSize: 0
   m_TileSize: 256
-  m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_OverrideVoxelSize: 1
+  m_VoxelSize: 0.3
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: bc9972da27777e0469686af689bb1bb1, type: 2}
 --- !u!4 &200713495
 Transform:
   m_ObjectHideFlags: 0
@@ -4620,7 +4620,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &210463933
 Transform:
@@ -4806,7 +4806,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &222265829
 Transform:
@@ -4907,7 +4907,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &223157949
 Transform:
@@ -5008,7 +5008,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &223363747
 Transform:
@@ -5109,7 +5109,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &226259370
 Transform:
@@ -5210,7 +5210,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &231852640
 Transform:
@@ -5311,7 +5311,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &235707049
 Transform:
@@ -5412,7 +5412,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &237184423
 Transform:
@@ -5513,7 +5513,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &242610043
 Transform:
@@ -5614,7 +5614,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &244669048
 Transform:
@@ -5715,7 +5715,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &247148376
 Transform:
@@ -5816,7 +5816,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &250053226
 Transform:
@@ -5929,7 +5929,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &253845932
 Transform:
@@ -6030,7 +6030,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &253980917
 Transform:
@@ -6131,7 +6131,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &254087861
 Transform:
@@ -6232,7 +6232,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &259229273
 Transform:
@@ -6333,7 +6333,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &271994526
 Transform:
@@ -6434,7 +6434,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &272514325
 Transform:
@@ -6535,7 +6535,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &272864066
 Transform:
@@ -6660,7 +6660,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1155546808048874, guid: f77f45aa2d6e4a0448ace47bac2a5a67, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1155546808048874, guid: f77f45aa2d6e4a0448ace47bac2a5a67, type: 2}
       propertyPath: m_Layer
@@ -6686,7 +6686,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &286386080
 Transform:
@@ -6787,7 +6787,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &287753017
 Transform:
@@ -6888,7 +6888,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &293383706
 Transform:
@@ -6989,7 +6989,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &322215155
 Transform:
@@ -7090,7 +7090,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &324460569
 Transform:
@@ -7191,7 +7191,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &326386224
 Transform:
@@ -7320,7 +7320,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &338605895
 Transform:
@@ -7421,7 +7421,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &345843603
 Transform:
@@ -7522,7 +7522,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &357901699
 Transform:
@@ -7635,7 +7635,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &360688833
 Transform:
@@ -7736,7 +7736,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &363405854
 Transform:
@@ -7837,7 +7837,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &364580988
 Transform:
@@ -7938,7 +7938,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &367478028
 Transform:
@@ -8178,7 +8178,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &387004655
 Transform:
@@ -8438,7 +8438,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &405083131
 Transform:
@@ -8539,7 +8539,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &406020437
 Transform:
@@ -8640,7 +8640,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &410179639
 Transform:
@@ -8741,7 +8741,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &411974090
 Transform:
@@ -8842,7 +8842,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &421242924
 Transform:
@@ -8943,7 +8943,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &422443760
 Transform:
@@ -9044,7 +9044,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &428913915
 Transform:
@@ -9145,7 +9145,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &441485615
 Transform:
@@ -9246,7 +9246,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &444802071
 Transform:
@@ -9347,7 +9347,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &453705487
 Transform:
@@ -9627,7 +9627,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &456417500
 Transform:
@@ -9728,7 +9728,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &460341142
 Transform:
@@ -9829,7 +9829,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &462821820
 Transform:
@@ -9930,7 +9930,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &471476370
 Transform:
@@ -10031,7 +10031,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &483617372
 Transform:
@@ -10132,7 +10132,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &488563535
 Transform:
@@ -10233,7 +10233,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &494137660
 Transform:
@@ -10458,7 +10458,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &499867457
 Transform:
@@ -10559,7 +10559,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &500491721
 Transform:
@@ -10883,7 +10883,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &510972401
 Transform:
@@ -11158,7 +11158,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &524135226
 Transform:
@@ -11259,7 +11259,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &526672618
 Transform:
@@ -11527,7 +11527,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &536358158
 Transform:
@@ -11628,7 +11628,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &536367220
 Transform:
@@ -11729,7 +11729,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &537349364
 Transform:
@@ -11830,7 +11830,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &537392135
 Transform:
@@ -11931,7 +11931,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &542480708
 Transform:
@@ -12032,7 +12032,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &543453425
 Transform:
@@ -12292,7 +12292,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &548220158
 Transform:
@@ -12393,7 +12393,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &558140599
 Transform:
@@ -12494,7 +12494,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &565889187
 Transform:
@@ -12595,7 +12595,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &568827717
 Transform:
@@ -12696,7 +12696,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &569876344
 Transform:
@@ -12797,7 +12797,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &570649132
 Transform:
@@ -12898,7 +12898,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &572440462
 Transform:
@@ -13004,7 +13004,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &586564296
 Transform:
@@ -13105,7 +13105,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &599850048
 Transform:
@@ -13206,7 +13206,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &600410700
 Transform:
@@ -13307,7 +13307,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &606152649
 Transform:
@@ -13408,7 +13408,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &606657419
 Transform:
@@ -13509,7 +13509,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &606703596
 Transform:
@@ -13610,7 +13610,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &610046918
 Transform:
@@ -13811,7 +13811,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &622738379
 Transform:
@@ -13912,7 +13912,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &623069586
 Transform:
@@ -14013,7 +14013,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &646214114
 Transform:
@@ -14188,7 +14188,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &650926307
 Transform:
@@ -14358,7 +14358,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &656594424
 Transform:
@@ -14459,7 +14459,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &658699280
 Transform:
@@ -14560,7 +14560,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &663469573
 Transform:
@@ -14751,7 +14751,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &665121752
 Transform:
@@ -14852,7 +14852,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &668284715
 Transform:
@@ -15127,7 +15127,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &673747061
 Transform:
@@ -15228,7 +15228,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &680670664
 Transform:
@@ -15329,7 +15329,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &682056595
 Transform:
@@ -15430,7 +15430,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &684931529
 Transform:
@@ -15531,7 +15531,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &701899394
 Transform:
@@ -15745,6 +15745,22 @@ Prefab:
       propertyPath: groundHolder
       value: 
       objectReference: {fileID: 872618379}
+    - target: {fileID: 4921034536849132, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177375312867920, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4413853811281082, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377675955591754, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
   m_IsPrefabAsset: 0
@@ -15856,7 +15872,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &710246258
 Transform:
@@ -15957,7 +15973,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &714277515
 Transform:
@@ -16058,7 +16074,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &715744837
 Transform:
@@ -16159,7 +16175,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &730134721
 Transform:
@@ -16260,7 +16276,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &736450251
 Transform:
@@ -16361,7 +16377,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &736823831
 Transform:
@@ -16462,7 +16478,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &737340973
 Transform:
@@ -16608,7 +16624,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &743872817
 Transform:
@@ -16709,7 +16725,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &749669223
 Transform:
@@ -16810,7 +16826,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &758702364
 Transform:
@@ -16911,7 +16927,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &759822038
 Transform:
@@ -17012,7 +17028,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &760099490
 Transform:
@@ -17113,7 +17129,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &769103823
 Transform:
@@ -17238,7 +17254,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1212678294326434, guid: 80ad5de9db370484ca5985c9f5fe874a, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1212678294326434, guid: 80ad5de9db370484ca5985c9f5fe874a, type: 2}
       propertyPath: m_Layer
@@ -17264,7 +17280,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &774338316
 Transform:
@@ -17365,7 +17381,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &776828217
 Transform:
@@ -17471,7 +17487,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &799481747
 Transform:
@@ -17584,7 +17600,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &812509248
 Transform:
@@ -17685,7 +17701,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &816359951
 Transform:
@@ -17876,7 +17892,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &826500674
 Transform:
@@ -17977,7 +17993,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &827259212
 Transform:
@@ -18078,7 +18094,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &831856576
 Transform:
@@ -18179,7 +18195,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &831880802
 Transform:
@@ -18280,7 +18296,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &835846520
 Transform:
@@ -18456,7 +18472,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &837973560
 Transform:
@@ -18557,7 +18573,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &851947262
 Transform:
@@ -18658,7 +18674,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &854002309
 Transform:
@@ -18759,7 +18775,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &862292712
 Transform:
@@ -18856,7 +18872,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &872618379
 Transform:
@@ -19326,7 +19342,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &874145475
 Transform:
@@ -19427,7 +19443,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &881334893
 Transform:
@@ -19528,7 +19544,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &888154020
 Transform:
@@ -19629,7 +19645,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &891130975
 Transform:
@@ -19730,7 +19746,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &901742123
 Transform:
@@ -19831,7 +19847,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &906342496
 Transform:
@@ -19932,7 +19948,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &910479793
 Transform:
@@ -20045,7 +20061,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &921415217
 Transform:
@@ -20146,7 +20162,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &927311354
 Transform:
@@ -20247,7 +20263,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &932657725
 Transform:
@@ -20348,7 +20364,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &933682212
 Transform:
@@ -20521,7 +20537,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &937495219
 Transform:
@@ -20622,7 +20638,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &942704013
 Transform:
@@ -20723,7 +20739,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &960702347
 Transform:
@@ -20824,7 +20840,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &974650165
 Transform:
@@ -20925,7 +20941,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &977408512
 Transform:
@@ -21026,7 +21042,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &997785230
 Transform:
@@ -21127,7 +21143,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &998913461
 Transform:
@@ -21228,7 +21244,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1000359886
 Transform:
@@ -21329,7 +21345,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1000703739
 Transform:
@@ -21430,7 +21446,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1001900683
 Transform:
@@ -21531,7 +21547,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1021139575
 Transform:
@@ -21632,7 +21648,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1023087733
 Transform:
@@ -21733,7 +21749,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1023904219
 Transform:
@@ -21834,7 +21850,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1031249981
 Transform:
@@ -21935,7 +21951,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1031763328
 Transform:
@@ -22041,7 +22057,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1033209460
 Transform:
@@ -22142,7 +22158,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1034750761
 Transform:
@@ -22243,7 +22259,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1039478916
 Transform:
@@ -22443,7 +22459,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1043883745
 Transform:
@@ -22544,7 +22560,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1046092010
 Transform:
@@ -22645,7 +22661,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1047991968
 Transform:
@@ -22746,7 +22762,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1059810213
 Transform:
@@ -22847,7 +22863,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1063105232
 Transform:
@@ -22948,7 +22964,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1067168689
 Transform:
@@ -23055,7 +23071,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1071905383
 Transform:
@@ -23156,7 +23172,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1079624488
 Transform:
@@ -23257,7 +23273,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1079641435
 Transform:
@@ -23358,7 +23374,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1081276313
 Transform:
@@ -23500,7 +23516,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1111704907
 Transform:
@@ -23601,7 +23617,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1120243610
 Transform:
@@ -23702,7 +23718,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1123070204
 Transform:
@@ -23815,7 +23831,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1129050472
 Transform:
@@ -23916,7 +23932,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1130999152
 Transform:
@@ -24017,7 +24033,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1133353759
 Transform:
@@ -24118,7 +24134,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1134579201
 Transform:
@@ -24234,6 +24250,7 @@ MonoBehaviour:
   totalGroundsToFall: 7
   brokenGroundMaterial: {fileID: 2100000, guid: 97aaa211d0a36c349920ca64c377c72c,
     type: 2}
+  navMeshSurface: {fileID: 200713494}
   fallOnStart: 1
 --- !u!4 &1141116097
 Transform:
@@ -24265,7 +24282,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1141975711
 Transform:
@@ -24366,7 +24383,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1145480905
 Transform:
@@ -24467,7 +24484,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1145999890
 Transform:
@@ -24637,7 +24654,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1167369122
 Transform:
@@ -24738,7 +24755,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1168124489
 Transform:
@@ -24839,7 +24856,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1178520989
 Transform:
@@ -24945,7 +24962,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1186746447
 Transform:
@@ -25058,7 +25075,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1204064655
 Transform:
@@ -25275,7 +25292,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1207198927
 Transform:
@@ -25376,7 +25393,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1210882771
 Transform:
@@ -25477,7 +25494,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1211941774
 Transform:
@@ -25578,7 +25595,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1230699501
 Transform:
@@ -25679,7 +25696,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1236193727
 Transform:
@@ -25780,7 +25797,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1239412187
 Transform:
@@ -25996,7 +26013,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1243744982
 Transform:
@@ -26097,7 +26114,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1248615914
 Transform:
@@ -26198,7 +26215,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1248643923
 Transform:
@@ -26299,7 +26316,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1253363876
 Transform:
@@ -26400,7 +26417,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1255066508
 Transform:
@@ -26501,7 +26518,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1256189479
 Transform:
@@ -26602,7 +26619,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1257019178
 Transform:
@@ -26703,7 +26720,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1266215474
 Transform:
@@ -26804,7 +26821,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1267348303
 Transform:
@@ -26905,7 +26922,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1274044796
 Transform:
@@ -27006,7 +27023,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1277190518
 Transform:
@@ -27107,7 +27124,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1279439599
 Transform:
@@ -27208,7 +27225,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1287630513
 Transform:
@@ -27309,7 +27326,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1288395499
 Transform:
@@ -27410,7 +27427,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1291944700
 Transform:
@@ -27511,7 +27528,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1296463876
 Transform:
@@ -27612,7 +27629,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1299370026
 Transform:
@@ -27713,7 +27730,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1308866156
 Transform:
@@ -27814,7 +27831,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1310563553
 Transform:
@@ -28096,7 +28113,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1334446742
 Transform:
@@ -28197,7 +28214,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1336098719
 Transform:
@@ -28437,7 +28454,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1340131006
 Transform:
@@ -28538,7 +28555,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1341698231
 Transform:
@@ -28639,7 +28656,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1348053432
 Transform:
@@ -28740,7 +28757,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1357889653
 Transform:
@@ -28841,7 +28858,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1364215169
 Transform:
@@ -28942,7 +28959,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1374049559
 Transform:
@@ -29043,7 +29060,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1378206204
 Transform:
@@ -29228,7 +29245,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1383710390
 Transform:
@@ -29329,7 +29346,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1383802083
 Transform:
@@ -29458,7 +29475,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1393191518
 Transform:
@@ -29559,7 +29576,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1400952290
 Transform:
@@ -29660,7 +29677,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1401579382
 Transform:
@@ -29761,7 +29778,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1402702995
 Transform:
@@ -29862,7 +29879,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1402794828
 Transform:
@@ -29963,7 +29980,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1403258779
 Transform:
@@ -30064,7 +30081,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1410828946
 Transform:
@@ -30165,7 +30182,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1412639475
 Transform:
@@ -30266,7 +30283,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1413538845
 Transform:
@@ -30367,7 +30384,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1414001263
 Transform:
@@ -30468,7 +30485,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1421503201
 Transform:
@@ -30569,7 +30586,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1421639708
 Transform:
@@ -30670,7 +30687,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1423594788
 Transform:
@@ -30771,7 +30788,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1427283504
 Transform:
@@ -30872,7 +30889,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1431831195
 Transform:
@@ -30973,7 +30990,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1433958780
 Transform:
@@ -31074,7 +31091,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1435178849
 Transform:
@@ -31175,7 +31192,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1439419328
 Transform:
@@ -31276,7 +31293,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1441928879
 Transform:
@@ -31377,7 +31394,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1448803693
 Transform:
@@ -31478,7 +31495,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1452695180
 Transform:
@@ -31579,7 +31596,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1456623037
 Transform:
@@ -31680,7 +31697,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1457088779
 Transform:
@@ -31781,7 +31798,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1470287058
 Transform:
@@ -31882,7 +31899,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1471485670
 Transform:
@@ -31983,7 +32000,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1477581823
 Transform:
@@ -32084,7 +32101,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1478279462
 Transform:
@@ -32185,7 +32202,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1478323055
 Transform:
@@ -32286,7 +32303,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1485989456
 Transform:
@@ -32387,7 +32404,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1489177454
 Transform:
@@ -32488,7 +32505,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1501397293
 Transform:
@@ -32664,7 +32681,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1502296193
 Transform:
@@ -32835,7 +32852,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1531282897
 Transform:
@@ -32986,7 +33003,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1536512079
 Transform:
@@ -33087,7 +33104,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1538981345
 Transform:
@@ -33229,7 +33246,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1546283263
 Transform:
@@ -33399,7 +33416,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1555264147
 Transform:
@@ -33500,7 +33517,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1567897990
 Transform:
@@ -33601,7 +33618,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1570513064
 Transform:
@@ -33702,7 +33719,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1575042249
 Transform:
@@ -33803,7 +33820,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1579262434
 Transform:
@@ -34083,7 +34100,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1590789246
 Transform:
@@ -34184,7 +34201,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1596850028
 Transform:
@@ -34588,7 +34605,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1624321659
 Transform:
@@ -34689,7 +34706,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1629775011
 Transform:
@@ -34790,7 +34807,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1631288418
 Transform:
@@ -34891,7 +34908,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1636227359
 Transform:
@@ -34992,7 +35009,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1648043813
 Transform:
@@ -35093,7 +35110,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1650458448
 Transform:
@@ -35194,7 +35211,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1654111437
 Transform:
@@ -35295,7 +35312,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1659404279
 Transform:
@@ -35396,7 +35413,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1665202902
 Transform:
@@ -35497,7 +35514,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1667073324
 Transform:
@@ -35777,7 +35794,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1681113479
 Transform:
@@ -35878,7 +35895,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1681217573
 Transform:
@@ -35985,7 +36002,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1682365337
 Transform:
@@ -36169,7 +36186,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1686810851
 Transform:
@@ -36270,7 +36287,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1686847986
 Transform:
@@ -36371,7 +36388,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1686965218
 Transform:
@@ -36472,7 +36489,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1708457075
 Transform:
@@ -36573,7 +36590,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1710636826
 Transform:
@@ -36824,7 +36841,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1718764922
 Transform:
@@ -36925,7 +36942,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1719675366
 Transform:
@@ -37026,7 +37043,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1721117656
 Transform:
@@ -37127,7 +37144,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1728180015
 Transform:
@@ -37329,7 +37346,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1743129955
 Transform:
@@ -37436,7 +37453,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1745814843
 Transform:
@@ -37537,7 +37554,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1748902460
 Transform:
@@ -37638,7 +37655,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1764342793
 Transform:
@@ -37739,7 +37756,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1768615060
 Transform:
@@ -37840,7 +37857,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1772789967
 Transform:
@@ -37941,7 +37958,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1782510710
 Transform:
@@ -38042,7 +38059,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1784096783
 Transform:
@@ -38143,7 +38160,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1785397438
 Transform:
@@ -38244,7 +38261,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1785513262
 Transform:
@@ -38345,7 +38362,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1786405736
 Transform:
@@ -38446,7 +38463,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1796214824
 Transform:
@@ -38547,7 +38564,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1796889365
 Transform:
@@ -38648,7 +38665,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1800189992
 Transform:
@@ -38749,7 +38766,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1802636494
 Transform:
@@ -38855,7 +38872,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1813108604
 Transform:
@@ -39053,7 +39070,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1815476832
 Transform:
@@ -39154,7 +39171,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1820902411
 Transform:
@@ -39255,7 +39272,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1823118868
 Transform:
@@ -39356,7 +39373,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1823255604
 Transform:
@@ -39457,7 +39474,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1827373005
 Transform:
@@ -39629,7 +39646,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1843370360
 Transform:
@@ -39730,7 +39747,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1845830995
 Transform:
@@ -39831,7 +39848,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1846383172
 Transform:
@@ -39932,7 +39949,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1849345090
 Transform:
@@ -40123,7 +40140,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1873656145
 Transform:
@@ -40224,7 +40241,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1886236103
 Transform:
@@ -40415,7 +40432,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1888242327
 Transform:
@@ -40516,7 +40533,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1888456287
 Transform:
@@ -40617,7 +40634,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1888497719
 Transform:
@@ -40718,7 +40735,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1889750155
 Transform:
@@ -40819,7 +40836,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1898187493
 Transform:
@@ -40920,7 +40937,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1899580492
 Transform:
@@ -41021,7 +41038,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1902793188
 Transform:
@@ -41122,7 +41139,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1913833237
 Transform:
@@ -41414,7 +41431,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1919066506
 Transform:
@@ -41515,7 +41532,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1925566940
 Transform:
@@ -41616,7 +41633,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1928661019
 Transform:
@@ -41717,7 +41734,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1931257043
 Transform:
@@ -41818,7 +41835,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1932851236
 Transform:
@@ -41919,7 +41936,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1938721229
 Transform:
@@ -42020,7 +42037,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1942551332
 Transform:
@@ -42278,7 +42295,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1955350854
 Transform:
@@ -42379,7 +42396,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1959915752
 Transform:
@@ -42480,7 +42497,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1961355065
 Transform:
@@ -42581,7 +42598,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1964480086
 Transform:
@@ -42682,7 +42699,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1965493279
 Transform:
@@ -42855,7 +42872,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1982639357
 Transform:
@@ -42956,7 +42973,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1990441891
 Transform:
@@ -43057,7 +43074,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1997122027
 Transform:
@@ -43158,7 +43175,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1998107529
 Transform:
@@ -43259,7 +43276,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1998491291
 Transform:
@@ -43360,7 +43377,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2008165514
 Transform:
@@ -43461,7 +43478,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2015679073
 Transform:
@@ -43562,7 +43579,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2017407749
 Transform:
@@ -43663,7 +43680,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2022043379
 Transform:
@@ -43839,7 +43856,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2047485289
 Transform:
@@ -44025,7 +44042,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2050649677
 Transform:
@@ -44126,7 +44143,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2056155902
 Transform:
@@ -44227,7 +44244,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2060230610
 Transform:
@@ -44328,7 +44345,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2061002302
 Transform:
@@ -44429,7 +44446,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2062782572
 Transform:
@@ -44530,7 +44547,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2064463713
 Transform:
@@ -44631,7 +44648,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2067815939
 Transform:
@@ -44732,7 +44749,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2067992576
 Transform:
@@ -44987,7 +45004,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2074967466
 Transform:
@@ -45088,7 +45105,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2075163412
 Transform:
@@ -45194,7 +45211,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2077415884
 Transform:
@@ -45295,7 +45312,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2081212663
 Transform:
@@ -45396,7 +45413,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2084924773
 Transform:
@@ -45497,7 +45514,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2086841664
 Transform:
@@ -45598,7 +45615,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2087363115
 Transform:
@@ -45699,7 +45716,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2087393524
 Transform:
@@ -45800,7 +45817,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2092232659
 Transform:
@@ -45901,7 +45918,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2096148361
 Transform:
@@ -46002,7 +46019,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2099604611
 Transform:
@@ -46103,7 +46120,7 @@ GameObject:
   m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2105413636
 Transform:
@@ -46204,7 +46221,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2105865763
 Transform:
@@ -46305,7 +46322,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2110759514
 Transform:
@@ -46472,7 +46489,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2115575977
 Transform:
@@ -46573,7 +46590,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2118958065
 Transform:
@@ -46674,7 +46691,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2119626474
 Transform:
@@ -46807,7 +46824,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2120677131
 Transform:
@@ -46908,7 +46925,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2135142241
 Transform:
@@ -47009,7 +47026,7 @@ GameObject:
   m_TagString: LavaGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2137523201
 Transform:
@@ -47110,7 +47127,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2140644931
 Transform:
@@ -47211,7 +47228,7 @@ GameObject:
   m_TagString: DirtGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2145563944
 Transform:

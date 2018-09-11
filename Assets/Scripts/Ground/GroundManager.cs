@@ -22,15 +22,14 @@ namespace ComBlitz.Ground
 
         #endregion Singleton
 
-        [Header("Ground Spawn Stats")]
-        public Transform groundParent;
-
+        [Header("Ground Spawn Stats")] public Transform groundParent;
         public float fallWaitTime = 14;
         public int totalGroundsToFall = 7;
         public Material brokenGroundMaterial;
 
-        [Header("Debug")]
-        public bool fallOnStart;
+        [Header(("NavMesh"))] public NavMeshSurface navMeshSurface;
+
+        [Header("Debug")] public bool fallOnStart;
 
         private List<GameObject> grounds;
         private List<Rigidbody> groundsToFall;
@@ -74,7 +73,11 @@ namespace ComBlitz.Ground
 
         public void StopGroundFall() => StopCoroutine(coroutine);
 
-        public void AddGround(GameObject ground) => grounds.Add(ground);
+        public void AddGround(GameObject ground)
+        {
+            grounds.Add(ground);
+            navMeshSurface.BuildNavMesh();
+        }
 
         private void AddGroundChildToList()
         {
@@ -108,6 +111,7 @@ namespace ComBlitz.Ground
                         rb.isKinematic = false;
 
                     groundsToFall.Clear();
+                    navMeshSurface.BuildNavMesh();
                 }
 
                 yield return new WaitForSeconds(waitBetweenEachEnumRate);
