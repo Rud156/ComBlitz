@@ -158,7 +158,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnTransform: {fileID: 4095721153482846}
   unit: {fileID: 1525621529363744, guid: 58966cda3de10a54f8862a4d9d984e14, type: 2}
-  spawnEffect: {fileID: 0}
+  spawnEffect: {fileID: 1098653619415604, guid: 36541d28822baf24ba4d1716fff06728,
+    type: 2}
   waitBetweenSpawn: 10
   waitBeteweenEffectAndSpawn: 0.1
   spawnOnStart: 1

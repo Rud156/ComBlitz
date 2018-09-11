@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae55dbaf-a3cc-4893-afdf-e096f06d7d46" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effects/Bullet Fire/Bullet Fire.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects/Bullet Fire/Bullet Fire.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effects/Player Destroy/Player Destroy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects/Player Destroy/Player Destroy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Shooters/Laser.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Shooters/Laser.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Shooters/Missile Launcher.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Shooters/Missile Launcher.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Shooters/Turret.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Shooters/Turret.prefab" afterDir="false" />
+    <list default="true" id="ae55dbaf-a3cc-4893-afdf-e096f06d7d46" name="Default Changelist" comment="Added Base Prefab and Updated Factories">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ComBlitz/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ComBlitz/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factories/FactoriesCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/FactoriesCreator.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,28 +72,28 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="2101" />
+          <entry key="cs" value="2176" />
           <entry key="shader" value="13" />
-          <entry key="txt" value="110" />
+          <entry key="txt" value="155" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="2101" />
-          <entry key="PLAIN_TEXT" value="110" />
+          <entry key="C#" value="2176" />
+          <entry key="PLAIN_TEXT" value="155" />
           <entry key="ShaderLab" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ShaderGraph" value="2" />
-          <entry key="cs" value="14" />
+          <entry key="cs" value="17" />
           <entry key="shader" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="14" />
+          <entry key="C#" value="17" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="ShaderLab" value="1" />
         </counts>
@@ -125,12 +122,15 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ConstantData/TagManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scene/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shooters/ShooterTargetEnemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factories/FactoriesCreator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scene/PauseAndResume.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../NavMeshTest/Assets/Scenes/RunTimeBuild.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Extensions/DestroyOnContact.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/POLY STYLE - Vegetation Pack/Standard Assets/Effects/ImageEffects/Shaders/BlendModesOverlay.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Resources/ShopManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollowTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.render-pipelines.lightweight@3.0.0-preview/LWRP/DefaultRendererSetup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/DamageAmountSetter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scene/PlayAndQuit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ground/GroundManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NavMeshComponents/Scripts/NavMeshSurface.cs" root0="FORCE_HIGHLIGHTING" />
@@ -155,6 +155,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Shooters/ShooterTargetEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ConstantData/TagManager.cs" />
         <option value="$PROJECT_DIR$/Assets/POLY STYLE - Vegetation Pack/Standard Assets/Effects/ImageEffects/Shaders/BlendModesOverlay.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factories/FactoriesCreator.cs" />
       </list>
     </option>
   </component>
@@ -184,6 +185,11 @@
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
             </path>
           </expand>
           <select />
@@ -281,7 +287,7 @@
       <workItem from="1536637184070" duration="7302000" />
       <workItem from="1536645636795" duration="5827000" />
       <workItem from="1536654981508" duration="4802000" />
-      <workItem from="1536662908974" duration="8357000" />
+      <workItem from="1536662908974" duration="10194000" />
     </task>
     <task id="LOCAL-00001" summary="Adding Game Manager">
       <created>1536647106274</created>
@@ -374,11 +380,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536675105251</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added Base Prefab and Updated Factories">
+      <created>1536678754009</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1536678754009</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26288000" />
+    <option name="totallyTimeSpent" value="28125000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -468,7 +481,8 @@
     <MESSAGE value="Updated Shooters And Tags" />
     <MESSAGE value="Updated Shooter Prefabs" />
     <MESSAGE value="Added Shooter Bullets" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Shooter Bullets" />
+    <MESSAGE value="Added Base Prefab and Updated Factories" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Base Prefab and Updated Factories" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -824,6 +838,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1184">
           <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Common/DamageAmountSetter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <folding>
+            <marker date="1536504605462" expanded="true" signature="45:154" ph="{...}" />
+            <marker date="1536504605462" expanded="true" signature="99:152" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Extensions/DestroyOnContact.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <marker date="1536506404684" expanded="true" signature="49:191" ph="{...}" />
+            <marker date="1536506404684" expanded="true" signature="101:189" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Factories/FactoriesCreator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <marker date="1536678769847" expanded="false" signature="6:73" ph="..." />
+            <marker date="1536678769847" expanded="true" signature="103:1412" ph="{...}" />
+            <marker date="1536678769847" expanded="true" signature="155:1410" ph="{...}" />
+            <marker date="1536678769847" expanded="true" signature="610:789" ph="{...}" />
+            <marker date="1536678769847" expanded="true" signature="972:1404" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

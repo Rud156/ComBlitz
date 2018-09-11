@@ -32,8 +32,8 @@ namespace ComBlitz.Factories
         public void StartSpawn() => coroutine = StartCoroutine(SpawnUnits());
 
         public void StopSpawn() => StopCoroutine(coroutine);
-        
-        public IEnumerator SpawnUnits()
+
+        private IEnumerator SpawnUnits()
         {
             Instantiate(spawnEffect, spawnTransform.position, spawnEffect.transform.rotation);
 
