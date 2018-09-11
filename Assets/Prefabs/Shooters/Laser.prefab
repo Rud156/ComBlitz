@@ -129,7 +129,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1476899010229264}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.679836, y: 0.25, z: 41.031815}
+  m_LocalPosition: {x: 36.45165, y: 0.25, z: 40.917866}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4083299287254688}
@@ -291,6 +291,6 @@ MonoBehaviour:
   fireRate: 5
   projectileShooter: {fileID: 4361037319238486}
   projectileShotEffect: {fileID: 0}
-  projectile: {fileID: 0}
+  projectile: {fileID: 1334638396897952, guid: 7370ee96fb2fff842a67923b33d04a44, type: 2}
   projectileLaunchPoint: {fileID: 4939837093435628}
   launchSpeed: 50
