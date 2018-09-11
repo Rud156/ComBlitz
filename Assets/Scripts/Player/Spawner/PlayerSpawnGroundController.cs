@@ -24,11 +24,12 @@ namespace ComBlitz.Player.Spawner
 
         public Transform groundHolder;
         public Transform groundTracker;
-        public Renderer groundIndicator;
         public float initalSpawnHeightAbove = 1f;
+        public float overlapSphereRadius = 2f;
+
+        [Header(("Indicator"))] public Renderer groundIndicator;
         public Material incorrectGroundMaterial;
         public Material correctGroundMaterial;
-        public float overlapSphereRadius = 2f;
 
         private bool groundIsBeingPlaced;
         private GameObject groundToBePlaced;
@@ -55,6 +56,7 @@ namespace ComBlitz.Player.Spawner
             GameObject groundInstance = Instantiate(groundPrefab, transform.position, Quaternion.identity);
             groundInstance.transform.SetParent(groundTracker);
             groundInstance.transform.localPosition = Vector3.zero + Vector3.up * initalSpawnHeightAbove;
+            groundInstance.GetComponent<BoxCollider>().enabled = false;
 
             groundIsBeingPlaced = true;
             groundIndicator.gameObject.SetActive(true);
@@ -64,16 +66,15 @@ namespace ComBlitz.Player.Spawner
         private void CheckAndCreateGroundInWorld()
         {
             Collider[] colliders = Physics.OverlapSphere(groundTracker.position, overlapSphereRadius);
-
             bool clear = false;
 
             if (colliders.Length == 0)
             {
                 clear = true;
-                groundIndicator.material = incorrectGroundMaterial;
+                groundIndicator.material = correctGroundMaterial;
             }
             else
-                groundIndicator.material = correctGroundMaterial;
+                groundIndicator.material = incorrectGroundMaterial;
 
             if (clear && Input.GetMouseButtonDown(0))
             {
@@ -82,9 +83,11 @@ namespace ComBlitz.Player.Spawner
 
                 groundToBePlaced.transform.SetParent(groundHolder);
                 groundToBePlaced.transform.position = new Vector3(xPos, 0, zPos);
+                groundToBePlaced.GetComponent<BoxCollider>().enabled = true;
 
                 ShopManager.instance.UseOrbToPlaceSelectedObject();
                 groundIsBeingPlaced = false;
+                groundIndicator.gameObject.SetActive(true);
 
                 GroundManager.instance.AddGround(groundToBePlaced);
             }

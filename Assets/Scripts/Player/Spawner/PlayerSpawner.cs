@@ -23,10 +23,11 @@ namespace ComBlitz.Player.Spawner
 
         public Transform spawnerHolder;
         public Transform spawnPoint;
-        public Renderer spawnIndicator;
+        public float overlapSphereRadius = 2f;
+
+        [Header(("Indicator"))] public Renderer spawnIndicator;
         public Material incorrectPositionMaterial;
         public Material correctPositionMaterial;
-        public float overlapSphereRadius = 2f;
 
         private bool objectIsBeingPlaced;
         private string allowedTagName;
@@ -55,6 +56,7 @@ namespace ComBlitz.Player.Spawner
                 objectPrefab.transform.rotation);
             objectInstance.transform.SetParent(spawnPoint);
             objectInstance.transform.localPosition = Vector3.zero;
+            objectInstance.GetComponent<BoxCollider>().enabled = false;
 
             objectIsBeingPlaced = true;
             spawnIndicator.gameObject.SetActive(true);
@@ -76,10 +78,6 @@ namespace ComBlitz.Player.Spawner
             }
             else
                 spawnIndicator.material = incorrectPositionMaterial;
-            
-            Debug.Log($"Length: {colliders.Length}");
-            Debug.Log($"Tag: {colliders[0].tag}");
-            Debug.Log($"Allowed Tag: {allowedTagName}");
 
             if (objectCanBePlaced && Input.GetMouseButton(0))
             {
@@ -88,9 +86,11 @@ namespace ComBlitz.Player.Spawner
 
                 objectToBePlaced.transform.SetParent(spawnerHolder);
                 objectToBePlaced.transform.position = new Vector3(xPos, 0.25f, zPos);
+                objectToBePlaced.GetComponent<BoxCollider>().enabled = true;
 
                 ShopManager.instance.UseOrbToPlaceSelectedObject();
                 objectIsBeingPlaced = false;
+                spawnIndicator.gameObject.SetActive(false);
             }
         }
     }

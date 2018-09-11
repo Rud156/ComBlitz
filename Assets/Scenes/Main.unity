@@ -15745,18 +15745,6 @@ Prefab:
       propertyPath: spawnerHolder
       value: 
       objectReference: {fileID: 1388060395}
-    - target: {fileID: 4921034536849132, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4921034536849132, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4921034536849132, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
   m_IsPrefabAsset: 0
@@ -24247,7 +24235,7 @@ MonoBehaviour:
   brokenGroundMaterial: {fileID: 2100000, guid: 97aaa211d0a36c349920ca64c377c72c,
     type: 2}
   surface: {fileID: 113653229}
-  fallOnStart: 0
+  fallOnStart: 1
 --- !u!4 &1141116097
 Transform:
   m_ObjectHideFlags: 0

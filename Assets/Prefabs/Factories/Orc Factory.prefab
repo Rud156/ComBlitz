@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4449917037064976}
   - component: {fileID: 33725032364999796}
   - component: {fileID: 23138609531594474}
+  - component: {fileID: 65401710522123414}
   m_Layer: 0
   m_Name: Orc Factory
   m_TagString: Untagged
@@ -63,7 +64,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1530795250213420}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 42.033108, y: 0.25, z: 35.59639}
+  m_LocalPosition: {x: 38.297474, y: 0.25, z: 41.475067}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children:
   - {fileID: 4367339815163648}
@@ -113,3 +114,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1530795250213420}
   m_Mesh: {fileID: 4300000, guid: 928d64207c74913499e4eabd183c7ff7, type: 3}
+--- !u!65 &65401710522123414
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1530795250213420}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 17.38159, y: 16.945805, z: 25.381804}
+  m_Center: {x: 0, y: 1.8034852e-13, z: 12.690902}
