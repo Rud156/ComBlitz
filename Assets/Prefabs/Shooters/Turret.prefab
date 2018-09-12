@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4331280460561218}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret Launch Point
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -36,7 +36,7 @@ GameObject:
   - component: {fileID: 4605038527255772}
   - component: {fileID: 33825200710715770}
   - component: {fileID: 23507162173974120}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 54779897406418710}
   - component: {fileID: 208988238693447444}
   - component: {fileID: 114015136660124738}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 4668561495878450}
   - component: {fileID: 33738577823764402}
   - component: {fileID: 23137749591894182}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4275904973336024}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 4322543590474734}
   - component: {fileID: 33067923021579532}
   - component: {fileID: 23097532063458778}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1628262246522202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36.880726, y: 0.25, z: 39.3792}
+  m_LocalPosition: {x: 33.47399, y: 0.25, z: 24.852356}
   m_LocalScale: {x: 0.5, y: 0.5000007, z: 0.5000007}
   m_Children:
   - {fileID: 4605038527255772}
@@ -364,7 +364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistanceToTarget: 30
   minDistanceToTarget: 7
-  fireRate: 1
+  fireRate: 3
   projectileShooter: {fileID: 4275904973336024}
   projectileShotEffect: {fileID: 1506582911323858, guid: 16fbe165f8e3e074ab823398963a9773,
     type: 2}

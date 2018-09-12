@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4398924684567598}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 54210541075866166}
   - component: {fileID: 208459672908810878}
   - component: {fileID: 114381101808532020}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Missile Launcher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4604615802473004}
   - component: {fileID: 33596659644617896}
   - component: {fileID: 23747189549022544}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 4685931540989608}
   - component: {fileID: 33343925476061408}
   - component: {fileID: 23227238277601844}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4303242522970014}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Missile Launch Point
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
@@ -101,10 +101,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1844088919729510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03044, y: -0, z: 0.0091}
+  m_LocalPosition: {x: 0.14, y: 0.91, z: 3.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4604615802473004}
+  m_Father: {fileID: 4398924684567598}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4398924684567598
@@ -117,6 +117,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 2.7949069, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 4303242522970014}
   - {fileID: 4604615802473004}
   m_Father: {fileID: 4496299303707436}
   m_RootOrder: 1
@@ -128,7 +129,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1341711165756486}
   m_LocalRotation: {x: -0, y: -0, z: 0.0014235943, w: 0.999999}
-  m_LocalPosition: {x: 35.783363, y: 0.25, z: 29.364147}
+  m_LocalPosition: {x: 24.70098, y: 0.25, z: 24.05609}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4685931540989608}
@@ -142,14 +143,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1493629456267248}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100.000046}
-  m_Children:
-  - {fileID: 4303242522970014}
+  m_Children: []
   m_Father: {fileID: 4398924684567598}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -90, y: 90, z: 0}
 --- !u!4 &4685931540989608
 Transform:
   m_ObjectHideFlags: 1
@@ -289,14 +289,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistanceToTarget: 150
   minDistanceToTarget: 5
-  fireRate: 0.1
+  fireRate: 7
   projectileShooter: {fileID: 4398924684567598}
   projectileShotEffect: {fileID: 1812251654674256, guid: 1b68df145d05e764aaf8352ec89142a7,
     type: 2}
-  projectile: {fileID: 1237630641643976, guid: 614a8d37bb4d26c48aa75519ecb3cde1, type: 2}
+  projectile: {fileID: 1984098653808386, guid: 614a8d37bb4d26c48aa75519ecb3cde1, type: 2}
   projectileLaunchPoint: {fileID: 4303242522970014}
   launchSpeed: 20
-  playOnStart: 1
+  playOnStart: 0
 --- !u!208 &208459672908810878
 NavMeshObstacle:
   m_ObjectHideFlags: 1

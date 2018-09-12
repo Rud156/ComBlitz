@@ -82,14 +82,15 @@ namespace ComBlitz.Shooters
 
                 if (currentTarget != null)
                 {
-//                    GameObject shotEffectInstance = Instantiate(projectileShotEffect,
-//                        projectileLaunchPoint.position, Quaternion.identity);
-//                    shotEffectInstance.transform.rotation = targetLookRotation;
-//
-//                    GameObject projectileInstance = Instantiate(projectile,
-//                        projectileLaunchPoint.position, Quaternion.identity);
-//                    projectileInstance.GetComponent<Rigidbody>().velocity =
-//                        projectileLaunchPoint.forward * launchSpeed;
+                    GameObject shotEffectInstance = Instantiate(projectileShotEffect,
+                        projectileLaunchPoint.position, Quaternion.identity);
+                    shotEffectInstance.transform.rotation = targetLookRotation;
+
+                    GameObject projectileInstance = Instantiate(projectile,
+                        projectileLaunchPoint.position, Quaternion.identity);
+                    projectileInstance.transform.rotation = targetLookRotation;
+                    projectileInstance.GetComponent<Rigidbody>().velocity =
+                        projectileLaunchPoint.forward * launchSpeed;
                 }
 
                 yield return new WaitForSeconds(fireRate);

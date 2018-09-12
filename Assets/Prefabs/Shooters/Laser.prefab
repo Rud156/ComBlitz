@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4083299287254688}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Laser Beamer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   - component: {fileID: 4706410798693840}
   - component: {fileID: 33716731107645344}
   - component: {fileID: 23324685199890192}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ GameObject:
   - component: {fileID: 4361037319238486}
   - component: {fileID: 33257355117948658}
   - component: {fileID: 23771586130519160}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4399905304852716}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Turret Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 54542568948603176}
   - component: {fileID: 208937314682743024}
   - component: {fileID: 114507090305460150}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4939837093435628}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shot Point
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
@@ -130,14 +130,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1144514452905080}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4939837093435628}
+  m_Children: []
   m_Father: {fileID: 4399905304852716}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 90, z: 0}
 --- !u!4 &4399905304852716
 Transform:
   m_ObjectHideFlags: 1
@@ -148,6 +147,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 2.794907, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 4939837093435628}
   - {fileID: 4361037319238486}
   m_Father: {fileID: 4083299287254688}
   m_RootOrder: 1
@@ -159,7 +159,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1476899010229264}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.964962, y: 0.25, z: 32.22592}
+  m_LocalPosition: {x: 23.592058, y: 0.25, z: 34.197006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4083299287254688}
@@ -186,10 +186,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1734476803533326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.284, y: -0, z: 0.977}
+  m_LocalPosition: {x: -0.09, y: 0.97700024, z: 4.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4361037319238486}
+  m_Father: {fileID: 4399905304852716}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23324685199890192
@@ -318,13 +318,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistanceToTarget: 60
-  fireRate: 0.1
+  minDistanceToTarget: 5
+  fireRate: 1
   projectileShooter: {fileID: 4399905304852716}
   projectileShotEffect: {fileID: 1269660783041226, guid: ae60649a681c6374199279e84a8961d4,
     type: 2}
   projectile: {fileID: 1334638396897952, guid: 7370ee96fb2fff842a67923b33d04a44, type: 2}
   projectileLaunchPoint: {fileID: 4939837093435628}
   launchSpeed: 50
+  playOnStart: 0
 --- !u!208 &208937314682743024
 NavMeshObstacle:
   m_ObjectHideFlags: 1
@@ -334,9 +336,9 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_Extents: {x: 1.5, y: 1, z: 1}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 0
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
   m_TimeToStationary: 0.5
