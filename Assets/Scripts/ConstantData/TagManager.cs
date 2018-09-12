@@ -13,8 +13,8 @@
         public const string LavaGround = "LavaGround";
         public const string DirtGround = "DirtGround";
 
-        public const string GreenOrb = "GreenOrb";
-        public const string RedOrb = "RedOrb";
-        public const string YellowOrb = "YellowOrb";
+        public const string GreenOrb = "Green Orb";
+        public const string RedOrb = "Red Orb";
+        public const string YellowOrb = "Yellow Orb";
     }
 }
