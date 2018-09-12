@@ -741,6 +741,7 @@ GameObject:
   - component: {fileID: 195589668992467454}
   - component: {fileID: 114341029967481814}
   - component: {fileID: 114584237873100648}
+  - component: {fileID: 114518079939382318}
   m_Layer: 0
   m_Name: Orc Enemy
   m_TagString: Enemy
@@ -1921,6 +1922,21 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114518079939382318
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1805352117909408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0109063c914ca5b668d5170ed200a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbPrefab: {fileID: 1580830272148402, guid: 27af4a9555231d844a9e879b6ca812a1, type: 2}
+  sphereRadius: 10
+  minSpawnCount: 1
+  maxSpawnCount: 5
 --- !u!114 &114584237873100648
 MonoBehaviour:
   m_ObjectHideFlags: 1

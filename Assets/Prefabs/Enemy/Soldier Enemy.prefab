@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 195795396468296014}
   - component: {fileID: 114286940521929616}
   - component: {fileID: 114683921078814150}
+  - component: {fileID: 114836289614795684}
   m_Layer: 0
   m_Name: Soldier Enemy
   m_TagString: Enemy
@@ -1053,6 +1054,21 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114836289614795684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1216225746254208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0109063c914ca5b668d5170ed200a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbPrefab: {fileID: 1537342039620830, guid: e624374820262f7488b3c5b49a8cf6b0, type: 2}
+  sphereRadius: 10
+  minSpawnCount: 1
+  maxSpawnCount: 3
 --- !u!114 &114837232701572910
 MonoBehaviour:
   m_ObjectHideFlags: 1
