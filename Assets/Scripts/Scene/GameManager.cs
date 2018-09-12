@@ -102,7 +102,6 @@ namespace ComBlitz.Scene
 
         #endregion PauseMenu
 
-
         #region InventoryItem
 
         public void InventoryItemSelected()
@@ -119,7 +118,6 @@ namespace ComBlitz.Scene
             playerShooter.ActivateShooting();
             inventoryItemSelected = false;
         }
-
 
         private void DiscardSelectedInventoryItem()
         {

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using ComBlitz.Enemy.Base;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace ComBlitz.Common
@@ -8,8 +9,7 @@ namespace ComBlitz.Common
         public GameObject deathEffect;
         public float maxHealth;
 
-        [Header("UI Display")]
-        public Color minHealthColor = Color.red;
+        [Header("UI Display")] public Color minHealthColor = Color.red;
 
         public Color halfHealthColor = Color.yellow;
         public Color maxHealthColor = Color.green;
@@ -43,6 +43,10 @@ namespace ComBlitz.Common
         {
             if (currentHealth <= 0)
             {
+                SpawnOrbOnDeath spawnOrbOnDeath = GetComponent<SpawnOrbOnDeath>();
+                if (spawnOrbOnDeath != null)
+                    spawnOrbOnDeath.SpawnOrb();
+
                 Instantiate(deathEffect, transform.position, Quaternion.identity);
                 Destroy(gameObject);
             }

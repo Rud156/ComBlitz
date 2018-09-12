@@ -32,11 +32,7 @@ namespace ComBlitz.Player.Shooter
             if (stopShooting)
                 return;
 
-
-            if (Input.GetMouseButton(0))
-                playerAnimator.SetBool(PlayerContantData.PlayerShootAnimParam, true);
-            else
-                playerAnimator.SetBool(PlayerContantData.PlayerShootAnimParam, false);
+            playerAnimator.SetBool(PlayerContantData.PlayerShootAnimParam, Input.GetMouseButton(0));
         }
 
         private void ShootBullet()
