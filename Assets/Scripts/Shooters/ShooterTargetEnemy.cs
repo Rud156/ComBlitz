@@ -9,6 +9,7 @@ namespace ComBlitz.Shooters
     public class ShooterTargetEnemy : MonoBehaviour
     {
         [Header(("Shooter Stats"))] public float maxDistanceToTarget;
+        public float minDistanceToTarget;
         public float fireRate;
         public Transform projectileShooter;
         public GameObject projectileShotEffect;
@@ -17,9 +18,36 @@ namespace ComBlitz.Shooters
         public Transform projectileLaunchPoint;
         public float launchSpeed;
 
+        [Header("Debug")] public bool playOnStart;
+
         private Transform enemyHolder;
 
-        private void Start() => enemyHolder = GameObject.FindGameObjectWithTag(TagManager.EnemyHolder).transform;
+        private bool movementStarted;
+        private GameObject currentTarget;
+        private Quaternion targetLookRotation;
+
+        private void Start()
+        {
+            enemyHolder = GameObject.FindGameObjectWithTag(TagManager.EnemyHolder).transform;
+            movementStarted = false;
+            targetLookRotation = Quaternion.identity;
+
+            if (playOnStart)
+                StartShooting();
+        }
+
+        private void Update()
+        {
+            if (!movementStarted || currentTarget == null)
+                return;
+
+            Vector3 direction = currentTarget.transform.position -
+                                projectileLaunchPoint.position;
+            Quaternion lookRotation = Quaternion.LookRotation(direction);
+
+            targetLookRotation = Quaternion.Slerp(projectileLaunchPoint.rotation, lookRotation, 5 * Time.deltaTime);
+            projectileShooter.rotation = targetLookRotation;
+        }
 
         public void StartShooting() => StartCoroutine(FindAndShootEnemy());
 
@@ -27,16 +55,16 @@ namespace ComBlitz.Shooters
         {
             GameObject nearestEnemy = null;
             int childCount = enemyHolder.childCount;
-            float minDistance = maxDistanceToTarget;
-
+            float maxDistance = maxDistanceToTarget;
+            
             for (int i = 0; i < childCount; i++)
             {
                 GameObject enemy = enemyHolder.GetChild(i).gameObject;
                 float enemyDistance = Vector3.Distance(enemy.transform.position, transform.position);
 
-                if (enemyDistance <= minDistance)
+                if (enemyDistance <= maxDistance && enemyDistance >= minDistanceToTarget)
                 {
-                    minDistance = enemyDistance;
+                    maxDistance = enemyDistance;
                     nearestEnemy = enemy;
                 }
             }
@@ -46,26 +74,22 @@ namespace ComBlitz.Shooters
 
         private IEnumerator FindAndShootEnemy()
         {
+            movementStarted = true;
+
             while (true)
             {
-                GameObject nearestEnemy = GetNearestEnemy();
+                currentTarget = GetNearestEnemy();
 
-                if (nearestEnemy != null)
+                if (currentTarget != null)
                 {
-                    Vector3 direction = nearestEnemy.transform.position -
-                                        projectileLaunchPoint.transform.position;
-                    Quaternion lookRotation = Quaternion.LookRotation(direction);
-
-                    projectileShooter.transform.rotation = lookRotation;
-
-                    GameObject shotEffectInstance = Instantiate(projectileShotEffect,
-                        projectileLaunchPoint.transform.position, Quaternion.identity);
-                    shotEffectInstance.transform.rotation = lookRotation;
-
-                    GameObject projectileInstance = Instantiate(projectile,
-                        projectileLaunchPoint.transform.position, Quaternion.identity);
-                    projectileInstance.GetComponent<Rigidbody>().velocity =
-                        projectileLaunchPoint.transform.forward * launchSpeed;
+//                    GameObject shotEffectInstance = Instantiate(projectileShotEffect,
+//                        projectileLaunchPoint.position, Quaternion.identity);
+//                    shotEffectInstance.transform.rotation = targetLookRotation;
+//
+//                    GameObject projectileInstance = Instantiate(projectile,
+//                        projectileLaunchPoint.position, Quaternion.identity);
+//                    projectileInstance.GetComponent<Rigidbody>().velocity =
+//                        projectileLaunchPoint.forward * launchSpeed;
                 }
 
                 yield return new WaitForSeconds(fireRate);

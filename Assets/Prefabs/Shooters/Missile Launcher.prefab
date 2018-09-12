@@ -288,13 +288,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistanceToTarget: 150
-  fireRate: 7
+  minDistanceToTarget: 5
+  fireRate: 0.1
   projectileShooter: {fileID: 4398924684567598}
   projectileShotEffect: {fileID: 1812251654674256, guid: 1b68df145d05e764aaf8352ec89142a7,
     type: 2}
   projectile: {fileID: 1237630641643976, guid: 614a8d37bb4d26c48aa75519ecb3cde1, type: 2}
   projectileLaunchPoint: {fileID: 4303242522970014}
   launchSpeed: 20
+  playOnStart: 1
 --- !u!208 &208459672908810878
 NavMeshObstacle:
   m_ObjectHideFlags: 1
