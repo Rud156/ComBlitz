@@ -1,3 +1,4 @@
+using ComBlitz.Extensions;
 using ComBlitz.Scene.Data;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,7 +21,7 @@ namespace ComBlitz.Scene
                 survivedTime = PlayerPrefs.GetFloat(SceneData.TimePlayerPref);
 
             killsText.text = $"Highest Kills : {kills}";
-            timeText.text = $"Longest Survived Time : {survivedTime} s";
+            timeText.text = $"Longest Survived Time : {ExtensionFunctions.Format2DecimalPlace(survivedTime)} s";
         }
     }
 }

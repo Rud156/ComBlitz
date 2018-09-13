@@ -430,7 +430,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 3. Use <color="red">Left Mouse Button</color> to Shoot
+  m_Text: 3. Use <color="red">Left Mouse Button</color> to Shoot to Place items
 --- !u!222 &453803618
 CanvasRenderer:
   m_ObjectHideFlags: 0

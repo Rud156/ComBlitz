@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 65089905772502412}
   - component: {fileID: 208118184308634034}
   - component: {fileID: 114616331927694330}
+  - component: {fileID: 114704435848155648}
   m_Layer: 0
   m_Name: Base
   m_TagString: Base
@@ -118,6 +119,21 @@ MonoBehaviour:
   maxHealthColor: {r: 0, g: 1, b: 0, a: 1}
   healthSlider: {fileID: 0}
   healthFiller: {fileID: 0}
+--- !u!114 &114704435848155648
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1193134491502032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e68de84edc8e17148a9cb2e3d9bffa06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magnitude: 5
+  roughness: 3
+  fadeoutTime: 2
+  fadeinTime: 0.3
 --- !u!208 &208118184308634034
 NavMeshObstacle:
   m_ObjectHideFlags: 1

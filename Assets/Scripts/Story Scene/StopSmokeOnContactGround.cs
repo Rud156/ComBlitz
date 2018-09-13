@@ -1,4 +1,5 @@
 using ComBlitz.ConstantData;
+using EZCameraShake;
 using UnityEngine;
 
 namespace ComBlitz.StoryScene
@@ -13,7 +14,8 @@ namespace ComBlitz.StoryScene
             if (other.gameObject.CompareTag(TagManager.MainGround))
             {
                 Instantiate(explosionSmoke, transform.position, Quaternion.identity);
-                rocketSmoke.SetActive(false);   
+                rocketSmoke.SetActive(false);
+                CameraShaker.Instance.ShakeOnce(5, 5, 0.3f, 2);
             }
         }
     }
