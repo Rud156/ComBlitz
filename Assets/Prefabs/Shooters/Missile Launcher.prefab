@@ -376,7 +376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a617646bb76c90419b82923dfb610b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathEffect: {fileID: 1674681003994678, guid: 50f42120f414fcf47b75303ef3ce5967,
+  deathEffect: {fileID: 1946011766871224, guid: 22d3ddccf7e29c045b599bb399f9c7f7,
     type: 2}
   maxHealth: 150
   minHealthColor: {r: 1, g: 0, b: 0, a: 1}
