@@ -27,7 +27,7 @@ namespace ComBlitz.Enemy.Base
         private Transform baseTransform;
         private Transform shooterHolder;
 
-        protected bool enemyAttackPlaying;
+        private bool enemyAttackPlaying;
         protected string enemyMoveAnimParam;
         protected string enemyAttackAnimParam;
 
@@ -51,6 +51,8 @@ namespace ComBlitz.Enemy.Base
             ChangeTargetIfInPath();
             ChangeTargetToPlayerIfNear();
 
+            LookTowardsTarget();
+
             MoveTowardsTargetAndAttack();
             SetMovementAnimation();
 
@@ -59,6 +61,12 @@ namespace ComBlitz.Enemy.Base
 
         protected virtual void MoveTowardsTargetAndAttack()
         {
+            if (currentTarget == null)
+            {
+                enemyAgent.ResetPath();
+                return;
+            }
+
             if (enemyAttackPlaying)
                 enemyAgent.ResetPath();
             else
@@ -97,6 +105,18 @@ namespace ComBlitz.Enemy.Base
                 enemyAnimator.SetBool(enemyMoveAnimParam, true);
             else
                 enemyAnimator.SetBool(enemyMoveAnimParam, false);
+        }
+
+        private void LookTowardsTarget()
+        {
+            if (currentTarget == null)
+                return;
+
+            Vector3 lookDirection = currentTarget.position - transform.position;
+            lookDirection.y = 0;
+
+            Quaternion rotation = Quaternion.LookRotation(lookDirection);
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 5 * Time.deltaTime);
         }
 
         private void ChangeTargetIfInPath()

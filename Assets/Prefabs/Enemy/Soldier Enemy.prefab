@@ -952,7 +952,7 @@ MonoBehaviour:
   laserShooter: 5
   missileShooter: 5
   bullet: {fileID: 1801117671892260, guid: 3feb5ea7737a50848b3436d148691dc3, type: 2}
-  bulletLaunchVelocity: 70
+  bulletLaunchVelocity: 40
   bulletLaunchPoint: {fileID: 4217718887098452}
   minAttackDistance: 20
 --- !u!114 &114683921078814150
@@ -1071,7 +1071,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbPrefab: {fileID: 1537342039620830, guid: e624374820262f7488b3c5b49a8cf6b0, type: 2}
-  sphereRadius: 0.5
   minSpawnCount: 1
   maxSpawnCount: 3
 --- !u!114 &114837232701572910
