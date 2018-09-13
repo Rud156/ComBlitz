@@ -16,5 +16,7 @@ namespace ComBlitz.Extensions
 
             return (Mathf.Abs(number - a) > Mathf.Abs(b - number)) ? b : a;
         }
+        
+        public static string Format2DecimalPlace(float value) => value.ToString("0.##");
     }
 }

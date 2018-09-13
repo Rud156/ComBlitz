@@ -499,7 +499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistanceToTarget: 60
   minDistanceToTarget: 5
-  fireRate: 3
+  fireRate: 2
   projectileShooter: {fileID: 4399905304852716}
   projectileShotEffect: {fileID: 1269660783041226, guid: ae60649a681c6374199279e84a8961d4,
     type: 2}

@@ -23513,6 +23513,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1089935175}
   - component: {fileID: 1089935174}
+  - component: {fileID: 1089935177}
+  - component: {fileID: 1089935176}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -23545,6 +23547,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1089935176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1089935173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a5552303b54a99b9c30512f40171ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  killsText: {fileID: 664171013}
+  timeText: {fileID: 1859045232}
+--- !u!114 &1089935177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1089935173}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f38c42606db4684b03ad91cf8916964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayTextAnimator: {fileID: 0}
+  displayText: {fileID: 0}
 --- !u!1 &1111704906
 GameObject:
   m_ObjectHideFlags: 0

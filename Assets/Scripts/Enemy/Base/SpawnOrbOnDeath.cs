@@ -1,3 +1,4 @@
+using ComBlitz.Scene;
 using UnityEngine;
 
 namespace ComBlitz.Enemy.Base
@@ -21,6 +22,9 @@ namespace ComBlitz.Enemy.Base
 
                 Instantiate(orbPrefab, updatedPoint + transform.position, Quaternion.identity);
             }
+            
+            // Add Kill When Enemy Dead
+            ScoreManager.instance.AddKill();
         }
     }
 }

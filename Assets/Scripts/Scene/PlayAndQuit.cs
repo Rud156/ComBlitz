@@ -9,6 +9,7 @@ namespace ComBlitz.Scene
         public void PlayGame()
         {
             NextSceneData.sceneToLoad = 2;
+            NextSceneData.showInfo = false;
             SceneManager.LoadScene(1);
         }
 
