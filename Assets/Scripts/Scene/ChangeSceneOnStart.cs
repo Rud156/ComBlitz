@@ -36,7 +36,8 @@ namespace ComBlitz.Scene
         IEnumerator LoadNextSceneAsync()
         {
             loadingSlider.value = 0;
-            yield return new WaitForSeconds(bufferTime);
+            if (SceneData.showInfo)
+                yield return new WaitForSeconds(bufferTime);
 
             int sceneIndex = SceneData.sceneToLoad;
             AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
