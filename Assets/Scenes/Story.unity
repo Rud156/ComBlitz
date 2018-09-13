@@ -15249,6 +15249,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ba8a1e9d62f80449a7154cf5f7eb65f, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &704235875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1592147435637384, guid: 0ba8a1e9d62f80449a7154cf5f7eb65f,
+    type: 2}
+  m_PrefabInternal: {fileID: 704235874}
 --- !u!1 &708384411
 GameObject:
   m_ObjectHideFlags: 0
@@ -22854,6 +22859,7 @@ GameObject:
   - component: {fileID: 1108877518}
   - component: {fileID: 1108877517}
   - component: {fileID: 1108877521}
+  - component: {fileID: 1108877522}
   m_Layer: 0
   m_Name: Base
   m_TagString: Base
@@ -22950,6 +22956,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1108877522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1108877516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b6cd1da2f04165aa19aa5d3fa52b54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rocketSmoke: {fileID: 704235875}
+  explosionSmoke: {fileID: 1049266584710528, guid: 6c6460c1938b0d543859a41495d17b93,
+    type: 2}
 --- !u!1 &1112969133
 GameObject:
   m_ObjectHideFlags: 0
@@ -27716,6 +27736,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1367736454}
   - component: {fileID: 1367736455}
+  - component: {fileID: 1367736456}
   m_Layer: 0
   m_Name: Scene Manager
   m_TagString: Untagged
@@ -27751,9 +27772,20 @@ MonoBehaviour:
   dialogues:
   - Finally , I landed on this world ...
   - Now to make it mine ....
-  waitTimeBewteenDialogues: 0
+  waitTimeBewteenDialogues: 5
+--- !u!114 &1367736456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1367736453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0971ae6445bc44e8aeffbb7449aff8c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   fadeImage: {fileID: 845056349}
-  fadeRate: 0.3
+  fadeRate: 15
 --- !u!1 &1367878164
 GameObject:
   m_ObjectHideFlags: 0
@@ -27869,7 +27901,7 @@ GameObject:
   - component: {fileID: 1369084168}
   m_Layer: 9
   m_Name: MainGround
-  m_TagString: Untagged
+  m_TagString: MainGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 8
@@ -31776,7 +31808,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000005722, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -762.8, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1586493900

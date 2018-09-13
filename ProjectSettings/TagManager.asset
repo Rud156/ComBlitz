@@ -19,6 +19,7 @@ TagManager:
   - Enemy Orc
   - Shooter Missile
   - Shooter Bullet
+  - MainGround
   layers:
   - Default
   - TransparentFX
