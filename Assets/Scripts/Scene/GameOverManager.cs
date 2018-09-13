@@ -36,6 +36,8 @@ namespace ComBlitz.Scene
             playerObject = GameObject.FindGameObjectWithTag(TagManager.Player);
 
             sceenSwitcherActivated = false;
+
+            StartCoroutine(DisplayStartingText());
         }
 
         private void Update()
@@ -48,11 +50,16 @@ namespace ComBlitz.Scene
             }
         }
 
+        private IEnumerator DisplayStartingText()
+        {
+            yield return new WaitForSeconds(2f);
+            DisplayTextContent("Protect the Base and make sure not to fall off");
+        }
+
         private IEnumerator SwitchScreenAndGoToMainMenu()
         {
-            displayText.text = "Game Over";
-            displayTextAnimator.SetTrigger("FadeInOut");
-
+            DisplayTextContent("Game Over");
+            
             yield return new WaitForSeconds(3);
 
             NextSceneData.sceneTime = ScoreManager.instance.GetCurrentTime();
@@ -63,5 +70,11 @@ namespace ComBlitz.Scene
         }
 
         private bool CheckPlayerAndBase() => baseObject == null || playerObject == null;
+
+        private void DisplayTextContent(string text)
+        {
+            displayText.text = text;
+            displayTextAnimator.SetTrigger("FadeInOut");
+        }
     }
 }
