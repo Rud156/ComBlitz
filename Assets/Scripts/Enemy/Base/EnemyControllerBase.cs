@@ -7,15 +7,18 @@ namespace ComBlitz.Enemy.Base
 {
     public abstract class EnemyControllerBase : MonoBehaviour
     {
-        [Header("Other Target Stats")]
-        public float maxTargetSwitchDistance = 10f;
-
+        [Header("Other Target Stats")] public float maxTargetSwitchDistance = 10f;
         public float minPlayerTargetDistance = 10f;
 
-        [Header("Enemy Control Stats")]
-        public float enemyMovementThreshold = 1f;
-
+        [Header("Enemy Control Stats")] public float enemyMovementThreshold = 1f;
         public float waitBetweenAttackTime = 2f;
+
+        [Header("Target Stop Distance")] public float baseDistance;
+        public float playerDistance;
+        public float bulletShooter;
+        public float laserShooter;
+        public float missileShooter;
+
 
         protected NavMeshAgent enemyAgent;
         protected Animator enemyAnimator;
@@ -50,6 +53,8 @@ namespace ComBlitz.Enemy.Base
 
             MoveTowardsTargetAndAttack();
             SetMovementAnimation();
+
+            SetStoppingDistance();
         }
 
         protected virtual void MoveTowardsTargetAndAttack()
@@ -67,6 +72,23 @@ namespace ComBlitz.Enemy.Base
                         StartCoroutine(AttackPlayer());
                 }
             }
+        }
+
+        private void SetStoppingDistance()
+        {
+            if(currentTarget == null)
+                return;
+            
+            if (currentTarget.CompareTag(TagManager.Player))
+                enemyAgent.stoppingDistance = playerDistance;
+            else if (currentTarget.CompareTag(TagManager.Base))
+                enemyAgent.stoppingDistance = baseDistance;
+            else if (currentTarget.CompareTag(TagManager.BulletShooter))
+                enemyAgent.stoppingDistance = bulletShooter;
+            else if (currentTarget.CompareTag(TagManager.LaserShooter))
+                enemyAgent.stoppingDistance = laserShooter;
+            else if (currentTarget.CompareTag(TagManager.MissileShooter))
+                enemyAgent.stoppingDistance = missileShooter;
         }
 
         private void SetMovementAnimation()

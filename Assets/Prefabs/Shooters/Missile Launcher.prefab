@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114381101808532020}
   m_Layer: 10
   m_Name: Missile Launcher
-  m_TagString: Untagged
+  m_TagString: Shooter Missile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,7 +129,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1341711165756486}
   m_LocalRotation: {x: -0, y: -0, z: 0.0014235943, w: 0.999999}
-  m_LocalPosition: {x: 24.70098, y: 0.25, z: 24.05609}
+  m_LocalPosition: {x: 36.940422, y: 0.25, z: 51.17518}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4685931540989608}
@@ -306,7 +306,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 0.65, y: 2.5, z: 1}
+  m_Extents: {x: 1, y: 2.5, z: 0.75}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 0

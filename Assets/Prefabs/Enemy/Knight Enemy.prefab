@@ -877,7 +877,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1525621529363744}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.558445, y: 0.25, z: 11.300814}
+  m_LocalPosition: {x: 36.976357, y: 0.25, z: 31.837826}
   m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_Children:
   - {fileID: 4150816017394988}
@@ -972,6 +972,11 @@ MonoBehaviour:
   minPlayerTargetDistance: 10
   enemyMovementThreshold: 1
   waitBetweenAttackTime: 2
+  baseDistance: 2.9
+  playerDistance: 0.74
+  bulletShooter: 1.2
+  laserShooter: 1.4
+  missileShooter: 1.6
   swordContactPoint: {fileID: 65913911780710342}
 --- !u!114 &114349039704644016
 MonoBehaviour:

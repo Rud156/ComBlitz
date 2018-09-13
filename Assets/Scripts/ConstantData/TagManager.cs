@@ -16,5 +16,9 @@
         public const string GreenOrb = "Green Orb";
         public const string RedOrb = "Red Orb";
         public const string YellowOrb = "Yellow Orb";
+
+        public const string BulletShooter = "Shooter Bullet";
+        public const string LaserShooter = "Shooter Laser";
+        public const string MissileShooter = "Shooter Missile";
     }
 }

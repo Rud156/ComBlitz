@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 114015136660124738}
   m_Layer: 10
   m_Name: Turret
-  m_TagString: Untagged
+  m_TagString: Shooter Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186,7 +186,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1628262246522202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.47399, y: 0.25, z: 24.852356}
+  m_LocalPosition: {x: 36.64324, y: 0.25, z: 51.271015}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 4605038527255772}
@@ -381,7 +381,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 0.75, y: 2.5, z: 1}
+  m_Extents: {x: 0.65, y: 2.5, z: 0.5}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 0

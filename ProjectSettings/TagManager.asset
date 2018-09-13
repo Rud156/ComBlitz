@@ -17,6 +17,8 @@ TagManager:
   - Factory Holder
   - Enemy
   - Enemy Orc
+  - Shooter Missile
+  - Shooter Bullet
   layers:
   - Default
   - TransparentFX

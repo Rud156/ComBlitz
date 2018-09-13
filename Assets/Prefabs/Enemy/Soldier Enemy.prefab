@@ -946,6 +946,11 @@ MonoBehaviour:
   minPlayerTargetDistance: 20
   enemyMovementThreshold: 1
   waitBetweenAttackTime: 1
+  baseDistance: 7
+  playerDistance: 7
+  bulletShooter: 5
+  laserShooter: 5
+  missileShooter: 5
   bullet: {fileID: 1801117671892260, guid: 3feb5ea7737a50848b3436d148691dc3, type: 2}
   bulletLaunchVelocity: 70
   bulletLaunchPoint: {fileID: 4217718887098452}
