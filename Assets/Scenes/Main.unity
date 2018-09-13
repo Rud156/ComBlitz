@@ -15802,11 +15802,6 @@ Prefab:
       propertyPath: healthFiller
       value: 
       objectReference: {fileID: 1550834789}
-    - target: {fileID: 114571146085103434, guid: bc903bb7f0b9219419b352aa6280db79,
-        type: 2}
-      propertyPath: maxHealth
-      value: 55000000
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
   m_IsPrefabAsset: 0

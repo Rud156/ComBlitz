@@ -968,7 +968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathEffect: {fileID: 1674681003994678, guid: 50f42120f414fcf47b75303ef3ce5967,
     type: 2}
-  maxHealth: 40
+  maxHealth: 30
   minHealthColor: {r: 1, g: 0, b: 0, a: 1}
   halfHealthColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   maxHealthColor: {r: 0, g: 1, b: 0, a: 1}

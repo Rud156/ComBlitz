@@ -1034,7 +1034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 1801117671892260, guid: eae7a4a0cec31d347a804e599959218f, type: 2}
-  bulletLaunchVelocity: 50
+  bulletLaunchVelocity: 30
   bulletLaunchPoint: {fileID: 4276217187417220}
 --- !u!114 &114565329916497480
 MonoBehaviour:
