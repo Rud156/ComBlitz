@@ -5,8 +5,7 @@ namespace ComBlitz.Enemy.Soldier
 {
     public class SoldierController : EnemyControllerBase
     {
-        [Header("Soldier BUllet")]
-        public GameObject bullet;
+        [Header("Soldier BUllet")] public GameObject bullet;
 
         public float bulletLaunchVelocity;
         public Transform bulletLaunchPoint;
@@ -26,6 +25,9 @@ namespace ComBlitz.Enemy.Soldier
 
         protected override void MoveTowardsTargetAndAttack()
         {
+            if (!base.enemyAgent.isOnNavMesh)
+                return;
+
             if (base.currentTarget != null)
             {
                 base.enemyAgent.SetDestination(currentTarget.position);
