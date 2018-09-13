@@ -1,4 +1,5 @@
 using ComBlitz.Common;
+using EZCameraShake;
 using UnityEngine;
 
 namespace ComBlitz.Shooters
@@ -23,6 +24,7 @@ namespace ComBlitz.Shooters
                     healthAndDamage.ReduceHealth(damageAmountSetter.damageAmount);
             }
 
+            CameraShaker.Instance.ShakeOnce(3, 3, 2, 0.3f);
             Instantiate(explosionEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
