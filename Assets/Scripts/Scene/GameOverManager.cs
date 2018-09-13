@@ -62,11 +62,34 @@ namespace ComBlitz.Scene
             
             yield return new WaitForSeconds(3);
 
-            NextSceneData.sceneTime = ScoreManager.instance.GetCurrentTime();
-            NextSceneData.sceneKills = ScoreManager.instance.GetCurrentKills();
-            NextSceneData.showInfo = true;
+            int sceneKills = ScoreManager.instance.GetCurrentKills();
+            float sceneTime = ScoreManager.instance.GetCurrentTime();
 
+            SceneData.sceneTime = sceneTime;
+            SceneData.sceneKills = sceneKills;
+            SceneData.showInfo = true;
+
+            SaveScore(sceneKills, sceneTime);
             PauseAndResume.instance.GoToMainMenu();
+        }
+
+        private void SaveScore(int sceneKills, float sceneTime)
+        {
+            int kills = 0;
+            if (PlayerPrefs.HasKey(SceneData.KillsPlayerPref))
+                kills = PlayerPrefs.GetInt(SceneData.KillsPlayerPref);
+
+            float survivedTime = 0;
+            if (PlayerPrefs.HasKey(SceneData.TimePlayerPref))
+                survivedTime = PlayerPrefs.GetFloat(SceneData.TimePlayerPref);
+
+            if (sceneKills > kills)
+                kills = sceneKills;
+            if (sceneTime > survivedTime)
+                survivedTime = sceneTime;
+            
+            PlayerPrefs.SetInt(SceneData.KillsPlayerPref, kills);
+            PlayerPrefs.SetFloat(SceneData.TimePlayerPref, survivedTime);
         }
 
         private bool CheckPlayerAndBase() => baseObject == null || playerObject == null;

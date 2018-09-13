@@ -12,8 +12,8 @@ namespace ComBlitz.Scene
 
         public void PlayGame()
         {
-            NextSceneData.sceneToLoad = 2;
-            NextSceneData.showInfo = false;
+            SceneData.sceneToLoad = 2;
+            SceneData.showInfo = false;
             SceneManager.LoadScene(1);
         }
 

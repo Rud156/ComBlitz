@@ -18,11 +18,11 @@ namespace ComBlitz.Scene
         /// </summary>
         void Start()
         {
-            if (NextSceneData.showInfo)
+            if (SceneData.showInfo)
             {
                 infoText.SetActive(true);
                 infoText.GetComponent<Text>().text =
-                    $"Killed {NextSceneData.sceneKills} in {NextSceneData.sceneTime} s";
+                    $"Killed {SceneData.sceneKills} in {SceneData.sceneTime} s";
             }
             else
             {
@@ -38,7 +38,7 @@ namespace ComBlitz.Scene
             loadingSlider.value = 0;
             yield return new WaitForSeconds(bufferTime);
 
-            int sceneIndex = NextSceneData.sceneToLoad;
+            int sceneIndex = SceneData.sceneToLoad;
             AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
 
             while (!operation.isDone)

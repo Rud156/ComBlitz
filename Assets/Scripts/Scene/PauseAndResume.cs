@@ -46,7 +46,7 @@ namespace ComBlitz.Scene
         public void GoToMainMenu()
         {
             Time.timeScale = 1;
-            NextSceneData.sceneToLoad = 0;
+            SceneData.sceneToLoad = 0;
             SceneManager.LoadScene(1);
         }
     }
