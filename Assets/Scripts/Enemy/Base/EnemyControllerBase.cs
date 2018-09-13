@@ -38,8 +38,8 @@ namespace ComBlitz.Enemy.Base
             enemyAnimator = GetComponent<Animator>();
             enemyAgent = GetComponent<NavMeshAgent>();
 
-            playerTransform = GameObject.FindGameObjectWithTag(TagManager.Player).transform;
-            baseTransform = GameObject.FindGameObjectWithTag(TagManager.Base).transform;
+            playerTransform = GameObject.FindGameObjectWithTag(TagManager.Player)?.transform;
+            baseTransform = GameObject.FindGameObjectWithTag(TagManager.Base)?.transform;
             shooterHolder = GameObject.FindGameObjectWithTag(TagManager.ShooterHolder).transform;
 
             currentTarget = baseTransform;
@@ -121,7 +121,7 @@ namespace ComBlitz.Enemy.Base
 
         private void ChangeTargetIfInPath()
         {
-            int shootersChildCount = shooterHolder.transform.childCount;
+            int shootersChildCount = shooterHolder.childCount;
             float shortestDistance = maxTargetSwitchDistance;
             Transform potentialTarget = null;
 
@@ -145,6 +145,9 @@ namespace ComBlitz.Enemy.Base
 
         private void ChangeTargetToPlayerIfNear()
         {
+            if(playerTransform == null)
+                return;
+            
             float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
             if (distanceToPlayer <= minPlayerTargetDistance)
                 currentTarget = playerTransform;
