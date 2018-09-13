@@ -7340,6 +7340,11 @@ Prefab:
       propertyPath: healthFiller
       value: 
       objectReference: {fileID: 1166874180}
+    - target: {fileID: 114616331927694330, guid: 307fa029f7bc2444599960e6c6ff71a8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 307fa029f7bc2444599960e6c6ff71a8, type: 2}
   m_IsPrefabAsset: 0
@@ -15818,6 +15823,11 @@ Prefab:
       propertyPath: groundHolder
       value: 
       objectReference: {fileID: 872618379}
+    - target: {fileID: 114571146085103434, guid: bc903bb7f0b9219419b352aa6280db79,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc903bb7f0b9219419b352aa6280db79, type: 2}
   m_IsPrefabAsset: 0

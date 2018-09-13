@@ -972,8 +972,8 @@ MonoBehaviour:
   minPlayerTargetDistance: 10
   enemyMovementThreshold: 1
   waitBetweenAttackTime: 2
-  baseDistance: 2.9
-  playerDistance: 0.74
+  baseDistance: 3
+  playerDistance: 1.5
   bulletShooter: 1.2
   laserShooter: 1.4
   missileShooter: 1.6
@@ -1102,7 +1102,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbPrefab: {fileID: 1529689746159532, guid: 2ef4767d0fdb9f34bb1a5cc810d93604, type: 2}
-  sphereRadius: 5
   minSpawnCount: 1
   maxSpawnCount: 3
 --- !u!114 &114835494676237602

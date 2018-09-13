@@ -76,9 +76,9 @@ namespace ComBlitz.Enemy.Base
 
         private void SetStoppingDistance()
         {
-            if(currentTarget == null)
+            if (currentTarget == null)
                 return;
-            
+
             if (currentTarget.CompareTag(TagManager.Player))
                 enemyAgent.stoppingDistance = playerDistance;
             else if (currentTarget.CompareTag(TagManager.Base))

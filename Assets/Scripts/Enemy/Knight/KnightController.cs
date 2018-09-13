@@ -5,8 +5,7 @@ namespace ComBlitz.Enemy.Knight
 {
     public class KnightController : EnemyControllerBase
     {
-        [Header("Sword")]
-        public BoxCollider swordContactPoint;
+        [Header("Sword")] public BoxCollider swordContactPoint;
 
         private void Start()
         {
@@ -14,16 +13,14 @@ namespace ComBlitz.Enemy.Knight
             base.enemyMoveAnimParam = "KnightMoving";
 
             base.Init();
+
+            swordContactPoint.enabled = false;
         }
 
-        private void Update()
-        {
-            if (base.enemyAttackPlaying)
-                swordContactPoint.enabled = true;
-            else
-                swordContactPoint.enabled = false;
+        private void Update() => base.UpdateEnemy();
 
-            base.UpdateEnemy();
-        }
+        public void EnableSwordContact() => swordContactPoint.enabled = true;
+
+        public void DisableSwordContact() => swordContactPoint.enabled = false;
     }
 }

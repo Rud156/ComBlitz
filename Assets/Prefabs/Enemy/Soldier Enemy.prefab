@@ -1071,7 +1071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orbPrefab: {fileID: 1537342039620830, guid: e624374820262f7488b3c5b49a8cf6b0, type: 2}
-  sphereRadius: 10
+  sphereRadius: 0.5
   minSpawnCount: 1
   maxSpawnCount: 3
 --- !u!114 &114837232701572910
