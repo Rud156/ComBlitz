@@ -18,7 +18,7 @@ namespace ComBlitz.StoryScene
             if (instance == null)
                 instance = this;
 
-            if (instance != null)
+            if (instance != this)
                 Destroy(gameObject);
         }
 
