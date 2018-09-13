@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using ComBlitz.Extensions;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -22,7 +23,7 @@ namespace ComBlitz.Scene
             {
                 infoText.SetActive(true);
                 infoText.GetComponent<Text>().text =
-                    $"Killed {SceneData.sceneKills} in {SceneData.sceneTime} s";
+                    $"Killed {SceneData.sceneKills} in {ExtensionFunctions.Format2DecimalPlace(SceneData.sceneTime)} s";
             }
             else
             {
