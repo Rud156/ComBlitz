@@ -49,7 +49,8 @@ namespace ComBlitz.Scene
 
         private void Update()
         {
-            if (!Input.GetKeyDown(KeyCode.Escape)) return;
+            if (!Input.GetKeyDown(KeyCode.Escape))
+                return;
 
             if (inventoryItemSelected)
                 DiscardSelectedInventoryItem();

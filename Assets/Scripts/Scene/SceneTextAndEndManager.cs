@@ -7,11 +7,11 @@ using UnityEngine.UI;
 
 namespace ComBlitz.Scene
 {
-    public class GameOverManager : MonoBehaviour
+    public class SceneTextAndEndManager : MonoBehaviour
     {
         #region Singleton
 
-        private static GameOverManager instance;
+        private static SceneTextAndEndManager instance;
 
         private void Awake()
         {
@@ -49,7 +49,10 @@ namespace ComBlitz.Scene
             bool gameOver = CheckPlayerAndBase();
             if (gameOver && !sceenSwitcherActivated)
             {
-                DisplayTextContent("Game Over");
+                if (baseObject == null)
+                    DisplayTextContent("Your base was destroyed ...");
+                else
+                    DisplayTextContent("You were killed in action ...");
                 StartCoroutine(ActivateFadeOut());
                 sceenSwitcherActivated = true;
             }
