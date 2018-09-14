@@ -10,7 +10,6 @@ A game where surviving your own onslaught is the goal. Grounds fall off and ever
 
 ### Download Link: https://rud156.itch.io/comblitz
 
-
 ### Screenshots:
 ![Main Screen](./Screenshots/Shot_1.png)
 ![Game World](./Screenshots/Shot_2.png)
