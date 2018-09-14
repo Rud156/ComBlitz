@@ -1,6 +1,6 @@
 # ComBlitz
 A game where surviving your own onslaught is the goal. Grounds fall off and everything can damage everything. Just try to survive for as long as possible.
-> All assets are free assets downloaded from the [Unity Asset Store](https://assetstore.unity.com/). Music is taken from [Freesound](https://freesound.org/).
+> Buildings and Character assets used are free assets downloaded from the [Unity Asset Store](https://assetstore.unity.com/). Music is taken from [Freesound](https://freesound.org/).
 
 ### Controls
 - Use `WASD` to move around
