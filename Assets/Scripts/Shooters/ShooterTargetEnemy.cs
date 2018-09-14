@@ -79,6 +79,8 @@ namespace ComBlitz.Shooters
             while (true)
             {
                 currentTarget = GetNearestEnemy();
+                
+                yield return new WaitForSeconds(fireRate);
 
                 if (currentTarget != null)
                 {
@@ -92,8 +94,6 @@ namespace ComBlitz.Shooters
                     projectileInstance.GetComponent<Rigidbody>().velocity =
                         projectileLaunchPoint.forward * launchSpeed;
                 }
-
-                yield return new WaitForSeconds(fireRate);
             }
         }
     }
