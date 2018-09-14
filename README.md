@@ -4,6 +4,7 @@ A game where surviving your own onslaught is the goal. Grounds fall off and ever
 ### Controls
 - Use `WASD` to move around
 - Use the `Mouse` to look around and target enemies
+- Use the `Left Mouse Button` to shoot and place objects
 - Use `Q` to open the inventory
 - Use `Esc` to close menus
 
