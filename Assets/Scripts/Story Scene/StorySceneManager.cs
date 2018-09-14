@@ -9,7 +9,7 @@ namespace ComBlitz.StoryScene
     {
         #region Singleton
 
-        private static StorySceneManager instance;
+        public static StorySceneManager instance;
 
         private void Awake()
         {
@@ -24,9 +24,12 @@ namespace ComBlitz.StoryScene
 
         public Rigidbody baseRocketBody;
 
+        private bool sceneFadeOutStarted;
+
         private void Start()
         {
             baseRocketBody.isKinematic = true;
+            sceneFadeOutStarted = false;
             
             DialogueManager.instance.dialogueComplete += FadeOutScene;
             Fader.instance.fadeInComplete += ActivateScene;
@@ -40,8 +43,17 @@ namespace ComBlitz.StoryScene
             Fader.instance.fadeInComplete -= ActivateScene;
             Fader.instance.fadeOutComplete -= DeactivateScene;
         }
-        
-        private void FadeOutScene() => Fader.instance.StartFadeOut();
+
+        public void SkipScene() => FadeOutScene();
+
+        private void FadeOutScene()
+        {
+            if(sceneFadeOutStarted)
+                return;
+
+            sceneFadeOutStarted = true;
+            Fader.instance.StartFadeOut();
+        }
 
         private void ActivateScene()
         {
