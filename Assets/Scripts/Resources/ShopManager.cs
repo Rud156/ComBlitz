@@ -79,6 +79,7 @@ namespace ComBlitz.Resources
 
         [Header("Inventory")] public GameObject inventory;
 
+        private bool stopShopOpening;
         private ShopItem _selectedItem;
 
         private ShopItem SelectedItem
@@ -93,18 +94,22 @@ namespace ComBlitz.Resources
 
         private void Start()
         {
+            stopShopOpening = false;
             SelectedItem = null;
             inventory.SetActive(false);
         }
 
         private void Update()
         {
+            if (stopShopOpening)
+                return;
+
             RenderSelectedItem();
             SetActiveItemToUi();
 
             if (Input.GetKeyDown(KeyCode.Q))
                 OpenInventory();
-            
+
             CheckAndRenderAllShopItems();
         }
 
@@ -151,6 +156,10 @@ namespace ComBlitz.Resources
                 itemOrangeOrbCount.text = $"X {SelectedItem.orangeOrbsCount}";
             }
         }
+
+        public void ActivateShop() => stopShopOpening = false;
+
+        public void DeActivateShop() => stopShopOpening = true;
 
         public void OpenInventory()
         {

@@ -12,6 +12,7 @@ namespace ComBlitz.Player.Movement
 
         private Animator playerAnimator;
         private Rigidbody playerRB;
+        private bool stopMovement;
 
         /// <summary>
         /// Start is called on the frame when a script is enabled just before any of the Update
@@ -21,6 +22,8 @@ namespace ComBlitz.Player.Movement
         {
             playerAnimator = GetComponent<Animator>();
             playerRB = GetComponent<Rigidbody>();
+
+            stopMovement = false;
         }
 
         /// <summary>
@@ -28,12 +31,19 @@ namespace ComBlitz.Player.Movement
         /// </summary>
         private void Update()
         {
+            if (stopMovement)
+                return;
+
             MovePlayerVerticalAndHorizontal();
 
             SetAndLimitPlayerAnimation();
 
             PointPlayerTowardsMouse();
         }
+
+        public void ActivateMovement() => stopMovement = false;
+
+        public void DeActivateMovement() => stopMovement = true;
 
         private void MovePlayerVerticalAndHorizontal()
         {

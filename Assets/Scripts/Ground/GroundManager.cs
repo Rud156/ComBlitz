@@ -65,6 +65,8 @@ namespace ComBlitz.Ground
         /// </summary>
         private void Update() => AddGroundChildToList();
 
+        public void ActivateGroundFalling() => StartGroundFall();
+
         public void StartGroundFall()
         {
             groundsToFall.Clear();

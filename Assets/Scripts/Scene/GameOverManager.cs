@@ -1,6 +1,7 @@
 using System.Collections;
 using ComBlitz.ConstantData;
 using ComBlitz.Scene.Data;
+using ComBlitz.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,6 +24,8 @@ namespace ComBlitz.Scene
 
         #endregion Singleton
 
+        public float waitForFadeOutTime = 3f;
+
         [Header("UI Display")] public Animator displayTextAnimator;
         public Text displayText;
 
@@ -37,7 +40,8 @@ namespace ComBlitz.Scene
 
             sceenSwitcherActivated = false;
 
-            StartCoroutine(DisplayStartingText());
+            DisplayStartingText();
+            Fader.instance.fadeOutComplete += SwitchScreenAndGoToMainMenu;
         }
 
         private void Update()
@@ -45,23 +49,24 @@ namespace ComBlitz.Scene
             bool gameOver = CheckPlayerAndBase();
             if (gameOver && !sceenSwitcherActivated)
             {
-                StartCoroutine(SwitchScreenAndGoToMainMenu());
+                DisplayTextContent("Game Over");
+                StartCoroutine(ActivateFadeOut());
                 sceenSwitcherActivated = true;
             }
         }
 
-        private IEnumerator DisplayStartingText()
+        private void OnDestroy() => Fader.instance.fadeOutComplete -= SwitchScreenAndGoToMainMenu;
+
+        private IEnumerator ActivateFadeOut()
         {
-            yield return new WaitForSeconds(2f);
-            DisplayTextContent("Protect the Base and make sure not to fall off");
+            yield return new WaitForSeconds(waitForFadeOutTime);
+            Fader.instance.StartFadeOut();
         }
 
-        private IEnumerator SwitchScreenAndGoToMainMenu()
-        {
-            DisplayTextContent("Game Over");
-            
-            yield return new WaitForSeconds(3);
+        private void DisplayStartingText() => DisplayTextContent("Protect the Base and make sure not to fall off");
 
+        private void SwitchScreenAndGoToMainMenu()
+        {
             int sceneKills = ScoreManager.instance.GetCurrentKills();
             float sceneTime = ScoreManager.instance.GetCurrentTime();
 
@@ -87,7 +92,7 @@ namespace ComBlitz.Scene
                 kills = sceneKills;
             if (sceneTime > survivedTime)
                 survivedTime = sceneTime;
-            
+
             PlayerPrefs.SetInt(SceneData.KillsPlayerPref, kills);
             PlayerPrefs.SetFloat(SceneData.TimePlayerPref, survivedTime);
         }

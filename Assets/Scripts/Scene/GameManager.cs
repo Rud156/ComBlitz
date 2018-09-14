@@ -1,5 +1,8 @@
-﻿using ComBlitz.Player.Shooter;
+﻿using ComBlitz.Ground;
+using ComBlitz.Player.Movement;
+using ComBlitz.Player.Shooter;
 using ComBlitz.Resources;
+using ComBlitz.UI;
 using UnityEngine;
 
 namespace ComBlitz.Scene
@@ -22,6 +25,7 @@ namespace ComBlitz.Scene
         #endregion Singleton
 
         public PlayerShootController playerShooter;
+        public PlayerMoveController playerMovement;
 
         private bool inventoryItemSelected;
         private bool inventoryOpen;
@@ -32,7 +36,14 @@ namespace ComBlitz.Scene
             inventoryOpen = false;
             pauseMenuOpen = false;
             inventoryItemSelected = false;
+
+            Fader.instance.fadeInComplete += FadeInComplete;
+            playerShooter.DeActivateShooting();
+            playerMovement.DeActivateMovement();
+            ShopManager.instance.DeActivateShop();
         }
+
+        private void OnDestroy() => Fader.instance.fadeInComplete -= FadeInComplete;
 
         private void Update()
         {
@@ -59,6 +70,18 @@ namespace ComBlitz.Scene
 
             OpenPauseMenu();
         }
+
+        #region SceneFader
+
+        public void FadeInComplete()
+        {
+            playerShooter.ActivateShooting();
+            playerMovement.ActivateMovement();
+            ShopManager.instance.ActivateShop();
+            GroundManager.instance.ActivateGroundFalling();
+        }
+
+        #endregion SceneFader
 
         #region Inventory
 
