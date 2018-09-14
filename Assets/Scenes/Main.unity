@@ -14073,7 +14073,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.15579224, y: -0.000030517578}
+  m_AnchoredPosition: {x: 0.15570068, y: -0.000030517578}
   m_SizeDelta: {x: 0.31152344, y: -21.074326}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &649963116
@@ -25510,7 +25510,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.000000012394588}
   m_SizeDelta: {x: -161.98853, y: 1.8513489}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1205649606
@@ -32928,9 +32928,9 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 316.04, y: -69.77501}
-  m_SizeDelta: {x: 624.1, y: 79.55}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -69.8}
+  m_SizeDelta: {x: -30, y: 79.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1501950643
 MonoBehaviour:
@@ -32964,7 +32964,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The Knight Factory produces... Well Knights
+  m_Text: This is a very long text that is probably only going to be here and does
+    not have any other reason.
 --- !u!222 &1501950644
 CanvasRenderer:
   m_ObjectHideFlags: 0
