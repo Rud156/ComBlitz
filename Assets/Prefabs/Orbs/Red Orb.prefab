@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4885536602482870}
   - component: {fileID: 198568489805203536}
   - component: {fileID: 199267821365788920}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 33887518347997216}
   - component: {fileID: 23353231995065034}
   - component: {fileID: 135362052986634064}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Red Orb
   m_TagString: Red Orb
   m_Icon: {fileID: 0}
