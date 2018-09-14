@@ -7,6 +7,8 @@ A game where surviving your own onslaught is the goal. Grounds fall off and ever
 - Use `Q` to open the inventory
 - Use `Esc` to close menus
 
+### Download Link: https://rud156.itch.io/comblitz
+
 
 ### Screenshots:
 ![Main Screen](./Screenshots/Shot_1.png)
