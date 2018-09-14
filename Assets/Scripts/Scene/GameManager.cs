@@ -38,6 +38,8 @@ namespace ComBlitz.Scene
             inventoryItemSelected = false;
 
             Fader.instance.fadeInComplete += FadeInComplete;
+            Fader.instance.StartFadeIn();
+
             playerShooter.DeActivateShooting();
             playerMovement.DeActivateMovement();
             ShopManager.instance.DeActivateShop();

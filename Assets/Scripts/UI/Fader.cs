@@ -68,10 +68,12 @@ namespace ComBlitz.UI
 
             fadeInComplete?.Invoke();
             activateFadeIn = false;
+            fadeImage.gameObject.SetActive(false);
         }
 
         public void StartFadeOut()
         {
+            fadeImage.gameObject.SetActive(true);
             currentAlpha = 0;
             fadeImage.color = new Color(0, 0, 0, 0);
 
