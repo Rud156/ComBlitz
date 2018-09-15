@@ -1052,6 +1052,8 @@ MonoBehaviour:
   bullet: {fileID: 1801117671892260, guid: eae7a4a0cec31d347a804e599959218f, type: 2}
   bulletLaunchVelocity: 30
   bulletLaunchPoint: {fileID: 4276217187417220}
+  bulletAudioPrefab: {fileID: 1613864337132896, guid: 3c0454d3a0f80d24095e35a4df0386ef,
+    type: 2}
 --- !u!114 &114565329916497480
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -9,6 +9,7 @@ namespace ComBlitz.Player.Shooter
         public GameObject bullet;
         public float bulletLaunchVelocity;
         public Transform bulletLaunchPoint;
+        public GameObject bulletAudioPrefab;
 
         private Animator playerAnimator;
         private bool stopShooting;
@@ -39,6 +40,10 @@ namespace ComBlitz.Player.Shooter
         {
             GameObject bulletInstance = Instantiate(bullet, bulletLaunchPoint.position, Quaternion.identity);
             bulletInstance.GetComponent<Rigidbody>().velocity = bulletLaunchVelocity * transform.forward;
+
+            GameObject bulletAudioInstance = Instantiate(bulletAudioPrefab, transform.position, Quaternion.identity);
+            bulletAudioInstance.transform.SetParent(gameObject.transform);
+            Destroy(bulletAudioInstance, 0.6f);
         }
     }
 }
