@@ -39,7 +39,11 @@ namespace ComBlitz.UI
         private bool activateFadeOut;
         private float currentAlpha;
 
-        private void Start() => fadeImage = GetComponent<Image>();
+        private void Start()
+        {
+            fadeImage = GetComponent<Image>();
+            currentAlpha = ExtensionFunctions.Map(fadeImage.color.a, 0, 1, 0, 255);
+        }
 
         private void Update()
         {
@@ -51,9 +55,6 @@ namespace ComBlitz.UI
 
         public void StartFadeIn()
         {
-            currentAlpha = 255;
-            fadeImage.color = Color.black;
-
             activateFadeIn = true;
             activateFadeOut = false;
         }
@@ -61,7 +62,11 @@ namespace ComBlitz.UI
         private void FadeIn()
         {
             currentAlpha -= fadeInRate * Time.deltaTime;
-            fadeImage.color = ExtensionFunctions.ConvertAndClampColor(0, 0, 0, currentAlpha);
+
+            Color fadeImageColor = fadeImage.color;
+            fadeImage.color =
+                ExtensionFunctions.ConvertAndClampColor(fadeImageColor.r, fadeImageColor.g, fadeImageColor.b,
+                    currentAlpha);
 
             if (!(currentAlpha <= 0))
                 return;
@@ -74,8 +79,6 @@ namespace ComBlitz.UI
         public void StartFadeOut()
         {
             fadeImage.gameObject.SetActive(true);
-            currentAlpha = 0;
-            fadeImage.color = new Color(0, 0, 0, 0);
 
             activateFadeOut = true;
             activateFadeIn = false;
@@ -84,7 +87,11 @@ namespace ComBlitz.UI
         private void FadeOut()
         {
             currentAlpha += fadeOutRate * Time.deltaTime;
-            fadeImage.color = ExtensionFunctions.ConvertAndClampColor(0, 0, 0, currentAlpha);
+
+            Color fadeImageColor = fadeImage.color;
+            fadeImage.color =
+                ExtensionFunctions.ConvertAndClampColor(fadeImageColor.r, fadeImageColor.g, fadeImageColor.b,
+                    currentAlpha);
 
             if (!(currentAlpha >= 255))
                 return;

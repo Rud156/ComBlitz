@@ -6,13 +6,12 @@ namespace ComBlitz.CustomCamera
 {
     public class CameraFollowTarget : MonoBehaviour
     {
-        [Header("Base Stats")]
-        public float followSpeed = 10f;
+        [Header("Base Stats")] public float followSpeed = 10f;
         public float lookAtSpeed = 10f;
         public Vector3 cameraOffset;
+        public bool useRotation = true;
 
-        [Header("Target")]
-        public Transform target;
+        [Header("Target")] public Transform target;
 
         private Vector3 lastTargetPosition;
 
@@ -26,7 +25,8 @@ namespace ComBlitz.CustomCamera
         {
             UpdateLastTargetPosition();
 
-            LootAtTarget();
+            if (useRotation)
+                LootAtTarget();
             MoveToTarget();
         }
 
@@ -48,9 +48,9 @@ namespace ComBlitz.CustomCamera
             Vector3 upVector = Vector3.up;
 
             Vector3 targetPosition = targetVector +
-                forwardVector * cameraOffset.z +
-                rightVector * cameraOffset.x +
-                upVector * cameraOffset.y;
+                                     forwardVector * cameraOffset.z +
+                                     rightVector * cameraOffset.x +
+                                     upVector * cameraOffset.y;
 
             transform.position = Vector3.Lerp(transform.position, targetPosition,
                 followSpeed * Time.deltaTime);
