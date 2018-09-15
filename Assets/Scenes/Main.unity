@@ -7202,7 +7202,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4165198565548732, guid: 307fa029f7bc2444599960e6c6ff71a8, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114616331927694330, guid: 307fa029f7bc2444599960e6c6ff71a8,
         type: 2}
@@ -15206,7 +15206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -24875,7 +24875,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1166874178
 GameObject:

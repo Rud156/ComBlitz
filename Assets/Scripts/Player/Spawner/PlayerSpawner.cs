@@ -4,6 +4,7 @@ using ComBlitz.Factories;
 using ComBlitz.Resources;
 using ComBlitz.Shooters;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace ComBlitz.Player.Spawner
 {
@@ -64,6 +65,7 @@ namespace ComBlitz.Player.Spawner
             objectInstance.transform.SetParent(spawnPoint);
             objectInstance.transform.localPosition = Vector3.zero;
             objectInstance.GetComponent<BoxCollider>().enabled = false;
+            objectInstance.GetComponent<NavMeshObstacle>().enabled = false;
             objectInstance.GetComponent<Rigidbody>().isKinematic = true;
 
             objectIsBeingPlaced = true;
@@ -100,6 +102,7 @@ namespace ComBlitz.Player.Spawner
                 objectToBePlaced.transform.position = new Vector3(xPos, 0.25f, zPos);
                 objectToBePlaced.transform.rotation = rotation;
                 objectToBePlaced.GetComponent<BoxCollider>().enabled = true;
+                objectToBePlaced.GetComponent<NavMeshObstacle>().enabled = true;
                 objectToBePlaced.GetComponent<Rigidbody>().isKinematic = false;
                 
                 if(parentTagName == TagManager.FactoryHolder)
