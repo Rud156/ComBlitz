@@ -16558,7 +16558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followSpeed: 10
   lookAtSpeed: 10
-  cameraOffset: {x: 5, y: 10, z: -5}
+  cameraOffset: {x: 5, y: 10, z: -7}
   target: {fileID: 576449665}
 --- !u!4 &743173756
 Transform:
@@ -16566,14 +16566,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 743173754}
-  m_LocalRotation: {x: 0.40305817, y: -0.272532, z: 0.12708372, w: 0.86436117}
+  m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
   m_LocalPosition: {x: 38.27, y: 8.72, z: 34.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 534669905}
   m_Father: {fileID: 0}
   m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 50.000004, y: 0, z: 0}
 --- !u!1 &743872816
 GameObject:
   m_ObjectHideFlags: 0
