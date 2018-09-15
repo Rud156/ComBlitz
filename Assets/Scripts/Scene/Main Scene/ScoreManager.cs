@@ -2,7 +2,7 @@ using ComBlitz.Extensions;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace ComBlitz.Scene
+namespace ComBlitz.Scene.MainScene
 {
     public class ScoreManager : MonoBehaviour
     {

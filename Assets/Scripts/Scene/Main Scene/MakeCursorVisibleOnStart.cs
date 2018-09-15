@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ComBlitz.Scene
+namespace ComBlitz.Scene.MainScene
 {
     public class MakeCursorVisibleOnStart : MonoBehaviour
     {

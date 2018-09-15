@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace ComBlitz.Scene
+namespace ComBlitz.HomeScene
 {
     public class PlayAndQuit : MonoBehaviour
     {

@@ -2,7 +2,7 @@ using ComBlitz.ConstantData;
 using EZCameraShake;
 using UnityEngine;
 
-namespace ComBlitz.StoryScene
+namespace ComBlitz.Scene.StoryScene
 {
     public class StopSmokeOnContactGround : MonoBehaviour
     {

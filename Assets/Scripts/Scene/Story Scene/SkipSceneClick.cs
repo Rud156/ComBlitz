@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ComBlitz.StoryScene
+namespace ComBlitz.Scene.StoryScene
 {
     public class SkipSceneClick : MonoBehaviour
     {

@@ -5,7 +5,7 @@ using ComBlitz.Resources;
 using ComBlitz.UI;
 using UnityEngine;
 
-namespace ComBlitz.Scene
+namespace ComBlitz.Scene.MainScene
 {
     public class GameManager : MonoBehaviour
     {

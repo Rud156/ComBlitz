@@ -3,7 +3,7 @@ using ComBlitz.Scene.Data;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace ComBlitz.Scene
+namespace ComBlitz.Scene.HomeScene
 {
     public class SceneDisplayScore : MonoBehaviour
     {

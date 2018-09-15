@@ -3,7 +3,7 @@ using ComBlitz.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace ComBlitz.StoryScene
+namespace ComBlitz.Scene.StoryScene
 {
     public class StorySceneManager : MonoBehaviour
     {

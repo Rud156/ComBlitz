@@ -1,4 +1,4 @@
-using ComBlitz.Scene;
+using ComBlitz.Scene.MainScene;
 using UnityEngine;
 
 namespace ComBlitz.Enemy.Base

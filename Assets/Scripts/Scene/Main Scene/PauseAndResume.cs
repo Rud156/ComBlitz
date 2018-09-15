@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace ComBlitz.Scene
+namespace ComBlitz.Scene.MainScene
 {
     public class PauseAndResume : MonoBehaviour
     {

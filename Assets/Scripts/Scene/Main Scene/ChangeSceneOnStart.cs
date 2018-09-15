@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using ComBlitz.Scene.Data;
 
-namespace ComBlitz.Scene
+namespace ComBlitz.Scene.MainScene
 {
     public class ChangeSceneOnStart : MonoBehaviour
     {

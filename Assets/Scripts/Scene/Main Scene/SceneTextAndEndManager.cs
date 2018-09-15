@@ -5,7 +5,7 @@ using ComBlitz.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace ComBlitz.Scene
+namespace ComBlitz.Scene.MainScene
 {
     public class SceneTextAndEndManager : MonoBehaviour
     {

@@ -1,6 +1,6 @@
 ﻿using ComBlitz.ConstantData;
 using ComBlitz.Player.Spawner;
-using ComBlitz.Scene;
+using ComBlitz.Scene.MainScene;
 using UnityEngine;
 using UnityEngine.UI;
 

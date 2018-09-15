@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace ComBlitz.StoryScene
+namespace ComBlitz.Scene.StoryScene
 {
     public class DialogueManager : MonoBehaviour
     {
