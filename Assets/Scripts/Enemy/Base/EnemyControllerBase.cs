@@ -61,6 +61,9 @@ namespace ComBlitz.Enemy.Base
 
         protected virtual void MoveTowardsTargetAndAttack()
         {
+            if (!enemyAgent.isOnNavMesh)
+                return;
+
             if (currentTarget == null)
             {
                 enemyAgent.ResetPath();
@@ -145,9 +148,9 @@ namespace ComBlitz.Enemy.Base
 
         private void ChangeTargetToPlayerIfNear()
         {
-            if(playerTransform == null)
+            if (playerTransform == null)
                 return;
-            
+
             float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
             if (distanceToPlayer <= minPlayerTargetDistance)
                 currentTarget = playerTransform;

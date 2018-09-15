@@ -26,6 +26,7 @@ namespace ComBlitz.Scene.MainScene
 
         public PlayerShootController playerShooter;
         public PlayerMoveController playerMovement;
+        public GameObject minimapHolder;
 
         private bool inventoryItemSelected;
         private bool inventoryOpen;
@@ -92,18 +93,17 @@ namespace ComBlitz.Scene.MainScene
         {
             playerShooter.DeActivateShooting();
             inventoryOpen = true;
-        }
-
-        public void InventoryClosed()
-        {
-            playerShooter.ActivateShooting();
-            inventoryOpen = false;
+            minimapHolder.SetActive(false);
         }
 
         private void CloseInventory()
         {
             ShopManager.instance.CloseInventory(true);
-            InventoryClosed();
+
+            playerShooter.ActivateShooting();
+            inventoryOpen = false;
+
+            minimapHolder.SetActive(true);
         }
 
         #endregion Inventory
@@ -137,6 +137,8 @@ namespace ComBlitz.Scene.MainScene
 
             inventoryOpen = false;
             ShopManager.instance.CloseInventory();
+
+            minimapHolder.SetActive(true);
         }
 
         public void InventoryItemWorkComplete()
