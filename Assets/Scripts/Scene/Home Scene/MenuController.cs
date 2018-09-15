@@ -34,6 +34,8 @@ namespace ComBlitz.Scene.HomeScene
             helpMenu.SetActive(false);
             controlsMenu.SetActive(true);
             inventoryMenu.SetActive(false);
+            
+            InventoryController.instance.ClearSelectedItem();
         }
     }
 }
