@@ -1,4 +1,5 @@
-﻿using ComBlitz.Player.Data;
+﻿using ComBlitz.Extensions;
+using ComBlitz.Player.Data;
 using UnityEngine;
 
 namespace ComBlitz.Player.Movement
@@ -54,10 +55,10 @@ namespace ComBlitz.Player.Movement
             Vector3 xVelocity = Vector3.zero;
 
             if (moveZ != 0)
-                zVelocity = transform.forward * moveZ;
+                zVelocity = Vector3.forward * moveZ;
 
             if (moveX != 0)
-                xVelocity = transform.right * moveX;
+                xVelocity = Vector3.right * moveX;
 
             Vector3 combinedVelocity = (zVelocity + xVelocity) * movementSpeed * Time.deltaTime;
             playerRB.velocity = new Vector3(combinedVelocity.x, playerRB.velocity.y, combinedVelocity.z);
@@ -68,8 +69,19 @@ namespace ComBlitz.Player.Movement
             float moveZ = Input.GetAxis(PlayerContantData.VerticalAxis);
             float moveX = Input.GetAxis(PlayerContantData.HorizontalAxis);
 
-            playerAnimator.SetFloat(PlayerContantData.PlayerVerticalMovement, moveZ);
-            playerAnimator.SetFloat(PlayerContantData.PlayerHorizontalMovement, moveX);
+            float yRotation = ExtensionFunctions.To360Angle(transform.rotation.eulerAngles.y);
+
+            float vAxisVMovement = moveZ * Mathf.Cos(Mathf.Deg2Rad * yRotation);
+            float vAxisHMovement = moveZ * Mathf.Sin(Mathf.Deg2Rad * yRotation);
+
+            float hAxisVMovement = moveX * Mathf.Sin(Mathf.Deg2Rad * yRotation);
+            float hAxisHMovement = moveX * Mathf.Cos(Mathf.Deg2Rad * yRotation);
+
+            float vMovement = vAxisVMovement + hAxisVMovement;
+            float hMovement = vAxisHMovement + hAxisHMovement;
+
+            playerAnimator.SetFloat(PlayerContantData.PlayerVerticalMovement, vMovement);
+            playerAnimator.SetFloat(PlayerContantData.PlayerHorizontalMovement, hMovement);
         }
 
         private void PointPlayerTowardsMouse()
