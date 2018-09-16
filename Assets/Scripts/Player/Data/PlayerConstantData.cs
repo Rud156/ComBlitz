@@ -1,6 +1,6 @@
 namespace ComBlitz.Player.Data
 {
-    public static class PlayerContantData
+    public static class PlayerConstantData
     {
         public const string HorizontalAxis = "Horizontal";
         public const string VerticalAxis = "Vertical";

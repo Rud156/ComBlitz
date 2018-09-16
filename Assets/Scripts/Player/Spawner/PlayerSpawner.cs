@@ -74,6 +74,7 @@ namespace ComBlitz.Player.Spawner
             objectToBePlaced = objectInstance;
 
             parentTagName = parentTag;
+            spawnIndicator.transform.rotation = objectPrefab.transform.rotation;
         }
 
         private void CheckAndPlaceObjectInWorld()
@@ -93,8 +94,8 @@ namespace ComBlitz.Player.Spawner
 
             if (objectCanBePlaced && Input.GetMouseButton(0))
             {
-                float xPos = ExtensionFunctions.GetClosestMultiple(spawnPoint.position.x);
-                float zPos = ExtensionFunctions.GetClosestMultiple(spawnPoint.position.z);
+                float xPos = spawnPoint.position.x;
+                float zPos = spawnPoint.position.z;
 
                 Transform spawnerHolder = GameObject.FindGameObjectWithTag(parentTagName).transform;
 
@@ -104,8 +105,8 @@ namespace ComBlitz.Player.Spawner
                 objectToBePlaced.GetComponent<BoxCollider>().enabled = true;
                 objectToBePlaced.GetComponent<NavMeshObstacle>().enabled = true;
                 objectToBePlaced.GetComponent<Rigidbody>().isKinematic = false;
-                
-                if(parentTagName == TagManager.FactoryHolder)
+
+                if (parentTagName == TagManager.FactoryHolder)
                     objectToBePlaced.GetComponent<FactoriesCreator>().StartSpawn();
                 else
                     objectToBePlaced.GetComponent<ShooterTargetEnemy>().StartShooting();

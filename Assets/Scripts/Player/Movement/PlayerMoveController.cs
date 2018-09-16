@@ -48,8 +48,8 @@ namespace ComBlitz.Player.Movement
 
         private void MovePlayerVerticalAndHorizontal()
         {
-            float moveZ = Input.GetAxis(PlayerContantData.VerticalAxis);
-            float moveX = Input.GetAxis(PlayerContantData.HorizontalAxis);
+            float moveZ = Input.GetAxis(PlayerConstantData.VerticalAxis);
+            float moveX = Input.GetAxis(PlayerConstantData.HorizontalAxis);
 
             Vector3 zVelocity = Vector3.zero;
             Vector3 xVelocity = Vector3.zero;
@@ -66,8 +66,8 @@ namespace ComBlitz.Player.Movement
 
         private void SetAndLimitPlayerAnimation()
         {
-            float moveZ = Input.GetAxis(PlayerContantData.VerticalAxis);
-            float moveX = Input.GetAxis(PlayerContantData.HorizontalAxis);
+            float moveZ = Input.GetAxis(PlayerConstantData.VerticalAxis);
+            float moveX = Input.GetAxis(PlayerConstantData.HorizontalAxis);
 
             float yRotation = ExtensionFunctions.To360Angle(transform.rotation.eulerAngles.y);
 
@@ -80,8 +80,8 @@ namespace ComBlitz.Player.Movement
             float vMovement = vAxisVMovement + hAxisVMovement;
             float hMovement = vAxisHMovement + hAxisHMovement;
 
-            playerAnimator.SetFloat(PlayerContantData.PlayerVerticalMovement, vMovement);
-            playerAnimator.SetFloat(PlayerContantData.PlayerHorizontalMovement, hMovement);
+            playerAnimator.SetFloat(PlayerConstantData.PlayerVerticalMovement, vMovement);
+            playerAnimator.SetFloat(PlayerConstantData.PlayerHorizontalMovement, hMovement);
         }
 
         private void PointPlayerTowardsMouse()

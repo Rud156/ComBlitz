@@ -23,7 +23,7 @@ namespace ComBlitz.Player.Spawner
         #endregion Singleton
 
         public Transform groundHolder;
-        public Transform groundTracker;
+        public Transform spawnPoint;
         public float initalSpawnHeightAbove = 1f;
         public float overlapSphereRadius = 2f;
 
@@ -54,18 +54,20 @@ namespace ComBlitz.Player.Spawner
         public void CreateGroundInWorld(GameObject groundPrefab)
         {
             GameObject groundInstance = Instantiate(groundPrefab, transform.position, Quaternion.identity);
-            groundInstance.transform.SetParent(groundTracker);
+            groundInstance.transform.SetParent(spawnPoint);
             groundInstance.transform.localPosition = Vector3.zero + Vector3.up * initalSpawnHeightAbove;
             groundInstance.GetComponent<BoxCollider>().enabled = false;
 
             groundIsBeingPlaced = true;
             groundIndicator.gameObject.SetActive(true);
             groundToBePlaced = groundInstance;
+
+            groundIndicator.transform.rotation = groundPrefab.transform.rotation;
         }
 
         private void CheckAndCreateGroundInWorld()
         {
-            Collider[] colliders = Physics.OverlapSphere(groundTracker.position, overlapSphereRadius);
+            Collider[] colliders = Physics.OverlapSphere(spawnPoint.position, overlapSphereRadius);
             bool clear = false;
 
             if (colliders.Length == 0)
@@ -78,8 +80,8 @@ namespace ComBlitz.Player.Spawner
 
             if (clear && Input.GetMouseButtonDown(0))
             {
-                float xPos = ExtensionFunctions.GetClosestMultiple(groundTracker.position.x);
-                float zPos = ExtensionFunctions.GetClosestMultiple(groundTracker.position.z);
+                float xPos = spawnPoint.position.x;
+                float zPos = spawnPoint.position.z;
 
                 groundToBePlaced.transform.SetParent(groundHolder);
                 groundToBePlaced.transform.position = new Vector3(xPos, 0, zPos);
