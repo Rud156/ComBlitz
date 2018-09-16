@@ -1,7 +1,7 @@
 using ComBlitz.Extensions;
 using UnityEngine;
 
-namespace ComBlitz.Player.Spawner
+namespace ComBlitz.CustomCamera
 {
     public class PointToGridCameraSnapper : MonoBehaviour
     {
