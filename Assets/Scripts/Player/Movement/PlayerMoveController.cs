@@ -1,5 +1,6 @@
 ﻿using ComBlitz.Extensions;
 using ComBlitz.Player.Data;
+using ComBlitz.Scene.Data;
 using UnityEngine;
 
 namespace ComBlitz.Player.Movement
@@ -14,6 +15,7 @@ namespace ComBlitz.Player.Movement
         private Animator playerAnimator;
         private Rigidbody playerRB;
         private bool stopMovement;
+        private bool useMouseBasedMovement;
 
         /// <summary>
         /// Start is called on the frame when a script is enabled just before any of the Update
@@ -25,6 +27,12 @@ namespace ComBlitz.Player.Movement
             playerRB = GetComponent<Rigidbody>();
 
             stopMovement = false;
+
+            int mouseMovement = 0;
+            if (PlayerPrefs.HasKey(SceneData.MovementPlayerPref))
+                mouseMovement = PlayerPrefs.GetInt(SceneData.MovementPlayerPref);
+
+            useMouseBasedMovement = mouseMovement != 0;
         }
 
         /// <summary>
@@ -55,16 +63,33 @@ namespace ComBlitz.Player.Movement
             Vector3 xVelocity = Vector3.zero;
 
             if (moveZ != 0)
-                zVelocity = Vector3.forward * moveZ;
+                zVelocity = (useMouseBasedMovement ? transform.forward : Vector3.forward) * moveZ;
 
             if (moveX != 0)
-                xVelocity = Vector3.right * moveX;
+                xVelocity = (useMouseBasedMovement ? transform.right : Vector3.right) * moveX;
 
             Vector3 combinedVelocity = (zVelocity + xVelocity) * movementSpeed * Time.deltaTime;
             playerRB.velocity = new Vector3(combinedVelocity.x, playerRB.velocity.y, combinedVelocity.z);
         }
 
         private void SetAndLimitPlayerAnimation()
+        {
+            if (useMouseBasedMovement)
+                SetMouseBasedAnimation();
+            else
+                SetScreenBasedAnimation();
+        }
+
+        private void SetMouseBasedAnimation()
+        {
+            float moveZ = Input.GetAxis(PlayerConstantData.VerticalAxis);
+            float moveX = Input.GetAxis(PlayerConstantData.HorizontalAxis);
+
+            playerAnimator.SetFloat(PlayerConstantData.PlayerVerticalMovement, moveZ);
+            playerAnimator.SetFloat(PlayerConstantData.PlayerHorizontalMovement, moveX);
+        }
+
+        private void SetScreenBasedAnimation()
         {
             float moveZ = Input.GetAxis(PlayerConstantData.VerticalAxis);
             float moveX = Input.GetAxis(PlayerConstantData.HorizontalAxis);

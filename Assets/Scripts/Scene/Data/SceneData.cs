@@ -10,5 +10,6 @@
 
         public const string KillsPlayerPref = "Kills";
         public const string TimePlayerPref = "Time";
+        public const string MovementPlayerPref = "Movement";
     }
 }
