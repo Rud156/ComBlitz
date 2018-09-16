@@ -70,9 +70,11 @@ namespace ComBlitz.Resources
         public Text itemGreenOrbCount;
 
         [Header("Inventory")] public GameObject inventory;
+        public AudioSource invalidItemSource;
 
         private bool stopShopOpening;
         private ShopItem _selectedItem;
+        private bool inventoryOpened;
 
         private ShopItem SelectedItem
         {
@@ -87,6 +89,7 @@ namespace ComBlitz.Resources
         private void Start()
         {
             stopShopOpening = false;
+            inventoryOpened = false;
             SelectedItem = null;
             inventory.SetActive(false);
         }
@@ -101,6 +104,9 @@ namespace ComBlitz.Resources
 
             if (Input.GetKeyDown(KeyCode.Q))
                 OpenInventory();
+
+            if (inventoryOpened)
+                UseHotKeyToSelectItem();
 
             CheckAndRenderAllShopItems();
         }
@@ -135,6 +141,78 @@ namespace ComBlitz.Resources
 
         #endregion Shooter
 
+        private void UseHotKeyToSelectItem()
+        {
+            // Grounds
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                if (ResourceAvailable(dirtGround))
+                    DirtGroundOnClick();
+                else
+                    invalidItemSource.Play();
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                if (ResourceAvailable(grassGround))
+                    GrassGroundOnClick();
+                else
+                    invalidItemSource.Play();
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                if (ResourceAvailable(lavaGround))
+                    LavaGroundOnClick();
+                else
+                    invalidItemSource.Play();
+            }
+
+            // Factories
+            else if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                if (ResourceAvailable(soldierFactory))
+                    SoldierFactoryOnClick();
+                else
+                    invalidItemSource.Play();
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha5))
+            {
+                if (ResourceAvailable(knightFactory))
+                    KnightFactoryOnClick();
+                else
+                    invalidItemSource.Play();
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha6))
+            {
+                if (ResourceAvailable(orcFactory))
+                    OrcFactoryOnClick();
+                else
+                    invalidItemSource.Play();
+            }
+
+            // Shooters
+            else if (Input.GetKeyDown(KeyCode.Alpha7))
+            {
+                if (ResourceAvailable(bulletShooter))
+                    DirtGroundOnClick();
+                else
+                    invalidItemSource.Play();
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha8))
+            {
+                if (ResourceAvailable(laserShooter))
+                    LaserShooterOnClick();
+                else
+                    invalidItemSource.Play();
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha9))
+            {
+                if (ResourceAvailable(bombShooter))
+                    BombShooterOnClick();
+                else
+                    invalidItemSource.Play();
+            }
+        }
+
         private void RenderSelectedItem()
         {
             if (SelectedItem == null)
@@ -160,6 +238,7 @@ namespace ComBlitz.Resources
 
             GameManager.instance.InventoryOpened();
             inventory.SetActive(true);
+            inventoryOpened = true;
         }
 
         public void CloseInventory(bool clearSelection = false)
@@ -167,6 +246,7 @@ namespace ComBlitz.Resources
             if (clearSelection)
                 SelectedItem = null;
             inventory.SetActive(false);
+            inventoryOpened = false;
         }
 
         // This method is called from the Select Item Button

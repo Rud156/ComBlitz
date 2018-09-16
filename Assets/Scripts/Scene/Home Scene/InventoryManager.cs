@@ -62,6 +62,9 @@ namespace ComBlitz.Scene.HomeScene
         {
             RenderSelectedItem();
             SetActiveItemToUi();
+
+            if (MenuManager.instance.InventoryActive())
+                UseHotKeysToSelectItem();
         }
 
         #region Ground
@@ -93,6 +96,33 @@ namespace ComBlitz.Scene.HomeScene
         public void BombShooterOnClick() => SelectedItem = bombShooter;
 
         #endregion Shooter
+
+        private void UseHotKeysToSelectItem()
+        {
+            // Grounds
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+                DirtGroundOnClick();
+            else if (Input.GetKeyDown(KeyCode.Alpha2))
+                GrassGroundOnClick();
+            else if (Input.GetKeyDown(KeyCode.Alpha3))
+                LavaGroundOnClick();
+
+            // Factories
+            else if (Input.GetKeyDown(KeyCode.Alpha4))
+                SoldierFactoryOnClick();
+            else if (Input.GetKeyDown(KeyCode.Alpha5))
+                KnightFactoryOnClick();
+            else if (Input.GetKeyDown(KeyCode.Alpha6))
+                OrcFactoryOnClick();
+
+            // Shooters
+            else if (Input.GetKeyDown(KeyCode.Alpha7))
+                BulletShooterOnClick();
+            else if (Input.GetKeyDown(KeyCode.Alpha8))
+                LaserShooterOnClick();
+            else if (Input.GetKeyDown(KeyCode.Alpha9))
+                BombShooterOnClick();
+        }
 
         public void ClearSelectedItem() => SelectedItem = null;
 

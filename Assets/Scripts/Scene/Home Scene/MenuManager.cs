@@ -7,6 +7,21 @@ namespace ComBlitz.Scene.HomeScene
 {
     public class MenuManager : MonoBehaviour
     {
+        #region Singleton
+
+        public static MenuManager instance;
+
+        private void Awake()
+        {
+            if (instance == null)
+                instance = this;
+
+            if (instance != this)
+                Destroy(gameObject);
+        }
+
+        #endregion Singleton
+
         public Texture2D cursorTexture;
         public GameObject homeMenu;
         public Toggle movementToggle;
@@ -16,6 +31,7 @@ namespace ComBlitz.Scene.HomeScene
         public GameObject inventoryMenu;
 
         private bool toggleOn;
+        private bool inventoryActive;
 
         private void Start()
         {
@@ -26,6 +42,8 @@ namespace ComBlitz.Scene.HomeScene
             movementToggle.isOn = toggleValue != 0;
             toggleOn = toggleValue != 0;
 
+            inventoryActive = false;
+
             Cursor.SetCursor(cursorTexture, new Vector2(15, 15), CursorMode.Auto);
         }
 
@@ -34,6 +52,8 @@ namespace ComBlitz.Scene.HomeScene
             if (Input.GetKeyDown(KeyCode.Escape))
                 CloseHelpMenu();
         }
+
+        public bool InventoryActive() => inventoryActive;
 
         public void HandlePlayerMovementTypeChange()
         {
@@ -52,6 +72,7 @@ namespace ComBlitz.Scene.HomeScene
         {
             controlsMenu.SetActive(false);
             inventoryMenu.SetActive(true);
+            inventoryActive = true;
         }
 
         public void CloseHelpMenu()
@@ -61,6 +82,7 @@ namespace ComBlitz.Scene.HomeScene
             controlsMenu.SetActive(true);
             inventoryMenu.SetActive(false);
 
+            inventoryActive = false;
             InventoryManager.instance.ClearSelectedItem();
         }
 
