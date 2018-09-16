@@ -42904,93 +42904,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grassGround:
-    greenOrbsCount: 5
-    orangeOrbsCount: 1
-    redOrbsCount: 1
-    description: Grass. Hm.. Useful for creating Knights?
-    groundToBePlacedOn: 3
-    itemType: 0
-    prefab: {fileID: 1155546808048874, guid: f77f45aa2d6e4a0448ace47bac2a5a67, type: 2}
+    item: {fileID: 11400000, guid: b152cb3a92a0d684fa47f8ee8f22563d, type: 2}
     button: {fileID: 1196676381}
     itemBorderImage: {fileID: 1196676382}
   dirtGround:
-    greenOrbsCount: 1
-    orangeOrbsCount: 5
-    redOrbsCount: 1
-    description: Dirt? Sand? Soldiers travel the world...
-    groundToBePlacedOn: 3
-    itemType: 0
-    prefab: {fileID: 1212678294326434, guid: 80ad5de9db370484ca5985c9f5fe874a, type: 2}
+    item: {fileID: 11400000, guid: 25d5a0dbfa1700e42bc88136e0b1359f, type: 2}
     button: {fileID: 252195863}
     itemBorderImage: {fileID: 252195864}
   lavaGround:
-    greenOrbsCount: 1
-    orangeOrbsCount: 1
-    redOrbsCount: 5
-    description: Lava? Burning Death... Mordor
-    groundToBePlacedOn: 3
-    itemType: 0
-    prefab: {fileID: 1941519210562276, guid: a983e6102f2a83141870cdcfd817cd12, type: 2}
+    item: {fileID: 11400000, guid: 16ccd17311524674ab3c84e7d1ff9ecf, type: 2}
     button: {fileID: 801757528}
     itemBorderImage: {fileID: 801757529}
   knightFactory:
-    greenOrbsCount: 5
-    orangeOrbsCount: 3
-    redOrbsCount: 1
-    description: Bold and honourable knights emerge from the grasslands...
-    groundToBePlacedOn: 1
-    itemType: 2
-    prefab: {fileID: 1646653038921522, guid: 94166a25118b3df468a1e56624d0fe39, type: 2}
+    item: {fileID: 11400000, guid: 3367771138f6cec44ade71ab494ca3a4, type: 2}
     button: {fileID: 1123576349}
     itemBorderImage: {fileID: 1123576350}
   orcFactory:
-    greenOrbsCount: 0
-    orangeOrbsCount: 1
-    redOrbsCount: 5
-    description: As vicious as the come from the fire. They'll rip you apart...
-    groundToBePlacedOn: 0
-    itemType: 2
-    prefab: {fileID: 1530795250213420, guid: 63952fb1fb98d3c43899d6d70af6519a, type: 2}
+    item: {fileID: 11400000, guid: d6006d3e2f3fd134fb274a52e5603ba7, type: 2}
     button: {fileID: 911617437}
     itemBorderImage: {fileID: 911617438}
   soldierFactory:
-    greenOrbsCount: 1
-    orangeOrbsCount: 5
-    redOrbsCount: 3
-    description: Always fighting for a motto... They are very brave.
-    groundToBePlacedOn: 2
-    itemType: 2
-    prefab: {fileID: 1676815709059950, guid: 147cbcf213d41cc46a33d5ff1d0af1e8, type: 2}
+    item: {fileID: 11400000, guid: 76400894ac210c4479d47545665cf3a0, type: 2}
     button: {fileID: 1916571087}
     itemBorderImage: {fileID: 1916571088}
   bulletShooter:
-    greenOrbsCount: 3
-    orangeOrbsCount: 2
-    redOrbsCount: 2
-    description: A multipurpose turret for all weathers... Must be placed on the grass.
-    groundToBePlacedOn: 1
-    itemType: 1
-    prefab: {fileID: 1628262246522202, guid: d615e185ad571b64d9c7fb41cb54f65f, type: 2}
+    item: {fileID: 11400000, guid: f4ede6aa0e82c244b91341f499031fdb, type: 2}
     button: {fileID: 103331616}
     itemBorderImage: {fileID: 103331617}
   laserShooter:
-    greenOrbsCount: 1
-    orangeOrbsCount: 0
-    redOrbsCount: 5
-    description: It uses fire to shoot beams which burn anyone in contact.
-    groundToBePlacedOn: 0
-    itemType: 1
-    prefab: {fileID: 1476899010229264, guid: 3e59ca931b075994285a7e32ef2f84d1, type: 2}
+    item: {fileID: 11400000, guid: 192b6703212410f47917a1fce13c5944, type: 2}
     button: {fileID: 360541011}
     itemBorderImage: {fileID: 360541012}
   bombShooter:
-    greenOrbsCount: 5
-    orangeOrbsCount: 10
-    redOrbsCount: 3
-    description: An impressive device that kills all who dare face it...
-    groundToBePlacedOn: 2
-    itemType: 1
-    prefab: {fileID: 1341711165756486, guid: 3f8138278a4765346852a2fc72804b01, type: 2}
+    item: {fileID: 11400000, guid: 93cb346dd3bc2d748809401eaac61e7f, type: 2}
     button: {fileID: 704282826}
     itemBorderImage: {fileID: 704282827}
   defaultBorder: {fileID: 21300000, guid: 82655cc7ceb674744b18e6d7ba007c40, type: 3}

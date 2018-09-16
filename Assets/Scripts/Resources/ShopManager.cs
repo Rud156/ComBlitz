@@ -1,4 +1,5 @@
 ﻿using ComBlitz.ConstantData;
+using ComBlitz.InventoryObjects;
 using ComBlitz.Player.Spawner;
 using ComBlitz.Scene.MainScene;
 using UnityEngine;
@@ -26,16 +27,7 @@ namespace ComBlitz.Resources
         [System.Serializable]
         public class ShopItem
         {
-            public int greenOrbsCount;
-            public int orangeOrbsCount;
-            public int redOrbsCount;
-
-            [TextArea] public string description;
-
-            public GroundTypes groundToBePlacedOn;
-            public ItemType itemType;
-
-            public GameObject prefab;
+            public InventoryItem item;
             public Button button;
             public Image itemBorderImage;
         }
@@ -150,10 +142,10 @@ namespace ComBlitz.Resources
             else
             {
                 itemDetailsParent.SetActive(true);
-                itemDescription.text = SelectedItem.description;
-                itemGreenOrbCount.text = $"X {SelectedItem.greenOrbsCount}";
-                itemRedOrbCount.text = $"X {SelectedItem.redOrbsCount}";
-                itemOrangeOrbCount.text = $"X {SelectedItem.orangeOrbsCount}";
+                itemDescription.text = SelectedItem.item.description;
+                itemGreenOrbCount.text = $"X {SelectedItem.item.greenOrbCount}";
+                itemRedOrbCount.text = $"X {SelectedItem.item.redOrbCount}";
+                itemOrangeOrbCount.text = $"X {SelectedItem.item.orangeOrbCount}";
             }
         }
 
@@ -180,12 +172,12 @@ namespace ComBlitz.Resources
         // This method is called from the Select Item Button
         public void UseItem()
         {
-            if (SelectedItem.itemType == ItemType.Ground)
-                PlayerSpawnGroundController.instance.CreateGroundInWorld(SelectedItem.prefab);
+            if (SelectedItem.item.itemType == ItemType.Ground)
+                PlayerSpawnGroundController.instance.CreateGroundInWorld(SelectedItem.item.itemPrefab);
             else
             {
                 string tagName = "";
-                switch (SelectedItem.groundToBePlacedOn)
+                switch (SelectedItem.item.groundToBePlacedOn)
                 {
                     case GroundTypes.DirtGround:
                         tagName = TagManager.DirtGround;
@@ -202,10 +194,10 @@ namespace ComBlitz.Resources
                         return;
                 }
 
-                string parentTagName = SelectedItem.itemType == ItemType.Factory
+                string parentTagName = SelectedItem.item.itemType == ItemType.Factory
                     ? TagManager.FactoryHolder
                     : TagManager.ShooterHolder;
-                PlayerSpawner.instance.CreateFactoryOrShooter(tagName, SelectedItem.prefab, parentTagName);
+                PlayerSpawner.instance.CreateFactoryOrShooter(tagName, SelectedItem.item.itemPrefab, parentTagName);
             }
 
             GameManager.instance.InventoryItemSelected();
@@ -213,9 +205,9 @@ namespace ComBlitz.Resources
 
         public void UseOrbToPlaceSelectedObject()
         {
-            ResourceManager.instance.UseOrbs(ResourceManager.OrbType.Orange, SelectedItem.orangeOrbsCount);
-            ResourceManager.instance.UseOrbs(ResourceManager.OrbType.Red, SelectedItem.redOrbsCount);
-            ResourceManager.instance.UseOrbs(ResourceManager.OrbType.Green, SelectedItem.greenOrbsCount);
+            ResourceManager.instance.UseOrbs(ResourceManager.OrbType.Orange, SelectedItem.item.orangeOrbCount);
+            ResourceManager.instance.UseOrbs(ResourceManager.OrbType.Red, SelectedItem.item.redOrbCount);
+            ResourceManager.instance.UseOrbs(ResourceManager.OrbType.Green, SelectedItem.item.greenOrbCount);
 
             GameManager.instance.InventoryItemWorkComplete();
             SelectedItem = null;
@@ -312,9 +304,9 @@ namespace ComBlitz.Resources
 
         private bool ResourceAvailable(ShopItem item)
         {
-            int greenOrbCount = item.greenOrbsCount;
-            int orangeOrbCount = item.orangeOrbsCount;
-            int redOrbCount = item.redOrbsCount;
+            int greenOrbCount = item.item.greenOrbCount;
+            int orangeOrbCount = item.item.orangeOrbCount;
+            int redOrbCount = item.item.redOrbCount;
 
             bool greenOrbsAvailable = ResourceManager.instance.OrbsAvailable(ResourceManager.OrbType.Green,
                 greenOrbCount);

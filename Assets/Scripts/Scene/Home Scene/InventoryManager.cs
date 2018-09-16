@@ -1,3 +1,4 @@
+using ComBlitz.InventoryObjects;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,8 +25,7 @@ namespace ComBlitz.Scene.HomeScene
         public class ShopItem
         {
             public Image itemBorderImage;
-
-            [TextArea] public string description;
+            public InventoryItem item;
         }
 
         [Header("Grounds")] public ShopItem grassGround;
@@ -103,7 +103,7 @@ namespace ComBlitz.Scene.HomeScene
             else
             {
                 itemDetailsParent.SetActive(true);
-                itemDescription.text = SelectedItem.description;
+                itemDescription.text = SelectedItem.item.description;
             }
         }
 

@@ -31467,31 +31467,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grassGround:
     itemBorderImage: {fileID: 2024628962}
-    description: Grass. Hm.. Useful for creating Knights?
+    item: {fileID: 11400000, guid: b152cb3a92a0d684fa47f8ee8f22563d, type: 2}
   dirtGround:
     itemBorderImage: {fileID: 397569584}
-    description: Dirt? Sand? Soldiers travel the world...
+    item: {fileID: 11400000, guid: 25d5a0dbfa1700e42bc88136e0b1359f, type: 2}
   lavaGround:
     itemBorderImage: {fileID: 865955698}
-    description: Lava? Burning Death... Mordor
+    item: {fileID: 11400000, guid: 16ccd17311524674ab3c84e7d1ff9ecf, type: 2}
   knightFactory:
     itemBorderImage: {fileID: 577352490}
-    description: Bold and honourable knights emerge from the grasslands...
+    item: {fileID: 11400000, guid: 3367771138f6cec44ade71ab494ca3a4, type: 2}
   orcFactory:
     itemBorderImage: {fileID: 876603541}
-    description: As vicious as the come from the fire. They'll rip you apart...
+    item: {fileID: 11400000, guid: d6006d3e2f3fd134fb274a52e5603ba7, type: 2}
   soldierFactory:
     itemBorderImage: {fileID: 691016722}
-    description: Always fighting for a motto... They are very brave.
+    item: {fileID: 11400000, guid: 76400894ac210c4479d47545665cf3a0, type: 2}
   bulletShooter:
     itemBorderImage: {fileID: 1732223265}
-    description: A multipurpose turret for all weathers... Must be placed on the grass.
+    item: {fileID: 11400000, guid: f4ede6aa0e82c244b91341f499031fdb, type: 2}
   laserShooter:
     itemBorderImage: {fileID: 2036220310}
-    description: It uses fire to shoot beams which burn anyone in contact.
+    item: {fileID: 11400000, guid: 192b6703212410f47917a1fce13c5944, type: 2}
   bombShooter:
     itemBorderImage: {fileID: 1516864819}
-    description: An impressive device that kills all who dare face it...
+    item: {fileID: 11400000, guid: 93cb346dd3bc2d748809401eaac61e7f, type: 2}
   defaultBorder: {fileID: 21300000, guid: 82655cc7ceb674744b18e6d7ba007c40, type: 3}
   selectedBorder: {fileID: 21300000, guid: 18f1d13b39d78274e8f45d4afcac5bc1, type: 3}
   itemDescription: {fileID: 1901814215}
