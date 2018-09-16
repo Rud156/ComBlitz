@@ -1,7 +1,7 @@
 using ComBlitz.Resources;
 using UnityEngine;
 
-namespace ComBlitz.InventoryObjects
+namespace ComBlitz.Resources
 {
     [CreateAssetMenu(fileName = "InventoryItem", menuName = "Inventory/Item")]
     public class InventoryItem : ScriptableObject

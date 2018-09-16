@@ -1,4 +1,4 @@
-using ComBlitz.InventoryObjects;
+using ComBlitz.Resources;
 using UnityEngine;
 using UnityEngine.UI;
 

@@ -1,5 +1,4 @@
 ﻿using ComBlitz.ConstantData;
-using ComBlitz.InventoryObjects;
 using ComBlitz.Player.Spawner;
 using ComBlitz.Scene.MainScene;
 using UnityEngine;
@@ -193,7 +192,7 @@ namespace ComBlitz.Resources
             else if (Input.GetKeyDown(KeyCode.Alpha7))
             {
                 if (ResourceAvailable(bulletShooter))
-                    DirtGroundOnClick();
+                    BulletShooterOnClick();
                 else
                     invalidItemSource.Play();
             }
