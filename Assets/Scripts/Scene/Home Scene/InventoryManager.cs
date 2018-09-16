@@ -3,11 +3,11 @@ using UnityEngine.UI;
 
 namespace ComBlitz.Scene.HomeScene
 {
-    public class InventoryController : MonoBehaviour
+    public class InventoryManager : MonoBehaviour
     {
         #region Singleton
 
-        public static InventoryController instance;
+        public static InventoryManager instance;
 
         private void Awake()
         {

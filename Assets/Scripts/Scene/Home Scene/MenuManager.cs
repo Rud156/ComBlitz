@@ -1,14 +1,19 @@
+using ComBlitz.Scene.Data;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace ComBlitz.Scene.HomeScene
 {
-    public class MenuController : MonoBehaviour
+    public class MenuManager : MonoBehaviour
     {
+        public Texture2D cursorTexture;
         public GameObject homeMenu;
 
-        [Header("Help Help")] public GameObject helpMenu;
+        [Header("Help Menu")] public GameObject helpMenu;
         public GameObject controlsMenu;
         public GameObject inventoryMenu;
+
+        private void Start() => Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
 
         private void Update()
         {
@@ -34,8 +39,17 @@ namespace ComBlitz.Scene.HomeScene
             helpMenu.SetActive(false);
             controlsMenu.SetActive(true);
             inventoryMenu.SetActive(false);
-            
-            InventoryController.instance.ClearSelectedItem();
+
+            InventoryManager.instance.ClearSelectedItem();
         }
+
+        public void PlayGame()
+        {
+            SceneData.sceneToLoad = 2;
+            SceneData.showInfo = false;
+            SceneManager.LoadScene(1);
+        }
+
+        public void QuitGame() => Application.Quit();
     }
 }

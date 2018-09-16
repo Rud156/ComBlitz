@@ -30357,7 +30357,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1698275076}
+      objectReference: {fileID: 1698275077}
     - target: {fileID: 114438618790497238, guid: 877d1480bb3248f488fef9378c210dfc,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -30671,7 +30671,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1698275076}
+      objectReference: {fileID: 1698275077}
     - target: {fileID: 114438618790497238, guid: 877d1480bb3248f488fef9378c210dfc,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -33768,27 +33768,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1698275078}
-  - component: {fileID: 1698275076}
   - component: {fileID: 1698275077}
   m_Layer: 0
-  m_Name: Menu Controller
+  m_Name: Menu Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1698275076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1698275075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84a5a6ae0f910f9459b5bcacd9ca7d6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 2800000, guid: 9b09d2f06469083428b3ffa541902967, type: 3}
 --- !u!114 &1698275077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33800,6 +33787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98c131e72f7e432188882e75c3fc0880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: 9b09d2f06469083428b3ffa541902967, type: 3}
   homeMenu: {fileID: 1076010879}
   helpMenu: {fileID: 1286766960}
   controlsMenu: {fileID: 1291970853}
