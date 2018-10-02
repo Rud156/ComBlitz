@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 54708033251693618}
   - component: {fileID: 208295691667234706}
   - component: {fileID: 114756430560958126}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Soldier Factory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4034170753093200}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Spawn Point
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}

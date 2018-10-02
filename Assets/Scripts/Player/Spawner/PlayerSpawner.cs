@@ -36,6 +36,7 @@ namespace ComBlitz.Player.Spawner
         private string allowedTagName;
         private GameObject objectToBePlaced;
         private Quaternion rotation;
+        private readonly LayerMask layerMask = 1 << 9 | 1 << 10 | 1 << 13 | 1 << 14;
 
         private string parentTagName;
 
@@ -79,7 +80,7 @@ namespace ComBlitz.Player.Spawner
 
         private void CheckAndPlaceObjectInWorld()
         {
-            Collider[] colliders = Physics.OverlapSphere(spawnPoint.position, overlapSphereRadius);
+            Collider[] colliders = Physics.OverlapSphere(spawnPoint.position, overlapSphereRadius, layerMask);
             bool objectCanBePlaced = false;
 
             if (colliders.Length > 1 || colliders.Length == 0)

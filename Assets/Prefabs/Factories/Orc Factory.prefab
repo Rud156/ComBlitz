@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 54261315518663468}
   - component: {fileID: 208207346728033542}
   - component: {fileID: 114706206895816814}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Orc Factory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4367339815163648}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Spawn Point
   m_TagString: Untagged
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}

@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 54117279703650620}
   - component: {fileID: 208867307116547160}
   - component: {fileID: 114697932752376970}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Knight Factory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4095721153482846}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Spawn Point
   m_TagString: Untagged
   m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
