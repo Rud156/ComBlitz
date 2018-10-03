@@ -26,22 +26,29 @@ namespace ComBlitz.Scene.MainScene
 
         private int currentKills;
         private float currentTime;
+        private bool countScore;
 
         private void Start()
         {
             currentKills = 0;
             currentTime = 0;
+            countScore = false;
         }
 
         private void Update()
         {
-            currentTime += Time.deltaTime;
-
             timeText.text = $"Time : {ExtensionFunctions.Format2DecimalPlace(currentTime)} s";
             killsText.text = $"Kills : {currentKills}";
+
+            if (countScore)
+                currentTime += Time.deltaTime;
         }
 
-        public void AddKill() => currentKills += 1;
+        public void StartScoring() => countScore = true;
+
+        public void StopScoring() => countScore = false;
+
+        public void AddKill() => currentKills = countScore ? currentKills + 1 : currentKills;
 
         public float GetCurrentTime() => currentTime;
 

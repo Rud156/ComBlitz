@@ -49,6 +49,8 @@ namespace ComBlitz.Scene.MainScene
             bool gameOver = CheckPlayerAndBase();
             if (gameOver && !sceenSwitcherActivated)
             {
+                ScoreManager.instance.StopScoring();
+                
                 if (baseObject == null)
                     DisplayTextContent("Your base was destroyed ...");
                 else

@@ -1,5 +1,6 @@
 ﻿using ComBlitz.Extensions;
 using ComBlitz.Ground;
+using ComBlitz.Player.Data;
 using ComBlitz.Resources;
 using UnityEngine;
 
@@ -33,7 +34,6 @@ namespace ComBlitz.Player.Spawner
 
         private bool groundIsBeingPlaced;
         private GameObject groundToBePlaced;
-        private readonly LayerMask layerMask = 1 << 9 | 1 << 10 | 1 << 13 | 1 << 14;
 
         private void Start() => groundIsBeingPlaced = false;
 
@@ -68,7 +68,8 @@ namespace ComBlitz.Player.Spawner
 
         private void CheckAndCreateGroundInWorld()
         {
-            Collider[] colliders = Physics.OverlapSphere(spawnPoint.position, overlapSphereRadius, layerMask);
+            Collider[] colliders = Physics.OverlapSphere(spawnPoint.position, overlapSphereRadius,
+                PlayerConstantData.spawnerMask);
             bool clear = false;
 
             if (colliders.Length == 0)

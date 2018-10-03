@@ -81,8 +81,10 @@ namespace ComBlitz.Scene.MainScene
         {
             playerShooter.ActivateShooting();
             playerMovement.ActivateMovement();
+            
             ShopManager.instance.ActivateShop();
             GroundManager.instance.ActivateGroundFalling();
+            ScoreManager.instance.StartScoring();
         }
 
         #endregion SceneFader

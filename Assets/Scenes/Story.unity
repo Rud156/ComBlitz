@@ -27955,7 +27955,7 @@ GameObject:
   m_TagString: MainGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!54 &1369084168
 Rigidbody:
