@@ -1,5 +1,5 @@
 # ComBlitz
-A game where surviving your own onslaught is the goal. Grounds fall off and everything can damage everything. Just try to survive for as long as possible.
+A game where surviving your own onslaught is the goal. Grounds fall off and everything can damage everything. Just try to survive for as long as possible. Create factories to make enemies and kill them to collect orbs and make the grounds.
 > Buildings and Character assets used are free assets downloaded from the [Unity Asset Store](https://assetstore.unity.com/) or [Dev Assets](http://devassets.com/assets/tower-defense-assets/). Music is taken from [Freesound](https://freesound.org/).
 
 ### Controls
